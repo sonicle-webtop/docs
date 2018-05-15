@@ -1,7 +1,7 @@
-.. WebTop 5 documentation master file
+.. WebTop documentation master file
 
-WebTop 5 Administrator Manual 
-=============================
+WebTop |version| Administrator Manual 
+=====================================
 
 .. image:: images/logo.png
       :alt: |product|
@@ -13,9 +13,12 @@ WebTop 5 Administrator Manual
     * `Community <https://redmine.sonicle.com/projects/webtop5>`_
 
 
-Release notes
--------------
+Release notes |version|
+-----------------------
 
+.. toctree::
+   :maxdepth: 2
+   
    release_notes
 
 Installation
