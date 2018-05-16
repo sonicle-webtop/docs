@@ -84,3 +84,11 @@ DAV Server
    :maxdepth: 2
    
    dav-server
+
+EAS Server
+----------
+
+.. toctree::
+   :maxdepth: 2
+   
+   eas-server

@@ -2,15 +2,10 @@
 Release notes
 =============
 
-|
-
 WebTop release 5
 
-|
-
-Major changes on wt-5.2
------------------------
-2018-05-15
+Release 5.2.0 - may 15, 2018
+----------------------------
 
 **New Features:**
 
@@ -36,9 +31,8 @@ Major changes on wt-5.2
 
 |
 
-Hot fixes on wt-5.1.9
----------------------
-2018-05-04
+Release 5.1.9 - may 04, 2018
+----------------------------
 
 **Bug Fixes:**
 
@@ -47,13 +41,12 @@ Hot fixes on wt-5.1.9
 
 |
 
-Major changes on wt-5.1.8
--------------------------
-2018-04-19
+Release 5.1.8 - april 19, 2018
+------------------------------
 
 **New Features:**
 
-- New global mail configuration option allows to disable grid row preview as a default option for everyone. See :ref:`mail-default-settings-section` [ #468 ]
+- New global mail configuration option allows to disable grid row preview as a default option for everyone. See :ref:`mail-defaults-settings-section` [ #468 ]
 - Saving a draft now overwrites previous one, adding a specific action to save as new [ #453 ]
 - Mail now saves layout of folders, columns positions and widths [ #452 ]
 - Contacts now saves layout of columns positions and widths [ #451 ]
