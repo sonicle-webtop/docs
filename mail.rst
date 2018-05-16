@@ -1,17 +1,24 @@
-===========
-WebTop Mail
-===========
+====
+Mail
+====
+
+WebTop Mail Service
 
 |
 
-Global configration settings
-############################
+Global mail configration settings
+#################################
+
+|
+
+Global configuration settings can be changed using the admin interface, as explained in the :ref:`core-settings-section`
 
 |
 
 .. _mail-default-settings-section:
 
-**Default user settings**
+Default user settings
+---------------------
 
 ``default.ingrid.preview`` [ true | false ]
 

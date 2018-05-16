@@ -1,17 +1,26 @@
-===========
-WebTop Core
-===========
+====
+Core
+====
+
+WebTop Core Services
 
 |
 
-Global configuration settings
-#############################
+.. _core-settings-section:
+
+Global core configuration settings
+##################################
+
+|
+
+Global and per-domain configuration settings can be setup using the admin interface, using the admin user. Click on properties to show the current settings, grouped by service. You may directly edit the settings and/or add new ones as specified in the documentation. Missing settings will default to a specified value.
 
 |
 
 .. _PBX-settings-section:
 
-**PBX Settings**
+PBX Settings
+------------
 
 ``pbx.provider`` [ nethvoice ]
 

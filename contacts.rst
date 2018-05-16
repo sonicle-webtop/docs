@@ -1,12 +1,12 @@
 ========
-Calendar
+Contacts
 ========
 
-WebTop Calendar Service
+WebTop Contacts Service
 
 |
 
-Global calendar configuration settings
+Global contacts configuration settings
 ######################################
 
 |
@@ -14,7 +14,3 @@ Global calendar configuration settings
 Global configuration settings can be changed using the admin interface, as explained in the :ref:`core-settings-section`
 
 |
-
-``default.calendar.sync`` [O=OFF | R=READ | W=WRITE]
-  
-Default synchronization status for new calendar folders.

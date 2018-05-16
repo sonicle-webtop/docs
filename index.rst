@@ -24,10 +24,63 @@ Release notes |version|
 Installation
 ------------
 
-    `Build <https://github.com/sonicle/sonicle-webtop5-gate#sonicle-webtop-5-build-environment>`_
-    
-    `Database initialization <https://github.com/sonicle/sonicle-webtop5-gate#database-initialization>`_
-    
-    `Deployment <https://github.com/sonicle/sonicle-webtop5-gate#deployment>`_
-    
-    `First Administration Steps <https://github.com/sonicle/sonicle-webtop5-gate#administration>`_
+.. toctree::
+   :maxdepth: 2
+   
+   installation
+
+Core
+----
+
+.. toctree::
+   :maxdepth: 2
+   
+   core
+
+Mail
+----
+
+.. toctree::
+   :maxdepth: 2
+   
+   mail
+
+Calendar
+--------
+
+.. toctree::
+   :maxdepth: 2
+   
+   calendar
+
+Contacts
+--------
+
+.. toctree::
+   :maxdepth: 2
+   
+   contacts
+
+Tasks
+--------
+
+.. toctree::
+   :maxdepth: 2
+   
+   tasks
+   
+Cloud
+-----
+
+.. toctree::
+   :maxdepth: 2
+   
+   cloud
+
+DAV Server
+----------
+
+.. toctree::
+   :maxdepth: 2
+   
+   dav-server
