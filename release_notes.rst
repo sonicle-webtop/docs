@@ -16,6 +16,7 @@ Release 5.2.0 - may 15, 2018
 - Domain users are automatically added as a "webtop" contacts source when suggesting recipients [ #457 ]
 - Completed implementation of What's New framework, showing changes for the user upon version upgrades and allowing to browse all history [ #463 ]
 - A new action on the email tree context menu allows to upload an eml file to the right-clicked folder [ #462 ]
+- Mail now features a breadcrumb on top of the messages grid for quick folders navigation [ #480 ]
 - Invitation requests are now rendered only with WebTop internal management UI, any attached html part is ignored to avoid confusion [ #455 ]
 - Firefox now correctly remembers succesful login names [ #458 ]
 - On Cloud, a new "refresh" action allows to reload folders and files [ #385 ]
@@ -28,6 +29,7 @@ Release 5.2.0 - may 15, 2018
 - The partial search in the phonebook in the mail composition does not work [ #373 ]
 - New folders on google drive do not appear on the app [ #384 ]
 - Scheduled emails are no more processed [ #467 ]
+- Mails with wrong attachments names may have spaces at the end, causing problems [ #471 ]
 
 |
 
