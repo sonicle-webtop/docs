@@ -88,8 +88,12 @@ Defaults Settings
 * | ``default.startup.service`` [ core | mail | calendar | contacts | tasks | vfs ]
   | The default service to start with after login.
 
-* | ``default.notifications.desktop`` [ never | always | background ]
+* | ``default.notifications.desktop`` [ never | always | auto ]
   | The default desktop notifications mode.
+  | ``never``: Desktop notifications will not be displayed.
+  | ``always``: Desktop notification will be always displayed.
+  | ``auto``: Desktop notifications will be displayed only if webapp is in background.
+  | NB: A consent screen will be prompted by the browser if necessary.
 
 .. _smtp-settings-section:
 
