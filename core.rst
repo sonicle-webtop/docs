@@ -63,10 +63,10 @@ Paths Settings
   | The path to a home folder for WebTop. This will contain domains files, such as personal cloud folders, mailcards, cloud attachment, etc.
 
 * | ``public.url`` [ the-public-url ]
-  | This URL defines how WebTop is reachable from users. It will be used to build various URLs, such as public cloud file URLs.
+  | This URL defines how WebTop is reachable from internet. It will be used to build various URLs, such as public cloud file URLs.
 
-* | ``public.url`` [ the-public-url ]
-  | This URL defines how WebTop is reachable from users. It will be used to build various URLs, such as public cloud file URLs.
+* | ``davserver.url`` [ the-public-davserver-url ]
+  | This URL defines how WebTop DAV Server is reachable from internet. It will be used to build various URLs, such as public DAV URLs.
 
 .. _core-defaults-settings-section:
 
