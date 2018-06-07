@@ -4,6 +4,20 @@ Release notes
 
 WebTop release 5
 
+Release 5.2.1 - may 06, 2018
+----------------------------
+
+**Bug Fixes:**
+
+- [core] Logging level of athmosphere client-side events is now set to 'debug' (this should limit logging in some situations)
+- [contacts] Fix missing version bump in init-db scripts
+- [calendar] Fix missing version bump in init-db scripts
+- [calendar] Event invitation emails are now sent even if the event is synchronized using CalDAV
+- [calendar] Avoid sending invitation email to the organizer himself (OpenSync on Android adds the organizer as attendee by default)
+- [dav-server] Fix PHP function for dumping headers missing on NethServer
+
+|
+
 Release 5.2.0 - may 15, 2018
 ----------------------------
 
