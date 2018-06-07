@@ -18,13 +18,14 @@ Release 5.2.1 - may 06, 2018
 
 |
 
-Release 5.2.0 - may 15, 2018
+Release 5.2.0 - may 30, 2018
 ----------------------------
 
 **New Features:**
 
-- WebTop DAV Server implementation through SabreDAV. See :ref:`dav-server-section`
+- WebTop DAV Server implementation through SabreDAV. See :ref:`dav-server-section` and :ref:`dav-clients-notes-section` [ #485 ]
 - NothVoice PBX integration with new specific core configuration. See :ref:`PBX-settings-section` [ #475 ]
+- New rrule based calendar recurrences and new full featured GUI [ #486 ]
 - Contacts feature one click on phone numbers and context menus to start the configured PBX call [ #476 ]
 - Contacts feature one click on email column to start mail composition [ #474 ]
 - Domain users are automatically added as a "webtop" contacts source when suggesting recipients [ #457 ]
