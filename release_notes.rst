@@ -4,11 +4,15 @@ Release notes
 
 WebTop release 5
 
-Release 5.2.1 - may 06, 2018
+Release 5.2.1 - june 11, 2018
 ----------------------------
 
 **Bug Fixes:**
 
+- [mail] Fix bug attaching two times the same filename via cloud [ #496 ]
+- [core] Workaround a Chrome bug while downloading links of filenames containing a comma [ #482 ]
+- [core] HTMLEditor bullet/numbered list fix by change on TinyMCE editor mode and styles [ #470 ]
+- [core] Fix infinite grid bug on Chrome while paging up [ #343 ]
 - [core] Logging level of athmosphere client-side events is now set to 'debug' (this should limit logging in some situations)
 - [contacts] Fix missing version bump in init-db scripts
 - [calendar] Fix missing version bump in init-db scripts
