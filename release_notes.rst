@@ -41,6 +41,9 @@ Release 5.2.0 - may 30, 2018
 - On Cloud, a new "refresh" action allows to reload folders and files [ #385 ]
 - Creating new emails, images attached with spaces in the name are not displayed [ #461 ]
 
+**New Requirements:**
+
+- This release requires Java 1.8 as the main Tomcat JVM
 
 **Bug Fixes:**
 
