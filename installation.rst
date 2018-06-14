@@ -32,7 +32,7 @@ The required JRE version for a given WebTop release is:
   Java is missing support to UTF-7 so if you want to add it, you need to plug a third-party encoding implementation on the JRE:
 
   1. Download the JCharset jar from `https://www.freeutils.net/source/jcharset/ <https://www.freeutils.net/source/jcharset/>`_.
-  2. Copy the jar to your :file:`$JAVA_HOME/jre/lib/ext` directory. The JAR file has to be in exactly this directory for the class loader to pick it up.
+  2. Copy the file :file:`jcharset-2.0.jar` to your :file:`$JAVA_HOME/jre/lib/ext` directory. The JAR file has to be in exactly this directory for the class loader to pick it up.
   3. Restart Tomcat if it is running.
 
 
