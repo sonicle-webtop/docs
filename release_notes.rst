@@ -14,6 +14,7 @@ Release 5.2.3 - july 11, 2018
 - [core] Java8 breaks mediaType guessing order in mimeutil [ #513 ]
 - [core] Calls to public services override user subject associated to execution thread [ #512 ]
 - [mail] Can not use the action marks as seen in the filters [ #511 ]
+- [mail] Possible deadlocks when having many many folders, caused by JavaMail standard library [ #518 ]
 
 |
 
