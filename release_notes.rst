@@ -4,7 +4,20 @@ Release notes
 
 WebTop release 5
 
-Release 5.2.1 - june 11, 2018
+Release 5.2.3 - july 11, 2018
+-----------------------------
+
+**Bug Fixes:**
+
+- [dav-server] Parsing exceptions on some CentOS installations [ #516 ]
+- [mail] Subject is not saved during send for later suggestions [ #515 ]
+- [core] Java8 breaks mediaType guessing order in mimeutil [ #513 ]
+- [core] Calls to public services override user subject associated to execution thread [ #512 ]
+- [mail] Can not use the action marks as seen in the filters [ #511 ]
+
+|
+
+Release 5.2.2 - june 11, 2018
 -----------------------------
 
 **Bug Fixes:**
