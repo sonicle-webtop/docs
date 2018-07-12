@@ -130,7 +130,7 @@ XMPP Settings
   | @since: upcoming
 
 WebRTC Settings
---------------
+---------------
 
 * | ``webrtc.ice.servers`` [ json-array-of-ice-servers ]
   | Defines list of ICE servers as a json array:
