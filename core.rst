@@ -67,6 +67,7 @@ Paths Settings
 
 * | ``davserver.url`` [ the-public-davserver-url ]
   | This URL defines how WebTop DAV Server is reachable from internet. It will be used to build various URLs, such as public DAV URLs.
+  | @since: 5.2.0
 
 .. _core-defaults-settings-section:
 
@@ -120,6 +121,36 @@ XMPP Settings
 * | ``xmpp.muc.subdomain`` [ the-xmpp-multiuserchat-subdomain ]
   | Defines the XMPP subdomain for multi user chat. Defaults to "conference".
 
+* | ``xmpp.muc.subdomain`` [ the-xmpp-multiuserchat-subdomain ]
+  | Defines the XMPP subdomain for multi user chat. Defaults to "conference".
+
+* | ``xmpp.bosh.url`` [ the-xmpp-bosh-url ]
+  | Defines the XMPP bosh URL, currently only needed for WebRTC to work.
+  | If not present, WebRTC functions will be disabled.
+  | @since: upcoming
+
+WebRTC Settings
+--------------
+
+* | ``webrtc.ice.servers`` [ json-array-of-ice-servers ]
+  | Defines list of ICE servers as a json array:
+  | 
+  | Example:
+  | [
+  |   {
+  |     'url': 'stun:stun.l.google.com:19302'
+  |   },
+  |   {
+  |     'url': 'stun:stun.mystunserver.com:19302'
+  |   },
+  |   {
+  |     'username': 'turn_username',
+  |     'credential': 'turn_password',
+  |     'url': 'turn:myturnserver.com:80?transport=tcp'
+  |   }
+  | ]
+  | @since: upcoming
+
 .. _OTP-settings-section:
 
 OTP Settings
@@ -147,10 +178,12 @@ PBX Settings
 
 * | ``pbx.provider`` [ nethvoice ]
   | PBX provider name. Currently only NethVoice is supported.
+  | @since: 5.2.0
 
 
 * | ``pbx.provider.nethvoice.webrest.url`` [ nethvoice-base-url-to-webrest ]
   | Specifies the NethVoice base url to access its webrest APIs
+  | @since: 5.2.0
 
 .. _FAX-settings-section:
 
