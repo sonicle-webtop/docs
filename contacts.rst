@@ -20,10 +20,21 @@ Defaults Settings
 * | ``default.category.sync`` [ O | R | W ]
   | Default synchronization status for new contacts categories: off, read or write.
 
+.. _category-remote-settings-section:
+
+Remote Categories Settings
+--------------------------
+
+* | ``category.remote.autosync.enabled`` [ true | false ]
+  | Enable/Disable remote categories auto-sync functionality. Defaults to ``false``.
+
+* | ``category.remote.autosync.onlywhenonline`` [ true | false ]
+  | Enable/Disable remote auto-sync only when category's owner is online. Defaults to ``true``.
+
 .. _contacts-dav-settings-section:
 
 DAV Settings
-------------------------
-* | ``dav.addressbook.delete.enabled`` [ true | false ]
-  | Enable/Disable addressbook deletions through DAV rest-api interface.
+------------
 
+* | ``dav.addressbook.delete.enabled`` [ true | false ]
+  | Enable/Disable addressbook deletions through DAV rest-api interface. Defaults to ``false``.

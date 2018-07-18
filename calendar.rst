@@ -14,7 +14,7 @@ Global configuration settings can be changed using the admin interface, as expla
 Defaults Settings
 -----------------
 
-* | ``default.view`` [ d | w5 | w | dw | m ]  
+* | ``default.view`` [ d | w5 | w | dw | m ]
   | Default synchronization status for new calendar folders.
 
 * | ``default.workday.start`` [ hours ]
@@ -29,9 +29,21 @@ Defaults Settings
 * | ``default.calendar.sync`` [ O | R | W ]
   | Default synchronization status for new calendar folder: off, read or write.
 
+.. _calendar-remote-settings-section:
+
+Remote Calendars Settings
+-------------------------
+
+* | ``calendar.remote.autosync.enabled`` [ true | false ]
+  | Enable/Disable remote calendars auto-sync functionality. Defaults to ``false``.
+
+* | ``calendar.remote.autosync.onlywhenonline`` [ true | false ]
+  | Enable/Disable remote auto-sync only when calendar's owner is online. Defaults to ``true``.
+
 .. _calendar-dav-settings-section:
 
 DAV Settings
-------------------------
+------------
+
 * | ``dav.calendar.delete.enabled`` [ true | false ]
-  | Enable/Disable calendar deletions through DAV rest-api interface.
+  | Enable/Disable calendar deletions through DAV rest-api interface. Defaults to ``false``.
