@@ -36,9 +36,11 @@ Remote Calendars Settings
 
 * | ``calendar.remote.autosync.enabled`` [ true | false ]
   | Enable/Disable remote calendars auto-sync functionality. Defaults to ``false``.
+  | @since: 5.3.0
 
 * | ``calendar.remote.autosync.onlywhenonline`` [ true | false ]
   | Enable/Disable remote auto-sync only when calendar's owner is online. Defaults to ``true``.
+  | @since: 5.3.0
 
 .. _calendar-dav-settings-section:
 
@@ -47,3 +49,4 @@ DAV Settings
 
 * | ``dav.calendar.delete.enabled`` [ true | false ]
   | Enable/Disable calendar deletions through DAV rest-api interface. Defaults to ``false``.
+  | @since: 5.2.0
