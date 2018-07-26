@@ -16,7 +16,7 @@ Global and per-domain configuration settings can be setup using the admin interf
 System Settings
 ---------------
 
-* | ``syslog.enabled`` [ true | false ]  
+* | ``syslog.enabled`` [ true | false ]
   | If enabled, WebTop will log various actions into a dedicated Postgres table.
 
 * | ``system.language`` [ en | it | ... ]
@@ -75,22 +75,25 @@ Defaults Settings
 -----------------
 
 * | ``default.theme`` [ crisp | neptune | classic | gray | ... ]
-  | Defines the default theme for users.  
+  | Defines the default theme for users. Defaults to ``crisp``.
 
-* | ``default.layout`` [ webtop | outlook | mozilla | ... ]
-  | Defines the default layout for users.  
+* | ``default.layout`` [ default | compact ]
+  | Defines the default layout for users. Defaults to ``default``.
 
-* | ``default.laf`` [ webtop | ... ]
-  | Defines the default look and feel for users. This may define an alternative icon set.
+* | ``default.laf`` [ default ]
+  | Defines the default look and feel for users. This may define an alternative icon set. Defaults to ``default``.
 
-* | ``default.rtl`` [ true | false ]
-  | If true, the web interface is delivered in right-to-left mode. Defaults to false.
+* | ``default.rtl`` [ true | false ] (not yet used)
+  | If true, the web interface is delivered in right-to-left mode. Defaults to ``false``.
+
+* | ``default.viewport.header.scale`` [ small | medium | large ]
+  | Defines the default viewport header's scale. Defaults to ``small``.
 
 * | ``default.startup.service`` [ core | mail | calendar | contacts | tasks | vfs ]
   | The default service to start with after login.
 
 * | ``default.notifications.desktop`` [ never | always | auto ]
-  | The default desktop notifications mode.
+  | The default desktop notifications mode. Defaults to ``auto``.
   | ``never``: Desktop notifications will not be displayed.
   | ``always``: Desktop notification will be always displayed.
   | ``auto``: Desktop notifications will be displayed only if webapp is in background.
@@ -134,7 +137,7 @@ WebRTC Settings
 
 * | ``webrtc.ice.servers`` [ json-array-of-ice-servers ]
   | Defines list of ICE servers as a json array:
-  | 
+  |
   | Example:
   | [
   |   {
