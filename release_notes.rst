@@ -4,6 +4,36 @@ Release notes
 
 WebTop release 5
 
+Release 5.2.4 - july 27, 2018
+----------------------------
+
+**New Features:**
+
+- [core] WebRTC Voice / Video call on chat. See :ref:`webrtc-settings-section` [ #501 ]
+- [core] Improve chat UI [ #514 ]
+- [admin] Centralized user options management from admin panel. See :ref:`core-usersettings-section` [ #497 ]
+- [mail] Favorites folder and management [ #495 ]
+- [mail] Autosave on drafts folder [ #517 ]
+- [mail] Add support to subject and body parameters in mailto urls clicked inside mail view [ #506 ]
+- [mail] New option for no mailcard on reply or forward [ #525 ]
+- [calendar] Add "receive notification on external update" option on calendars [ #502 ]
+- [calendar] Enable attendees management within recurring events [ #509 ]
+- [calendar] Remote calendars auto-sync. See :ref:`calendar-remote-settings-section` [ #522 ]
+- [calendar] Remote categories auto-sync. See :ref:`calendar-remote-settings-section` [ #523 ]
+- [contacts] Contacts Import LDIF format [ #505 ]
+- [contacts] SMS Send (Rest API SMSHosting e Twilio). See :ref:`SMS-settings-section` [ #528 ]
+
+**Bug Fixes:**
+
+- [mail] Forwarding messages with attached eml doubles final attachments [ #532 ]
+- [mail] Creating a main folder with name "root" causes the folders tree go crazy [ #510 ]
+- [mail] Emails that contain images become already read [ #493 ]
+- [mail] Labels with space in the name are not applied [ #484 ]
+- [mail] The modification of a custom label is not applied to the emails [ #483 ]
+- [cloud] Duplicate folders in the connected nextcloud resource [ #519 ]
+- [cloud] Webdav folders are duplicated if name contains encoded whitespaces [ #520 ]
+
+
 Release 5.2.3 - july 11, 2018
 -----------------------------
 
@@ -40,7 +70,6 @@ Release 5.2.0 - may 30, 2018
 ----------------------------
 
 **New Features:**
-
 - WebTop DAV Server implementation through SabreDAV. See :ref:`dav-server-section` and :ref:`dav-clients-notes-section` [ #485 ]
 - NethVoice PBX integration with new specific core configuration. See :ref:`PBX-settings-section` [ #475 ]
 - New rrule based calendar recurrences and new full featured GUI [ #486 ]

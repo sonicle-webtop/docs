@@ -4,6 +4,17 @@ Core
 
 WebTop Core Services
 
+.. _core-usersettings-section:
+
+User settings management
+########################
+
+Most user settings can be directly managed by the user itself via the settings menu. Locked settings reuquire administration privileges.
+The administrator can impersonate users through a specific login pattern (admin!user@domain) using its own admin password, to check the correctness and functionalities of the account.
+Up to version 5.2.3, impersonating received administration privileges, allowing to change locked user settings once impersonated.
+Since version 5.2.4 this has changed: impersonating receives samer user privileges, allowing to check exactly what the user can see.
+Full user settings administration is available directly in the admin interface, by right clicking on a user: the settings menu will open the full user settings pane, with everything unlocked.
+
 .. _core-settings-section:
 
 Global core configuration settings
@@ -130,7 +141,9 @@ XMPP Settings
 * | ``xmpp.bosh.url`` [ the-xmpp-bosh-url ]
   | Defines the XMPP bosh URL, currently only needed for WebRTC to work.
   | If not present, WebRTC functions will be disabled.
-  | @since: upcoming
+  | @since: 5.2.4
+
+.. _webrtc-settings-section:
 
 WebRTC Settings
 ---------------
@@ -152,7 +165,7 @@ WebRTC Settings
   |     'url': 'turn:myturnserver.com:80?transport=tcp'
   |   }
   | ]
-  | @since: upcoming
+  | @since: 5.2.4
 
 .. _OTP-settings-section:
 
@@ -210,3 +223,26 @@ FAX Settings
 
 * | ``fax.smtp.port`` [ fax-smtp-port ]
   | In case of specific fax smtp gateways, you may specify here the port to be used. Defaults to WebTop SMTP port.
+
+.. _SMS-settings-section:
+
+SMS Settings
+------------
+
+* | ``sms.provider`` [ smshosting | twilio ]
+  | SMS provider name. Currently only SMS Hosting and Twilio are supported.
+  | @since: 5.2.4
+
+
+* | ``sms.provider.webrest.url`` [ base-url-to-webrest ]
+  | Specifies the base url to access providers's webrest APIs
+  | @since: 5.2.4
+
+* | ``sms.provider.webrest.user`` [ user-or-SID-to-webrest ]
+  | Specifies a global authorization user or SID to access the SMS provider
+  | @since: 5.2.4
+
+* | ``sms.provider.webrest.password`` [ password-or-token-to-webrest ]
+  | Specifies a global authorization password or token to access the SMS provider
+  | @since: 5.2.4
+
