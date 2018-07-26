@@ -5,7 +5,7 @@ Release notes
 WebTop release 5
 
 Release 5.2.4 - july 27, 2018
-----------------------------
+-----------------------------
 
 **New Features:**
 
