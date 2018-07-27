@@ -21,9 +21,6 @@ This is the way you could achieve this point using Apache HTTP Server::
 In some cases you need also to edit the main HTML template to remove the anti-Clickjacking security feature.
 Please refer to the official Integration Guide `section <https://docs.mattermost.com/integrations/embedding.html#embedding-mattermost-in-web-applications-using-an-iframe>`_ for any further info.
 
-Mattermost Web application is embedded using the iframe mode, so you must fulfill the instructions
-described `here <https://docs.mattermost.com/integrations/embedding.html#embedding-mattermost-in-web-applications-using-an-iframe>`_ in the official Integration Guide.
-
 Global Mattermost configuration settings
 ########################################
 
