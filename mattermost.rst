@@ -31,5 +31,5 @@ Global configuration settings can be changed using the admin interface, as expla
 Embedding settings
 ------------------
 
-* | ``url``
+* | ``url`` [ the-mattermost-url ]
   | URL that targets mattermost Web application on your server.
