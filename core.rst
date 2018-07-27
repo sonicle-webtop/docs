@@ -121,6 +121,12 @@ SMTP Settings
 * | ``smtp.port`` [ the-smtp-port ]
   | Defines the SMTP port to be used on the defined SMTP host.
 
+* | ``smtp.starttls`` [ true | false ]
+  | Enable starttls on SMTP send
+
+* | ``smtp.auth`` [ true | false ]
+  | Enable authentication for user sessions SMTP send. Core sessionless woker threads will continue to send with no authentication.
+
 .. _xmpp-settings-section:
 
 XMPP Settings

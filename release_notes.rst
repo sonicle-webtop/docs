@@ -12,6 +12,7 @@ Release 5.2.4 - july 27, 2018
 - [core] WebRTC Voice / Video call on chat. See :ref:`webrtc-settings-section` [ #501 ]
 - [core] Improve chat UI [ #514 ]
 - [core] New header toolbar layout (icons scale, centered searchbox, etc) [ #535 ]
+- [core] New SMTP setting to support starttls and user authentication. See :ref:`smtp-settings-section` [ #537 ]
 - [admin] Centralized user options management from admin panel. See :ref:`core-usersettings-section` [ #497 ]
 - [mail] Favorites folder and management [ #495 ]
 - [mail] Autosave on drafts folder [ #517 ]
