@@ -11,17 +11,20 @@ Release 5.2.4 - july 27, 2018
 
 - [core] WebRTC Voice / Video call on chat. See :ref:`webrtc-settings-section` [ #501 ]
 - [core] Improve chat UI [ #514 ]
+- [core] New header toolbar layout (icons scale, centered searchbox, etc) [ #535 ]
 - [admin] Centralized user options management from admin panel. See :ref:`core-usersettings-section` [ #497 ]
 - [mail] Favorites folder and management [ #495 ]
 - [mail] Autosave on drafts folder [ #517 ]
 - [mail] Add support to subject and body parameters in mailto urls clicked inside mail view [ #506 ]
 - [mail] New option for no mailcard on reply or forward [ #525 ]
+- [mail] Reorganize UI toolbars and buttons [ #534 ]
 - [calendar] Add "receive notification on external update" option on calendars [ #502 ]
 - [calendar] Enable attendees management within recurring events [ #509 ]
 - [calendar] Remote calendars auto-sync. See :ref:`calendar-remote-settings-section` [ #522 ]
 - [calendar] Remote categories auto-sync. See :ref:`calendar-remote-settings-section` [ #523 ]
 - [contacts] Contacts Import LDIF format [ #505 ]
 - [contacts] SMS Send (Rest API SMSHosting e Twilio). See :ref:`SMS-settings-section` [ #528 ]
+- [mattermost] New Mattermost integration service [ #533 ]
 
 **Bug Fixes:**
 
@@ -46,7 +49,6 @@ Release 5.2.3 - july 11, 2018
 - [mail] Can not use the action marks as seen in the filters [ #511 ]
 - [mail] Possible deadlocks when having many many folders, caused by JavaMail standard library [ #518 ]
 
-|
 
 Release 5.2.2 - june 11, 2018
 -----------------------------
@@ -64,7 +66,6 @@ Release 5.2.2 - june 11, 2018
 - [calendar] Avoid sending invitation email to the organizer himself (OpenSync on Android adds the organizer as attendee by default)
 - [dav-server] Fix PHP function for dumping headers missing on NethServer
 
-|
 
 Release 5.2.0 - may 30, 2018
 ----------------------------
@@ -96,7 +97,6 @@ Release 5.2.0 - may 30, 2018
 - Scheduled emails are no more processed [ #467 ]
 - Mails with wrong attachments names may have spaces at the end, causing problems [ #471 ]
 
-|
 
 Release 5.1.9 - may 04, 2018
 ----------------------------
@@ -106,7 +106,6 @@ Release 5.1.9 - may 04, 2018
 - Calendar reminders via email do not work [ #464 ]
 - Moving an event breaks reminder notification [ #465 ]
 
-|
 
 Release 5.1.8 - april 19, 2018
 ------------------------------
