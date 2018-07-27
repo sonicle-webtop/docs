@@ -1,6 +1,6 @@
 .. WebTop documentation master file
 
-WebTop |version| Administrator Manual 
+WebTop |version| Administrator Manual
 =====================================
 
 .. image:: images/logo.png
@@ -18,7 +18,7 @@ Release notes |version|
 
 .. toctree::
    :maxdepth: 2
-   
+
    release_notes
 
 Installation
@@ -26,7 +26,7 @@ Installation
 
 .. toctree::
    :maxdepth: 2
-   
+
    installation
 
 Core
@@ -34,7 +34,7 @@ Core
 
 .. toctree::
    :maxdepth: 2
-   
+
    core
 
 Mail
@@ -42,7 +42,7 @@ Mail
 
 .. toctree::
    :maxdepth: 2
-   
+
    mail
 
 Calendar
@@ -50,7 +50,7 @@ Calendar
 
 .. toctree::
    :maxdepth: 2
-   
+
    calendar
 
 Contacts
@@ -58,7 +58,7 @@ Contacts
 
 .. toctree::
    :maxdepth: 2
-   
+
    contacts
 
 Tasks
@@ -66,23 +66,31 @@ Tasks
 
 .. toctree::
    :maxdepth: 2
-   
+
    tasks
-   
+
 Cloud
 -----
 
 .. toctree::
    :maxdepth: 2
-   
+
    cloud
+
+Mattermost
+----------
+
+.. toctree::
+   :maxdepth: 2
+
+   mattermost
 
 DAV Server
 ----------
 
 .. toctree::
    :maxdepth: 2
-   
+
    dav-server
 
 EAS Server
@@ -90,5 +98,5 @@ EAS Server
 
 .. toctree::
    :maxdepth: 2
-   
+
    eas-server

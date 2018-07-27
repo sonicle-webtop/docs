@@ -4,7 +4,7 @@ Mail
 
 WebTop Mail Service
 
-Global mail configuration settings
+Global Mail configuration settings
 ##################################
 
 Global configuration settings can be changed using the admin interface, as explained in the :ref:`core-settings-section`

@@ -4,7 +4,7 @@ Calendar
 
 WebTop Calendar Service
 
-Global calendar configuration settings
+Global Calendar configuration settings
 ######################################
 
 Global configuration settings can be changed using the admin interface, as explained in the :ref:`core-settings-section`
