@@ -222,7 +222,7 @@ FAX Settings
   | The pattern to transform fax numbers into emails for the fax provider, for example "{number}@fax.provider.com"
 
 * | ``fax.subject`` [ subject ]
-  | A fixed subject to be used with the fax provider. If not specified, user will be able to write its own subject. Defaults is none.
+  | A fixed subject to be used with the fax provider. If not specified, user will be able to write its own subject.
 
 * | ``fax.smtp.host`` [ fax-smtp-host ]
   | In case of specific fax smtp gateways, you may specify here the host to be used. Defaults to WebTop SMTP host.
@@ -239,11 +239,6 @@ SMS Settings
   | SMS provider name. Currently only SMS Hosting and Twilio are supported.
   | @since: 5.2.4
 
-
-* | ``sms.provider.webrest.url`` [ base-url-to-webrest ]
-  | Specifies the base url to access providers's webrest APIs
-  | @since: 5.2.4
-
 * | ``sms.provider.webrest.user`` [ user-or-SID-to-webrest ]
   | Specifies a global authorization user or SID to access the SMS provider
   | @since: 5.2.4
@@ -252,3 +247,7 @@ SMS Settings
   | Specifies a global authorization password or token to access the SMS provider
   | @since: 5.2.4
 
+* | ``sms.provider.webrest.url`` [ base-url-to-webrest ]
+  | Optional. If specified, overrides the baseURL of provider implemenation (really useful only for smshosting).
+  | Use this only in emergency case, each provider already its own URL to reach.
+  | @since: 5.2.4
