@@ -249,5 +249,5 @@ SMS Settings
 
 * | ``sms.provider.webrest.url`` [ base-url-to-webrest ]
   | Optional. If specified, overrides the baseURL of provider implemenation (really useful only for smshosting).
-  | Use this only in emergency case, each provider already its own URL to reach.
+  | Use this only in emergency case, each provider already knows its own URL to reach.
   | @since: 5.2.4
