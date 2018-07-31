@@ -159,23 +159,21 @@ WebRTC Settings
   | - ``credential``: The server password. (optional)
   |
   | Example:
-  |
-  | ::
-  |
-  |   [
-  |     {
-  |       'url': 'stun:stun.l.google.com:19302'
-  |     },
-  |     {
-  |       'url': 'stun:stun.mystunserver.com:19302'
-  |     },
-  |     {
-  |       'url': 'turn:myturnserver.com:80?transport=tcp',
-  |       'username': 'my_turn_username',
-  |       'credential': 'my_turn_password'
-  |     }
-  |   ]
-  |
+
+  ::
+
+    [
+      {
+        'url': 'stun:stun.l.google.com:19302'
+      }, {
+        'url': 'stun:stun.mystunserver.com:19302'
+      }, {
+        'url': 'turn:myturnserver.com:80?transport=tcp',
+        'username': 'my_turn_username',
+        'credential': 'my_turn_password'
+      }
+    ]
+
   | @since: 5.2.4
 
 .. _OTP-settings-section:
@@ -206,7 +204,6 @@ PBX Settings
 * | ``pbx.provider`` [ nethvoice ]
   | PBX provider name. Currently only NethVoice is supported.
   | @since: 5.2.0
-
 
 * | ``pbx.provider.nethvoice.webrest.url`` [ nethvoice-base-url-to-webrest ]
   | Specifies the NethVoice base url to access its webrest APIs
