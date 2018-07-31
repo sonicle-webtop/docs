@@ -29,6 +29,7 @@ Release 5.2.4 - july 27, 2018
 
 **Bug Fixes:**
 
+- [mail] Possible heavy load on inboxes with ten thousands of unseen emails [ #538 ]
 - [mail] Forwarding messages with attached eml doubles final attachments [ #532 ]
 - [mail] Creating a main folder with name "root" causes the folders tree go crazy [ #510 ]
 - [mail] Emails that contain images become already read [ #493 ]
