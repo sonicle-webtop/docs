@@ -133,20 +133,17 @@ XMPP Settings
 --------------
 
 * | ``xmpp.host`` [ the-xmpp-host ]
-  | Defines the XMPP host for IM services.
+  | Defines the XMPP host for IM services. Defaults to ``localhost``.
 
 * | ``xmpp.port`` [ the-xmpp-port ]
-  | Defines the XMPP port to be used on the defined XMPP host.
+  | Defines the XMPP port to be used on the defined XMPP host. Defaults to ``5222``.
 
 * | ``xmpp.muc.subdomain`` [ the-xmpp-multiuserchat-subdomain ]
-  | Defines the XMPP subdomain for multi user chat. Defaults to "conference".
-
-* | ``xmpp.muc.subdomain`` [ the-xmpp-multiuserchat-subdomain ]
-  | Defines the XMPP subdomain for multi user chat. Defaults to "conference".
+  | Defines the XMPP subdomain for multi user chat. Defaults to ``conference``.
 
 * | ``xmpp.bosh.url`` [ the-xmpp-bosh-url ]
-  | Defines the XMPP bosh URL, currently only needed for WebRTC to work.
-  | If not present, WebRTC functions will be disabled.
+  | Optional. Specifies the XMPP URL that can be accessed using BOSH protocol.
+  | Currently only needed for WebRTC to work; if not present, WebRTC functions will be disabled.
   | @since: 5.2.4
 
 .. _webrtc-settings-section:
@@ -155,22 +152,30 @@ WebRTC Settings
 ---------------
 
 * | ``webrtc.ice.servers`` [ json-array-of-ice-servers ]
-  | Defines list of ICE servers as a json array:
+  | Defines list of ICE servers as a JSON array.
+  | Each element is an object with the following fields:
+  | - ``url``: The server URL.
+  | - ``username``: The server username. (optional)
+  | - ``credential``: The server password. (optional)
   |
   | Example:
-  | [
-  |   {
-  |     'url': 'stun:stun.l.google.com:19302'
-  |   },
-  |   {
-  |     'url': 'stun:stun.mystunserver.com:19302'
-  |   },
-  |   {
-  |     'username': 'turn_username',
-  |     'credential': 'turn_password',
-  |     'url': 'turn:myturnserver.com:80?transport=tcp'
-  |   }
-  | ]
+  |
+  | ::
+  |
+  |   [
+  |     {
+  |       'url': 'stun:stun.l.google.com:19302'
+  |     },
+  |     {
+  |       'url': 'stun:stun.mystunserver.com:19302'
+  |     },
+  |     {
+  |       'url': 'turn:myturnserver.com:80?transport=tcp',
+  |       'username': 'my_turn_username',
+  |       'credential': 'my_turn_password'
+  |     }
+  |   ]
+  |
   | @since: 5.2.4
 
 .. _OTP-settings-section:
