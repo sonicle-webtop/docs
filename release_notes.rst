@@ -4,7 +4,7 @@ Release notes
 
 WebTop release 5
 
-Release 5.2.4 - july 27, 2018
+Release 5.3.0 - july 27, 2018
 -----------------------------
 
 **New Features:**
@@ -19,6 +19,7 @@ Release 5.2.4 - july 27, 2018
 - [mail] Add support to subject and body parameters in mailto urls clicked inside mail view [ #506 ]
 - [mail] New option for no mailcard on reply or forward [ #525 ]
 - [mail] Reorganize UI toolbars and buttons [ #534 ]
+- [mail] Paste of emails from Excel column to Message Editor recipients [ #508 ]
 - [calendar] Add "receive notification on external update" option on calendars [ #502 ]
 - [calendar] Enable attendees management within recurring events [ #509 ]
 - [calendar] Remote calendars auto-sync. See :ref:`calendar-remote-settings-section` [ #522 ]
