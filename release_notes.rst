@@ -30,6 +30,7 @@ Release 5.3.0 - july 27, 2018
 
 **Bug Fixes:**
 
+- [core] LDAP CertificateException error on ojdk 1.8.0.181 [ #539 ]
 - [mail] Possible heavy load on inboxes with ten thousands of unseen emails [ #538 ]
 - [mail] Forwarding messages with attached eml doubles final attachments [ #532 ]
 - [mail] Creating a main folder with name "root" causes the folders tree go crazy [ #510 ]
