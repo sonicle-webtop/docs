@@ -252,3 +252,9 @@ SMS Settings
 * | ``sms.provider.webrest.url`` [ base-url-to-webrest ]
   | Optional. If specified, overrides the baseURL of provider implemenation (really useful only for ``smshosting`` provider). Use only in emergency cases, each provider already knows its own URL to reach.
   | @since: 5.2.4
+
+
+* | ``sms.sender`` [ default-sender ]
+  | Sepecifies the default sender when sending SMS: number (max 16 chars) or name (max 11 chars).
+  | The user has its own setting panel to override this sender with his own, in General / SMS.
+  | @since: 5.3.1
