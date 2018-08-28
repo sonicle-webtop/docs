@@ -23,7 +23,7 @@ Release 5.3.0 - july 27, 2018
 - [calendar] Add "receive notification on external update" option on calendars [ #502 ]
 - [calendar] Enable attendees management within recurring events [ #509 ]
 - [calendar] Remote calendars auto-sync. See :ref:`calendar-remote-settings-section` [ #522 ]
-- [calendar] Remote categories auto-sync. See :ref:`calendar-remote-settings-section` [ #523 ]
+- [contacts] Remote categories auto-sync. See :ref:`category-remote-settings-section` [ #523 ]
 - [contacts] Contacts Import LDIF format [ #505 ]
 - [contacts] SMS Send (Rest API SMSHosting e Twilio). See :ref:`SMS-settings-section` [ #528 ]
 - [mattermost] New Mattermost integration service [ #533 ]
