@@ -4,6 +4,13 @@ Release notes
 
 WebTop release 5
 
+Release 5.3.1 - september 4, 2018
+---------------------------------
+
+**Bug Fixes:**
+
+- [mail] Some text/plain mails with non utf-8 charset may not display correctly [ #554 ]
+
 Release 5.3.0 - july 27, 2018
 -----------------------------
 
