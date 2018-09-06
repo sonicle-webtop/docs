@@ -35,7 +35,8 @@ Event Settings
 --------------
 
 * | ``event.statistic.fields.visible`` [ true | false ]
-  | Show or hide statistic fields in event window. Defaults to true.
+  | Show or hide statistic fields in event window.  Defaults to ``true``.
+  | @since: 5.3.3
 
 .. _calendar-remote-settings-section:
 
