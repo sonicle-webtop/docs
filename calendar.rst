@@ -29,6 +29,14 @@ Defaults Settings
 * | ``default.calendar.sync`` [ O | R | W ]
   | Default synchronization status for new calendar folder: off, read or write.
 
+.. _calendar-event-settings-section:
+
+Event Settings
+--------------
+
+* | ``event.statistic.fields.visible`` [ true | false ]
+  | Show or hide statistic fields in event window. Defaults to true.
+
 .. _calendar-remote-settings-section:
 
 Remote Calendars Settings
