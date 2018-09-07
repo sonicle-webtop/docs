@@ -4,13 +4,15 @@ Release notes
 
 WebTop release 5
 
-Release 5.3.1 - september 5, 2018
+Release 5.3.1 - september 7, 2018
 ---------------------------------
 
 **Bug Fixes:**
 
 - [mail] Some text/plain mails with non utf-8 charset may not display correctly [ #554 ]
 - [mail] Sending or discarding a new message may sometime prompt errors [ #555 ]
+- [mail] Firefox does not show the grid after login, with Crisp theme [ #549 ]
+- [mail] Sent receipts are always saved in the Sent folder of the main user, also inside shared identities folders [ #559 ]
 
 Release 5.3.0 - july 27, 2018
 -----------------------------
