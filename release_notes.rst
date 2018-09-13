@@ -7,11 +7,15 @@ WebTop release 5
 Release 5.3.3 - september 13, 2018
 ----------------------------------
 
-**Bug Fixes:**
-
 **New Features:**
 
 - [core] Add the ability to insert link buttons in launcher. See :ref:`system-settings-section` [ #564 ]
+
+**Bug Fixes:**
+
+- [mail] Bugfix 559 regression : new bug with multiple identities with same emails [ #566 ]
+- [mail] Advanced search anywhere does not provide correct results [ #561 ]
+- [core] TinyMCE editor applies blob conversion on inline images [ #560 ]
 
 Release 5.3.2 - september 7, 2018
 ---------------------------------
