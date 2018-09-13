@@ -101,6 +101,14 @@ EAS Server
 
    eas-server
 
+Document server
+---------------
+
+.. toctree::
+   :maxdepth: 2
+
+   doc-server
+
 PEC Bridge
 ----------
 

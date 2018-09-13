@@ -98,10 +98,10 @@ Paths Settings
 * | ``home.path`` [ /path/to/webtop/home ]
   | The path to a home folder for WebTop. This will contain domains files, such as personal cloud folders, mailcards, cloud attachment, etc.
 
-* | ``public.url`` [ the-public-url ]
+* | ``public.url`` [ url ]
   | This URL defines how WebTop is reachable from internet. It will be used to build various URLs, such as public cloud file URLs.
 
-* | ``davserver.url`` [ the-public-davserver-url ]
+* | ``davserver.url`` [ url ]
   | This URL defines how WebTop DAV Server is reachable from internet. It will be used to build various URLs, such as public DAV URLs.
   | @since: 5.2.0
 
@@ -140,10 +140,10 @@ Defaults Settings
 SMTP Settings
 --------------
 
-* | ``smtp.host`` [ the-smtp-host ]
+* | ``smtp.host`` [ host ]
   | Defines the SMTP host for outgoing mails.
 
-* | ``smtp.port`` [ the-smtp-port ]
+* | ``smtp.port`` [ port ]
   | Defines the SMTP port to be used on the defined SMTP host.
 
 * | ``smtp.starttls`` [ true | false ]
@@ -157,16 +157,16 @@ SMTP Settings
 XMPP Settings
 --------------
 
-* | ``xmpp.host`` [ the-xmpp-host ]
+* | ``xmpp.host`` [ host ]
   | Defines the XMPP host for IM services. Defaults to ``localhost``.
 
-* | ``xmpp.port`` [ the-xmpp-port ]
+* | ``xmpp.port`` [ port ]
   | Defines the XMPP port to be used on the defined XMPP host. Defaults to ``5222``.
 
-* | ``xmpp.muc.subdomain`` [ the-xmpp-multiuserchat-subdomain ]
+* | ``xmpp.muc.subdomain`` [ xmpp-multiuserchat-subdomain ]
   | Defines the XMPP subdomain for multi user chat. Defaults to ``conference``.
 
-* | ``xmpp.bosh.url`` [ the-xmpp-bosh-url ]
+* | ``xmpp.bosh.url`` [ url ]
   | Optional. Specifies the XMPP URL that can be accessed using BOSH protocol.
   | Currently only needed for WebRTC to work; if not present, WebRTC functions will be disabled.
   | @since: 5.2.4
@@ -176,7 +176,7 @@ XMPP Settings
 WebRTC Settings
 ---------------
 
-* | ``webrtc.ice.servers`` [ json-array-of-ice-servers ]
+* | ``webrtc.ice.servers`` [ json-array-of-iceserver-objects ]
   | Defines list of ICE servers as a JSON array.
   | Each element is an object with the following fields:
   | - ``url``: The server URL.
@@ -230,8 +230,8 @@ PBX Settings
   | PBX provider name. Currently only NethVoice is supported.
   | @since: 5.2.0
 
-* | ``pbx.provider.nethvoice.webrest.url`` [ nethvoice-base-url-to-webrest ]
-  | Specifies the NethVoice base url to access its webrest APIs
+* | ``pbx.provider.nethvoice.webrest.url`` [ url ]
+  | Specifies the NethVoice base URL to access its webrest APIs
   | @since: 5.2.0
 
 .. _FAX-settings-section:
@@ -251,10 +251,10 @@ FAX Settings
 * | ``fax.subject`` [ subject ]
   | A fixed subject to be used with the fax provider. If not specified, user will be able to write its own subject.
 
-* | ``fax.smtp.host`` [ fax-smtp-host ]
+* | ``fax.smtp.host`` [ host ]
   | In case of specific fax smtp gateways, you may specify here the host to be used. Defaults to WebTop SMTP host.
 
-* | ``fax.smtp.port`` [ fax-smtp-port ]
+* | ``fax.smtp.port`` [ port ]
   | In case of specific fax smtp gateways, you may specify here the port to be used. Defaults to WebTop SMTP port.
 
 .. _SMS-settings-section:
@@ -266,20 +266,48 @@ SMS Settings
   | SMS provider name. Currently only SMS Hosting and Twilio are supported.
   | @since: 5.2.4
 
-* | ``sms.provider.webrest.user`` [ user-or-SID-to-webrest ]
+* | ``sms.provider.webrest.user`` [ user-or-sid ]
   | Specifies a global authorization user or SID to access the SMS provider
   | @since: 5.2.4
 
-* | ``sms.provider.webrest.password`` [ password-or-token-to-webrest ]
+* | ``sms.provider.webrest.password`` [ password-or-token ]
   | Specifies a global authorization password or token to access the SMS provider
   | @since: 5.2.4
 
-* | ``sms.provider.webrest.url`` [ base-url-to-webrest ]
+* | ``sms.provider.webrest.url`` [ url ]
   | Optional. If specified, overrides the baseURL of provider implemenation (really useful only for ``smshosting`` provider). Use only in emergency cases, each provider already knows its own URL to reach.
   | @since: 5.2.4
-
 
 * | ``sms.sender`` [ default-sender ]
   | Sepecifies the default sender when sending SMS: number (max 16 chars) or name (max 11 chars).
   | The user has its own setting panel to override this sender with his own, in General / SMS.
   | @since: 5.3.1
+
+.. _core-docserver-settings-section:
+
+DocumentServer Settings
+-----------------------
+
+* | ``documentserver.enabled`` [ true | false ]
+  | Enable or disable DocumentServer integration.
+  | @since: 5.4.0
+
+* | ``documentserver.public.url`` [ url ]
+  | Specifies how the DocumentServer is reachable externally (from public network).
+  | @since: 5.4.0
+
+* | ``documentserver.local.url`` [ url ]
+  | Specifies how the DocumentServer is reachable internally (from local network). (not used yet)
+  | @since: 5.4.0
+
+* | ``documentserver.loopback.url`` [ url ]
+  | Specifies how WebTop is reachable internally (from local network) by the DocumentServer.
+  | @since: 5.4.0
+
+* | ``documentserver.secret.out`` [ string ]
+  | Specifies the secret shared key to use for outgoing communications to the DocumentServer. WebTop will sign outgoing calls using this key.
+  | @since: 5.4.0
+
+* | ``documentserver.secret.in`` [ string ]
+  | Specifies the secret shared key to use for incoming communications from the DocumentServer. WebTop will decrypt incoming calls using this key.
+  | @since: 5.4.0
