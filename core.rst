@@ -45,6 +45,31 @@ System Settings
 * | ``whatsnew.enabled`` [ true | false ]
   | Specifies if What's New visualization to users is enabled.
 
+* | ``launcher.links`` [ json-array-of-link-objects ]
+  | Specifies a list of links to be displayed as link buttons in viewport's launcher.
+  | List definitiron must be specified as a JSON array. Each element is an object with the following fields:
+  | - ``href``: The URL of the page the link goes to.
+  | - ``text``: The text to display as tooltip. (optional)
+  | - ``icon``: The URL of the image to display as button icon. In order to avoid scaling problems, a vector image should be used.
+  |
+  | Example:
+
+  ::
+
+    [
+      {
+        'href': 'https://www.google.it/',
+        'text': 'Google',
+        'icon': 'https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg'
+      }, {
+        'href': 'https://the/url/to/open',
+        'text': 'The link text',
+        'icon': 'https://the/icon/url'
+      }
+    ]
+
+  | @since: 5.3.2
+
 .. _login-settings-section:
 
 Login Settings

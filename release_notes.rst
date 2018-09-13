@@ -4,6 +4,15 @@ Release notes
 
 WebTop release 5
 
+Release 5.3.3 - september 13, 2018
+---------------------------------
+
+**Bug Fixes:**
+
+**New Features:**
+
+- [core] Add the ability to insert link buttons in launcher. See :ref:`system-settings-section` [ #564 ]
+
 Release 5.3.2 - september 7, 2018
 ---------------------------------
 
