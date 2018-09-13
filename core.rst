@@ -50,7 +50,7 @@ System Settings
   | List definitiron must be specified as a JSON array. Each element is an object with the following fields:
   | - ``href``: The URL of the page the link goes to.
   | - ``text``: The text to display as tooltip. (optional)
-  | - ``icon``: The URL of the image to display as button icon. In order to avoid scaling problems, a vector image should be used.
+  | - ``icon``: The URL of the image to display as button icon. In order to avoid scaling problems, vector images should be used.
   |
   | Example:
 
