@@ -35,7 +35,7 @@ Release 5.4.0 - october 2, 2018
 - [mail] Public images can not be placed on the domain signature from the admin panel [ #579 ]
 - [tasks] Cannot setup email reminders [ #578 ]
 - [mail] Some mail with attachments do not show the attach icon on the grid [ #576 ]
-- [mail] Quoted attributes in html mails may note correctly render (e.g. styles with font names) [ #570 ]
+- [mail] Quoted attributes in html mails may note correctly render [ #570 ]
 - [mail] Workaround Dovecot bug during rename folder on shared folders [ #569 ]
 - [mail] Junk mail displacement with shared accounts ends up in the wrong folder [ #562 ]
 - [contacts] Setting key "default.category.sync" not honored [ #544 ]
