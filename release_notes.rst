@@ -10,7 +10,7 @@ Release 5.4.0 - october 2, 2018
 **New Features:**
 
 - [mail] Show quota for mailbox [ #574 ]
-- [core] Optimized layout for tablet / smartphone experience. See :ref:`other-tablet-section` [ #571 ]
+- [core] Optimized layout for tablet experience. See :ref:`other-tablet-section` [ #571 ]
 - [calendar] Add attachments support on Events [ #558 ]
 - [contacts] Add attachments support on Contacts [ #557 ]
 - [tasks] Add attachments support on Tasks [ #556 ]
