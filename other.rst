@@ -22,7 +22,7 @@ Starting from version 5.3.4, WebTop detects tablet and smartphone devices, deliv
 
 * | [all] - To support devices without context menu access (e.g. iOS) all the essential actions are available on the service mini-toolbar
 
-* | [all] - Optimized grid columns without sate savings to allow reset on login
+* | [all] - Optimized grid columns without state savings to allow reset on login
 
 * | [mail] - Mail preview always at the bottom with optimized sizes for grid and preview areas
 
