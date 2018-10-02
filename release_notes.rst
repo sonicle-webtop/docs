@@ -4,6 +4,47 @@ Release notes
 
 WebTop release 5
 
+Release 5.4.0 - october 2, 2018
+-------------------------------
+
+**New Features:**
+
+- [mail] Show quota for mailbox [ #574 ]
+- [core] Optimized layout for tablet / smartphone experience. See :ref:`other-tablet-section` [ #571 ]
+- [calendar] Add attachments support on Events [ #558 ]
+- [contacts] Add attachments support on Contacts [ #557 ]
+- [tasks] Add attachments support on Tasks [ #556 ]
+- [core] OnlyOffice integration. See :ref:`doc-server-section` [ #550 ]
+- [mail] OnlyOffice integration support on attachments [ #552 ]
+- [cloud] OnlyOffice integration support on office files [ #551 ]
+- [mail] Manual seen with option to set seen on open [ #546 ]
+- [calendar] Global setting to disable statistic fields on event window. See :ref:`calendar-event-settings-section` [ #545 ]
+- [contacts] Contact list link to contacts [ #542 ]
+- [contacts] Add contacts to existing list [ #540 ]
+- [core] Add setting for ajax special timeout [ #581 ]
+- [mail] Use core setting "ajax.specialtimeout" for message grid listing [ #582 ]
+- [mail] Multi search filter on column attachment [ #575 ]
+- [mail] Mantain multiple filter visibility upon folder change [ #572 ]
+- [mail] Show hour instead of date in list when grouped by date [ #527 ]
+- [calendar] Highlight the current time on the calendar with a line [ #320 ]
+
+**Bug Fixes:**
+
+- [core] Possible rare deadlock during attachment content-type recognition [ #583 ]
+- [mail] TinyMCE editor does not select image on click [ #580 ]
+- [mail] Public images can not be placed on the domain signature from the admin panel [ #579 ]
+- [tasks] Cannot setup email reminders [ #578 ]
+- [mail] Some mail with attachments do not show the attach icon on the grid [ #576 ]
+- [mail] Quoted attributes in html mails may note correctly render (e.g. styles with font names) [ #570 ]
+- [mail] Workaround Dovecot bug during rename folder on shared folders [ #569 ]
+- [mail] Junk mail displacement with shared accounts ends up in the wrong folder [ #562 ]
+- [contacts] Setting key "default.category.sync" not honored [ #544 ]
+- [calendar] Rendering issue if event dates fall on DST boundaries [ #543 ]
+- [z-push] Events/Contacts added using EAS cannot be synchronized again using DAV [ #541 ]
+- [calendar] The date corresponding to the DST is seen twice in the monthly calendar [ #503 ]
+- [mail] Emoticons are not interpreted in the mail received from webtop [ #499 ]
+- [calendar] The presence of overlapping events in a day imposes a width on other events [ #469 ]
+
 Release 5.3.3 - september 13, 2018
 ----------------------------------
 

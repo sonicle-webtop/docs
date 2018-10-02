@@ -6,6 +6,8 @@ This integration enables user to view and edit documents from WebTop using ONLYO
 The following document formats can be handled through the provided editor: doc, docm, docx, dot, dotm, dotx, epub, fodt, htm, html, mht, odt, ott, pdf, rtf, txt, djvu, xps, csv, fods, ods, ots, xls, xlsm, xlsx, xlt, xltm, xltx, fodp, odp, otp, pot, potm, potx, pps, ppsm, ppsx, ppt, pptm, pptx.
 Collaboration is also enabled, allowing multiple users to collaborate in real time and to save back those changes to WebTop.
 
+.. _doc-server-section:
+
 Installation
 ------------
 
