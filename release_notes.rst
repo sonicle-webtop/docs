@@ -8,6 +8,7 @@ Release 5.4.1 - october 12, 2018
 ---------------------------------
 
 **New Features:**
+
 - [calendar] Add support to reminder for recurring events [ #590 ]
 
 **Bug Fixes:**
