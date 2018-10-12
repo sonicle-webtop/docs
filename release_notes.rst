@@ -4,6 +4,21 @@ Release notes
 
 WebTop release 5
 
+Release 5.4,1 - october 12, 2018
+---------------------------------
+
+**New Features:**
+- [calendar] Roadmap Feature #589 - Add support to reminder for recurring events [ #590 ]
+
+**Bug Fixes:**
+
+- [mail] Alternate root doesn't work correctly [ #597 ]
+- [calendar] Sometimes recurring modification is applied on wrong target[ #594 ]
+- [core] The account email settings can not be changed from the admin panel [ #593 ]
+- [core] Error in identity management via admin panel [ #592 ]
+- [mail] No message list when quota command is not supported by imap server [ #587 ]
+- [calendar] DB integrity error when inserting an event from CalDAV server [ #586 ]
+
 Release 5.4.0 - october 2, 2018
 -------------------------------
 
