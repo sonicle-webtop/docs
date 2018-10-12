@@ -161,6 +161,7 @@ Release 5.2.0 - may 30, 2018
 ----------------------------
 
 **New Features:**
+
 - WebTop DAV Server implementation through SabreDAV. See :ref:`dav-server-section` and :ref:`dav-clients-notes-section` [ #485 ]
 - NethVoice PBX integration with new specific core configuration. See :ref:`PBX-settings-section` [ #475 ]
 - New rrule based calendar recurrences and new full featured GUI [ #486 ]
