@@ -11,8 +11,8 @@ Global configuration settings can be changed using the admin interface, as expla
 
 .. _contacts-default-settings-section:
 
-Defaults Settings
------------------
+Settings (defaults)
+-------------------
 
 * | ``default.anniversary.reminder.delivery`` [ none | app | email ]
   | Default anniversary reminders delivery mode.

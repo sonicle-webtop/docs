@@ -11,8 +11,8 @@ Global configuration settings can be changed using the admin interface, as expla
 
 .. _calendar-default-settings-section:
 
-Defaults Settings
------------------
+Settings (defaults)
+-------------------
 
 * | ``default.view`` [ d | w5 | w | dw | m ]
   | Default synchronization status for new calendar folders.

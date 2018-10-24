@@ -112,8 +112,8 @@ Paths Settings
 
 .. _core-defaults-settings-section:
 
-Defaults Settings
------------------
+Settings (defaults)
+-------------------
 
 * | ``default.theme`` [ crisp | neptune | classic | gray | ... ]
   | Defines the default theme for users. Defaults to ``crisp``.

@@ -11,8 +11,8 @@ Global configuration settings can be changed using the admin interface, as expla
 
 .. _tasks-defaults-settings-section:
 
-Defaults settings
------------------
+Settings (defaults)
+-------------------
 
 * | ``default.category.sync`` [ O | R | W ]
   | Default synchronization status for new tasks categories: off, read or write.

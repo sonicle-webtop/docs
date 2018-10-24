@@ -11,8 +11,8 @@ Global configuration settings can be changed using the admin interface, as expla
 
 .. _mail-defaults-settings-section:
 
-Defaults settings
------------------
+Settings (defaults)
+-------------------
 
 * | ``default.ingrid.preview`` [ true | false ]
   | Disable grid row preview for everyone, default value is false.
@@ -23,16 +23,18 @@ Defaults settings
 * | ``default.upcoming.tasks.show`` [ true | false ]
   | Activate a view showing all upcoming tasks by default.
 
-.. _mail-upload-settings-section:
+.. _mail-settings-section:
 
-Upload settings
----------------
+Settings
+--------
 
 * | ``attachment.maxfilesize`` [ size-in-bytes ]
-  | Maximum size for file attachments.
+  | Maximum size for file attachments. Defaults to `10485760` (10MB).
+
+* | ``message.replyall.stripmyidentities`` [ true | false ]
+  | False to disable (in reply to all) recipients removing if matching with user identities. Defaults to `true`.
 
 .. _mail-sieve-settings-section:
-
 
 Sieve settings
 --------------
