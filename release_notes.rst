@@ -4,6 +4,18 @@ Release notes
 
 WebTop release 5
 
+Release 5.4.2 - october 24, 2018
+---------------------------------
+
+**New Features:**
+
+- [mail] Avoid removing recipients equal to my identities during ReplyToAll [ #603 ]
+
+**Bug Fixes:**
+
+- [contacts] Contacts list virtual address is not expanded anymore [ #602 ]
+- [contacts] The search result is not updated by deleting the key [ #591 ]
+
 Release 5.4.1 - october 12, 2018
 ---------------------------------
 
