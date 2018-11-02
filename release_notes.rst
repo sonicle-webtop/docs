@@ -4,6 +4,14 @@ Release notes
 
 WebTop release 5
 
+Release 5.4.3 - november 2, 2018
+---------------------------------
+
+**Bug Fixes:**
+
+- [mail] Insert file image produces broken image [ #612 ]
+- [mail] Advanced search problem with columns after subject [ #607 ]
+
 Release 5.4.2 - october 24, 2018
 ---------------------------------
 
