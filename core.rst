@@ -307,7 +307,7 @@ DocumentServer Settings
   | @since: 5.4.0
 
 * | ``documentserver.loopback.url`` [ url ]
-  | Specified how WebTop is reachable by the DocumentServer.
+  | Specifies how WebTop is reachable by the DocumentServer.
   | This is the base URL used to build the location path at which the DocumentServer can contact WebTop in order to handle documents operations.
   | This is usually an internal URL if both WebTop and DocumentServer reside on the same network.
   | @since: 5.4.0
