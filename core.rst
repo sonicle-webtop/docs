@@ -321,3 +321,6 @@ DocumentServer Settings
   | Specifies the secret shared key to use for incoming communications from the DocumentServer. WebTop will decrypt incoming calls using this key.
   | Since that HS256 algorithm is used to check JWT token's signature, a secret key of 256bits (32 chars) or more is required.
   | @since: 5.4.0
+
+.. warning::
+  Shared key specified at ``documentserver.secret.in`` is cached for speeding up request filtering, you have to restart the application upon each changes.
