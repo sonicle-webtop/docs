@@ -298,21 +298,26 @@ DocumentServer Settings
   | @since: 5.4.0
 
 * | ``documentserver.public.url`` [ url ]
-  | Specifies how the DocumentServer is reachable externally (from public network).
+  | Specifies how the DocumentServer is reachable externally (from public network or internet).
+  | This is the base URL used to build the location path at which the browser can load the DocumentServer's client JavaScript API.
   | @since: 5.4.0
 
-* | ``documentserver.local.url`` [ url ]
-  | Specifies how the DocumentServer is reachable internally (from local network). (not used yet)
+* | ``documentserver.local.url`` [ url ] (not used yet)
+  | Specifies how the DocumentServer is reachable internally (from local network).
   | @since: 5.4.0
 
 * | ``documentserver.loopback.url`` [ url ]
-  | Specifies how WebTop is reachable internally (from local network) by the DocumentServer.
+  | Specified how WebTop is reachable by the DocumentServer.
+  | This is the base URL used to build the location path at which the DocumentServer can contact WebTop in order to handle documents operations.
+  | This is usually an internal URL if both WebTop and DocumentServer reside on the same network.
   | @since: 5.4.0
 
 * | ``documentserver.secret.out`` [ string ]
   | Specifies the secret shared key to use for outgoing communications to the DocumentServer. WebTop will sign outgoing calls using this key.
+  | Since that algorithm HS256 is used to generate JWT token, a secret key of 256bits (32 chars) or more is required.
   | @since: 5.4.0
 
 * | ``documentserver.secret.in`` [ string ]
   | Specifies the secret shared key to use for incoming communications from the DocumentServer. WebTop will decrypt incoming calls using this key.
+  | Since that algorithm HS256 is used check JWT token's signature, a secret key of 256bits (32 chars) or more is required.
   | @since: 5.4.0
