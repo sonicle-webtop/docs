@@ -15,10 +15,29 @@ Settings (defaults)
 -------------------
 
 * | ``default.anniversary.reminder.delivery`` [ none | app | email ]
-  | Default anniversary reminders delivery mode.
+  | Default anniversary reminders delivery mode. Defaults to ``app``.
+  | ``none``: Off.
+  | ``app``: Reminers are displayed in WebTop application.
+  | ``email``: Reminders are sent by email.
 
 * | ``default.category.sync`` [ O | R | W ]
-  | Default synchronization status for new contacts categories: off, read or write.
+  | Default synchronization status for new contacts categories. Defaults to ``O``.
+  | ``O``: Off, not active.
+  | ``R``: Enabled, devices can only read.
+  | ``W``: Enabled, devices can read and write.
+
+* | ``default.view`` [ work | home | list ]
+  | Default view mode used in main contacts list. Defaults to ``work``.
+  | ``work``: Both contacts and contacts list are listed, displaying work related fields.
+  | ``home``: Both contacts and contacts list are listed, displaying home related fields.
+  | ``list``: Only contacts list are listed.
+  | @since: 5.5.0
+
+* | ``default.showby`` [ firstName | lastName ]
+  | Default field used for ordering contacts. Defaults to ``lastName``.
+  | ``firstName``: Contact's first-name.
+  | ``lastName``: Contact's last-name.
+  | @since: 5.5.0
 
 .. _category-remote-settings-section:
 
