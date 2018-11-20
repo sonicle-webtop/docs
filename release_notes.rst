@@ -4,6 +4,19 @@ Release notes
 
 WebTop release 5
 
+Release 5.4.4 - november 20, 2018
+---------------------------------
+
+**Bug Fixes:**
+
+- [mail] bulleted list lost by forwarding the mail [ #613 ]
+- [mail] Image inserted in the body of the email are not always shown [ #614 ]
+- [mail] Mails with wrong html may cut parts of text away [ #615 ]
+- [mail] Replying to an email, inline images are lost [ #616 ]
+- [mail] Events in scheduler display are not grouped by calendar [ #620 ]
+- [mail] Inline cids generated as filenames may duplicate during fwds/replies [ #625 ]
+- [mail] Replies do not retain possible original html styles and or inner bodies [ #626 ]
+
 Release 5.4.3 - november 2, 2018
 ---------------------------------
 
