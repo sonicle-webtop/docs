@@ -4,12 +4,19 @@ Release notes
 
 WebTop release 5
 
+Release 5.4.5 - november 21, 2018
+---------------------------------
+
+**Bug Fixes:**
+
+- [calendar] Through DAV is not possible to make invitations on events [#627]
+
 Release 5.4.4 - november 20, 2018
 ---------------------------------
 
 **Bug Fixes:**
 
-- [mail] bulleted list lost by forwarding the mail [ #613 ]
+- [mail] Bulleted list lost by forwarding the mail [ #613 ]
 - [mail] Image inserted in the body of the email are not always shown [ #614 ]
 - [mail] Mails with wrong html may cut parts of text away [ #615 ]
 - [mail] Replying to an email, inline images are lost [ #616 ]
