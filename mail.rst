@@ -28,6 +28,10 @@ Settings (defaults)
 Settings
 --------
 
+* | ``editor.fonts`` [ comma separated font names list ]
+  | Customize list of fonts available to the HTML editor.
+  | @since: 5.5.0
+
 * | ``attachment.maxfilesize`` [ size-in-bytes ]
   | Maximum size for file attachments. Defaults to `10485760` (10MB).
 
@@ -41,3 +45,30 @@ Sieve settings
 
 * | ``sieve.port`` [ port ]
   | The Sieve daemon port.
+
+.. _mail-external-archiving-settings-section:
+
+External Archiving
+------------------
+
+* | ``archiving.external`` [ true | false ]
+  | Enable or disable external archiving feature, both on the client and the server scripts. Defaults to false.
+
+* | ``archiving.external.host`` [ hostname ]
+  | The hostname of the server hosting the external archive.
+
+* | ``archiving.external.port`` [ port ]
+  | The port of the server hosting the external archive.
+
+* | ``archiving.external.protocol`` [ imap | imaps ]
+  | The protocol of the server hosting the external archive.
+
+* | ``archiving.external.username`` [ username ]
+  | The username of the external archive account 
+
+* | ``archiving.external.password`` [ password ]
+  | The password of the external archive account 
+
+* | ``archiving.external.minage`` [ number-of-days ]
+  | The minimum age in days of mails to be considered for archiving. Defaults to 365*5.
+
