@@ -27,7 +27,7 @@ Release 5.5.0 - november 30, 2018
 **Bug Fixes:**
 
 - [mail] It is not possible to rename subfolders in case of alternative root [#634]
-- [mail] Opening more than 1 new message and sending deletes only one of the automatic drafts [#637]
+- [mail] Opening more than one new message and sending may delete only one of the automatic drafts [#637]
 
 Release 5.4.5 - november 21, 2018
 ---------------------------------
