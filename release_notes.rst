@@ -13,7 +13,7 @@ Release 5.5.0 - november 30, 2018
 - [mail] Add support to multiline text when using reject action in filter actions[ #601 ]
 - [mail] Customize color of todays messages[ #604 ]
 - [mail] Add start/end dates and days on vacation filter [ #611 ]
-- [mail] Add option to transform public resource links to inline attachment (e.g. card images) [ #629 ]
+- [mail] Option to transform resource links to inline attachment (e.g. card images) [ #629 ]
 - [mail] Show quota limit on interface [ #630 ]
 - [mail] External archiving management [ #635 ]
 - [dav-server] Add support to shared resources synchronization [ #507 ]
