@@ -4,6 +4,31 @@ Release notes
 
 WebTop release 5
 
+Release 5.5.0 - november 30, 2018
+---------------------------------
+
+**New Features:**
+
+- [mail] Request to save drafts by closing an uncompleted email [ #247 ]
+- [mail] Add support to multiline text when using reject action in filter actions[ #601 ]
+- [mail] Customize color of todays messages[ #604 ]
+- [mail] Add start/end dates and days on vacation filter [ #611 ]
+- [mail] Add option to transform public resource links to inline attachment [ #629 ]
+- [mail] Show quota limit on interface [ #630 ]
+- [mail] External archiving management [ #635 ]
+- [dav-server] Add support to shared resources synchronization [ #507 ]
+- [core] Customize font list available to the html editor [ #610 ]
+- [contacts] Restyling: infinite grid, initials, modern grouping, preview pane [ #622 ]
+- [cloud] Drag & Drop files from cloud to email message [ #386 ]
+- [calendar] Improve invitation behaviour [ #595 ]
+- [calendar] Allow recurring event start date modification [ #596 ]
+- [calendar] on calendar, add row showing current hour [ #596 ]
+
+**Bug Fixes:**
+
+- [mail] It is not possible to rename subfolders in case of alternative root [#634]
+- [mail] Opening more than 1 new message and sending deletes only one of the automatic drafts [#637]
+
 Release 5.4.5 - november 21, 2018
 ---------------------------------
 
