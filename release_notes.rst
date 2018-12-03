@@ -14,7 +14,6 @@ Release 5.5.0 - november 30, 2018
 - [mail] Customize color of todays messages[ #604 ]
 - [mail] Add start/end dates and days on vacation filter [ #611 ]
 - [mail] Option to transform resource links to inline attachment (e.g. card images) [ #629 ]
-- [mail] Show quota limit on interface [ #630 ]
 - [mail] External archiving management [ #635 ]
 - [dav-server] Add support to shared resources synchronization [ #507 ]
 - [core] Customize font list available to the html editor [ #610 ]
@@ -22,7 +21,6 @@ Release 5.5.0 - november 30, 2018
 - [cloud] Drag & Drop files from cloud to email message [ #386 ]
 - [calendar] Improve invitation behaviour [ #595 ]
 - [calendar] Allow recurring event start date modification [ #596 ]
-- [calendar] On calendar, add row showing current hour [ #596 ]
 
 **Bug Fixes:**
 
