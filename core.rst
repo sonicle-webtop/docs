@@ -45,6 +45,10 @@ System Settings
 * | ``whatsnew.enabled`` [ true | false ]
   | Specifies if What's New visualization to users is enabled.
 
+* | ``recipient.provider.auto.enabled`` [ true | false ]
+  | Specifies whether to include auto-recipients in recipients lookups. Defaults to ``true``.
+  | @since: 5.5.1
+
 * | ``launcher.links`` [ json-array-of-link-objects ]
   | Specifies a list of links to be displayed as link buttons in viewport's launcher.
   | List definitiron must be specified as a JSON array. Each element is an object with the following fields:
