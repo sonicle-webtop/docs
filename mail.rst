@@ -39,6 +39,10 @@ Settings
 * | ``message.replyall.stripmyidentities`` [ true | false ]
   | False to disable (in reply to all) recipients removing if matching with user identities. Defaults to `true`.
 
+* | ``message.edit.subject`` [ true | false ]
+  | Enable or disable the feature to edit subject of received emails. Defaults to `false`.
+  | @since: 5.5.1
+
 .. _mail-sieve-settings-section:
 
 Sieve settings
