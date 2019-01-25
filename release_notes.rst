@@ -4,6 +4,41 @@ Release notes
 
 WebTop release 5
 
+Release 5.5.1 - january 28, 2019
+---------------------------------
+
+**New Features:**
+
+- [core] Add setting to hide auto-suggested recipient in lookups. See :ref:`system-settings-section` [#645]
+- [core] Reset two-factor authentication (OTP) from admin [#360]
+- [mail] Add subject customization in auto-responder [#646]
+- [mail] Add support to DnD attachments between message preview to cloud [#639]
+- [mail] Save an attachment from an email directly to your personal cloud [#329]
+- [mail] Edit subject of a mail and save it. A specific setting is needed to enable this functionality, see :ref:`mail-settings-section` [#297]
+- [mail] Remember search field by folder [#205]
+- [calendar] Show day name in first column of weekly view [#650]
+- [contacts] Add support to multiselect when moving or copying contacts [#623]
+
+**Bug Fixes:**
+
+- [core] Sometimes log file is not written [#661]
+  Configuration needs to be updated here, please see :ref:`configuration-logging-section`
+- [core] Click on email in the body does not pick up email address [#654]
+- [core] Upgrade plupload to avoid WRONG_FORMAT error [#565]
+- [core] Some upload button/item no longer work with the upgraded plupload [#665]
+- [core] Some fileType icons are missing [#663]
+- [core] Key translation error on postpone reminder [#660]
+- [mail] Hide unneeded date columns in message grid header options [#659]
+- [mail] Check mailcard permissions server side during write [#658]
+- [mail] Advanced search on folders other than INBOX goes wrong [#656]
+- [mail] Deleting/Renaming a folder set as favorite causes a UI error [#655]
+- [mail] Clicking on web notification of a new mail does not refresh the inbox and cause javascript error [#648]
+- [mail] Broken inline images on "Forward" or "Open as new message" [#643]
+- [mail] Match unconditionally option in filters (incoming) doesn't require rules [#600]
+- [contacts] List element with linked contact may throw null pointer exception on open [#642]
+- [tasks] It is not possible to copy tasks from one category to another [#623]
+- [cloud] Creating folders with the character : in the name you no longer access your personal cloud [#479]
+
 Release 5.5.0 - november 30, 2018
 ---------------------------------
 
