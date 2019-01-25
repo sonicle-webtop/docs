@@ -9,7 +9,7 @@ Release 5.5.1 - january 28, 2019
 
 **New Features:**
 
-- [core] Add setting to hide auto-suggested recipient in lookups. See :ref:`system-settings-section` [#645]
+- [core] Add setting to hide auto-suggested recipient in lookups (see :ref:`system-settings-section`) [#645]
 - [core] Reset two-factor authentication (OTP) from admin [#360]
 - [mail] Add subject customization in auto-responder [#646]
 - [mail] Add support to DnD attachments between message preview to cloud [#639]
@@ -21,8 +21,7 @@ Release 5.5.1 - january 28, 2019
 
 **Bug Fixes:**
 
-- [core] Sometimes log file is not written [#661]
-  Configuration needs to be updated here, please see :ref:`configuration-logging-section`
+- [core] Sometimes log file is not written (starup configuration needs to be updated here, please see :ref:`configuration-logging-section`) [#661]
 - [core] Click on email in the body does not pick up email address [#654]
 - [core] Upgrade plupload to avoid WRONG_FORMAT error [#565]
 - [core] Some upload button/item no longer work with the upgraded plupload [#665]
