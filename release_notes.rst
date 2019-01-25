@@ -21,7 +21,7 @@ Release 5.5.1 - january 28, 2019
 
 **Bug Fixes:**
 
-- [core] Sometimes log file is not written (starup configuration needs to be updated here, please see :ref:`configuration-logging-section`) [#661]
+- [core] Sometimes log file is not written (startup configuration needs to be updated here, please see :ref:`configuration-logging-section`) [#661]
 - [core] Click on email in the body does not pick up email address [#654]
 - [core] Upgrade plupload to avoid WRONG_FORMAT error [#565]
 - [core] Some upload button/item no longer work with the upgraded plupload [#665]
