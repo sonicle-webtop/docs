@@ -61,9 +61,9 @@ If you want to change this default behaviour you need to set some JVM global var
 
 * | ``webtop.log.appender``
   | Specifies the pre-configured appender to use for writing log entries. Defaults to ``stdout``.
-  | - ``stdout``: Writes to Tomcat's standard output.
-  | - ``file``: Writes to a straight file. (any rolling policy support is demanded to OS)
-  | - ``rollingfile``: Writes to a file using a time-based rolling policy. (file is rolled every day using a max history of 15 days and 150MB of size cap each file)
+  | - ``stdout``: Writes to Tomcat's standard output
+  | - ``file``: Writes to a straight file (any rolling policy support is demanded to OS)
+  | - ``rollingfile``: Writes to a file using a time-based rolling policy (file is rolled every day using a max history of 15 days and 150MB of size cap each file)
 
 * | ``webtop.log.dir``
   | Directory where to store log files. Defaults to ``/var/log/webtop``.
@@ -72,6 +72,7 @@ If you want to change this default behaviour you need to set some JVM global var
 * | ``webtop.log.file.basename``
   | The base filename of the log file (extension `.log` will be automatically appended).
   | Defaults to the webapp's full context name (including context version if present).
+  | This is only used if the appender targets a file output.
 
 Due to some differences between components logging needs, the logging level cannot be set using a single variable like above.
 The :file:`logback.xml` file is refreshed every 30s, so you can control your desired logging level by manually updating the level value in correspondence of each `<logger>` elements.

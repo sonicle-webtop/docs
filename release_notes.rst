@@ -4,7 +4,7 @@ Release notes
 
 WebTop release 5
 
-Release 5.5.1 - january 28, 2019
+Release 5.5.1 - january 30, 2019
 ---------------------------------
 
 **New Features:**
@@ -27,6 +27,7 @@ Release 5.5.1 - january 28, 2019
 - [core] Some upload button/item no longer work with the upgraded plupload [#665]
 - [core] Some fileType icons are missing [#663]
 - [core] Key translation error on postpone reminder [#660]
+- [mail] The delete button does not work by opening the email [#664]
 - [mail] Hide unneeded date columns in message grid header options [#659]
 - [mail] Check mailcard permissions server side during write [#658]
 - [mail] Advanced search on folders other than INBOX goes wrong [#656]
