@@ -4,6 +4,13 @@ Release notes
 
 WebTop release 5
 
+Release 5.5.2 - february 8, 2019
+---------------------------------
+
+**Bug Fixes:**
+
+- [mail] Sending email sometimes shows error on "closed folder" [#673]
+
 Release 5.5.1 - january 30, 2019
 ---------------------------------
 
