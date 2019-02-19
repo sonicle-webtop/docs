@@ -4,6 +4,13 @@ Release notes
 
 WebTop release 5
 
+Release 5.5.3 - february 19, 2019
+---------------------------------
+
+**Bug Fixes:**
+
+- [mail] From the admin panel the domain mailcard is not editable [#WTMAIL-222]
+
 Release 5.5.2 - february 8, 2019
 ---------------------------------
 
