@@ -52,10 +52,10 @@ System Settings
 * | ``launcher.links`` [ json-array-of-link-objects ]
   | Specifies a list of links to be displayed as link buttons in viewport's launcher.
   | List definitiron must be specified as a JSON array. Each element is an object with the following fields:
+  | - ``text``: The text to display as tooltip.
   | - ``href``: The URL of the page the link goes to.
-  | - ``text``: The text to display as tooltip. (optional)
   | - ``icon``: The URL of the image to display as button icon. In order to avoid scaling problems, vector images should be used.
-  |
+  | - ``order``: An positive integer (greater than 0) value representing the display position, items will be ordered by this field. (@since: 5.6.0)
   | Example:
 
   ::
@@ -64,11 +64,13 @@ System Settings
       {
         'href': 'https://www.google.it/',
         'text': 'Google',
-        'icon': 'https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg'
+        'icon': 'https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg',
+        'order': 1
       }, {
         'href': 'https://the/url/to/open',
         'text': 'The link text',
-        'icon': 'https://the/icon/url'
+        'icon': 'https://the/icon/url',
+        'order': 2
       }
     ]
 
