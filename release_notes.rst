@@ -4,6 +4,27 @@ Release notes
 
 WebTop release 5
 
+Release 5.6.0 - february 28, 2019
+---------------------------------
+
+**Bug Fixes:**
+- [core] Error removing domain settings [#WTCORE-72]
+- [core] Automatic recipients cannot be deleted if they contain accented characters [#WTCORE-74]
+- [mail] Failed to send mail with images resized in the mailcard [#WTMAIL-224]
+- [mail] Add failure message when try to flag/tag a read-only shared account [#WTMAIL-219]
+- [mail] Mail with special characters in the object can not be saved [#WTMAIL-217]
+- [mail] Some threads are not grouped correctly [#WTMAIL-154]
+- [mail] In some cases the mail of the organizer is not detected even if present in the attached .ics file [#WTMAIL-141]
+- [cloud] It is not possible to rename files with extension [#WTCLOUD-20]
+
+**New Features:**
+- [core] Add a management view for launcher links [#WTCORE-70]
+- [mail] PEC View [#WTMAIL-226]
+- [mail] Import contact from vcf attachment [#WTMAIL-225]
+- [cloud] Download complete folder as a zip file [#WTCLOUD-19]
+- [eas-server] Brand new ActiveSync Server, full rewrite of the old webtop-zpush [#WTEASSRV-1]
+- [dav-server] Align config.js and API clients as the EAS server (see dav-server docs) [#WTDAVSRV-5]
+
 Release 5.5.3 - february 19, 2019
 ---------------------------------
 
