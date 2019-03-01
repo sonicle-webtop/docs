@@ -8,6 +8,7 @@ Release 5.6.0 - february 28, 2019
 ---------------------------------
 
 **Bug Fixes:**
+
 - [core] Error removing domain settings [#WTCORE-72]
 - [core] Automatic recipients cannot be deleted if they contain accented characters [#WTCORE-74]
 - [mail] Failed to send mail with images resized in the mailcard [#WTMAIL-224]
@@ -18,6 +19,7 @@ Release 5.6.0 - february 28, 2019
 - [cloud] It is not possible to rename files with extension [#WTCLOUD-20]
 
 **New Features:**
+
 - [core] Add a management view for launcher links [#WTCORE-70]
 - [mail] PEC View [#WTMAIL-226]
 - [mail] Import contact from vcf attachment [#WTMAIL-225]
