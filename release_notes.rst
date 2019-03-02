@@ -24,7 +24,7 @@ Release 5.6.0 - february 28, 2019
 - [mail] PEC View [#WTMAIL-226]
 - [mail] Import contact from vcf attachment [#WTMAIL-225]
 - [cloud] Download complete folder as a zip file [#WTCLOUD-19]
-- [eas-server] Brand new ActiveSync Server, full rewrite of the old webtop-zpush [#WTEASSRV-1]
+- [eas-server] Brand new ActiveSync Server, full rewrite of the old webtop-zpush [#WTEASSRV-7]
 - [dav-server] Align config.js and API clients as the EAS server (see dav-server docs) [#WTDAVSRV-5]
 
 Release 5.5.3 - february 19, 2019
