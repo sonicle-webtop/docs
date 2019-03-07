@@ -4,6 +4,15 @@ Release notes
 
 WebTop release 5
 
+Release 5.6.1 - march 07, 2019
+---------------------------------
+
+**Bug Fixes:**
+
+- [mail] Order by Status or Priority then by descending date [#WTMAIL-229]
+- [mail] Forwarding mails with multiple bodies (e.g. Italian PEC) misses parts [#WTMAIL-228]
+- [mail] Using Firefox and plain text the interface crashes [#WTMAIL-221]
+
 Release 5.6.0 - february 28, 2019
 ---------------------------------
 
