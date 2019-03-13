@@ -4,6 +4,13 @@ Release notes
 
 WebTop release 5
 
+Release 5.6.2 - march 13, 2019
+---------------------------------
+
+**Bug Fixes:**
+
+- [core] Missing db namespace in init-data-core.sql [#WTCORE-76]
+
 Release 5.6.1 - march 07, 2019
 ---------------------------------
 
