@@ -4,6 +4,13 @@ Release notes
 
 WebTop release 5
 
+Release 5.6.3 - march 22, 2019
+---------------------------------
+
+**Bug Fixes:**
+
+- [core] Old launcher links setting format in globals may cause main interface problems [#WTCORE-79]
+
 Release 5.6.2 - march 13, 2019
 ---------------------------------
 
