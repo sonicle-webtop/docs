@@ -4,6 +4,20 @@ Release notes
 
 WebTop release 5
 
+Release 5.6.4 - april ??, 2019
+---------------------------------
+
+**Bug Fixes:**
+
+- [core] The what's new window is always shown after login [#WTCORE-77]
+- [core] ZPush admin script output is not parsed correctly [#WTCORE-81]
+- [mail] ???
+- [calendar] Broken recurrences are not synchronized correctly with EAS and DAV [#WTCALENDAR-59]
+- [calendar] Sync customization on shared calendar is not honored [#WTCALENDAR-65]
+- [contacts] Values from some fields can not be deleted  [#WTCONTACTS-34]
+- [contacts] Sync customization on shared category is not honored [#WTCONTACTS-36]
+- [tasks] Sync customization on shared category is not honored [#WTTASKS-8]
+
 Release 5.6.3 - march 22, 2019
 ---------------------------------
 
@@ -35,6 +49,7 @@ Release 5.6.0 - february 28, 2019
 - [core] Error removing domain settings [#WTCORE-72]
 - [core] Automatic recipients cannot be deleted if they contain accented characters [#WTCORE-74]
 - [mail] Failed to send mail with images resized in the mailcard [#WTMAIL-224]
+- [mail] Possible timeouts and errors during scheduled mails check [#WTMAIL-223]
 - [mail] Add failure message when try to flag/tag a read-only shared account [#WTMAIL-219]
 - [mail] Mail with special characters in the object can not be saved [#WTMAIL-217]
 - [mail] Some threads are not grouped correctly [#WTMAIL-154]
