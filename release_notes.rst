@@ -17,6 +17,10 @@ Release 5.6.4 - april ??, 2019
 - [contacts] Values from some fields can not be deleted  [#WTCONTACTS-34]
 - [contacts] Sync customization on shared category is not honored [#WTCONTACTS-36]
 - [tasks] Sync customization on shared category is not honored [#WTTASKS-8]
+- [eas-server] Events are not editable in Android's Google Calendar if you have a customized email address [#WTEASSRV-11]
+- [eas-server] Occasionally sync with Android devices is not done [#WTEASSRV-12]
+- [eas-server] config.js not always found correctly [#WTEASSRV-13]
+- [eas-server] All-day events created by the device after the upgrade are modified [#WTEASSRV-14]
 
 Release 5.6.3 - march 22, 2019
 ---------------------------------
