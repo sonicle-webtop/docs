@@ -4,19 +4,27 @@ Release notes
 
 WebTop release 5
 
-Release 5.6.4 - april ??, 2019
+Release 5.6.4 - april 19, 2019
 ---------------------------------
 
 **Bug Fixes:**
 
 - [core] The what's new window is always shown after login [#WTCORE-77]
 - [core] ZPush admin script output is not parsed correctly [#WTCORE-81]
-- [mail] ???
+- [mail] The scheduled notification email does not show the html content [#WTMAIL-242]
+- [mail] Missing icon in scheduled emails [#WTMAIL-241]
+- [mail] With no mailcard set, editor reacts insanely on first enter [#WTMAIL-239]
+- [mail] In manual seen mode, unseen number decrease incorrectly [#WTMAIL-238]
+- [mail] Mail preview may break html5 content [#WTMAIL-237]
+- [mail] Mail drafts always become read when opened with manual seen set [#WTMAIL-236]
+- [mail] The OK key of hidden folder recovery does not work [#WTMAIL-220]
+- [mail] PDF attachments sent with add-ons do not open in view [#WTMAIL-100]
 - [calendar] Broken recurrences are not synchronized correctly with EAS and DAV [#WTCALENDAR-59]
 - [calendar] Sync customization on shared calendar is not honored [#WTCALENDAR-65]
 - [contacts] Values from some fields can not be deleted  [#WTCONTACTS-34]
 - [contacts] Sync customization on shared category is not honored [#WTCONTACTS-36]
 - [tasks] Sync customization on shared category is not honored [#WTTASKS-8]
+- [eas-server] Folders are duplicated after upgrade [#WTEASSRV-10]
 - [eas-server] Events are not editable in Android's Google Calendar if you have a customized email address [#WTEASSRV-11]
 - [eas-server] Occasionally sync with Android devices is not done [#WTEASSRV-12]
 - [eas-server] config.js not always found correctly [#WTEASSRV-13]
