@@ -9,6 +9,7 @@ Release 5.6.4 - april 19, 2019
 
 **Bug Fixes:**
 
+- [core] Chat audio/video conferencing does not work when ice servers are configured in globals [#WTCORE-84]
 - [core] The what's new window is always shown after login [#WTCORE-77]
 - [core] ZPush admin script output is not parsed correctly [#WTCORE-81]
 - [mail] The scheduled notification email does not show the html content [#WTMAIL-242]
@@ -23,6 +24,7 @@ Release 5.6.4 - april 19, 2019
 - [calendar] Sync customization on shared calendar is not honored [#WTCALENDAR-65]
 - [contacts] Values from some fields can not be deleted  [#WTCONTACTS-34]
 - [contacts] Sync customization on shared category is not honored [#WTCONTACTS-36]
+- [tasks] DB error when inserting a new task [#WTTASKS-10]
 - [tasks] Sync customization on shared category is not honored [#WTTASKS-8]
 - [eas-server] Folders are duplicated after upgrade [#WTEASSRV-10]
 - [eas-server] Events are not editable in Android's Google Calendar if you have a customized email address [#WTEASSRV-11]
