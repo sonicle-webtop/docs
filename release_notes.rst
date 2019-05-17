@@ -4,6 +4,39 @@ Release notes
 
 WebTop release 5
 
+Release 5.7.0 - may ??, 2019
+---------------------------------
+
+**Bug Fixes:**
+
+- [core] After user autoCreation an error entry is traced [#WTCORE-86]
+- [mail] Mail preview may break html5 content [#WTMAIL-237]
+- [calendar] Event instance is lost when recurring event start is moved ahead [#WTCALENDAR-69]
+- [calendar] Copying an event does not synchronize the original event via CalDAV [#WTCALENDAR-64]
+- [cloud] File download notification is not sent [#WTCLOUD-21]
+- [cloud] Webdav server fails to list folders with special characters [#WTCLOUD-17]
+
+**New Features:**
+- [core] Faster login loading time [#WTCORE-85]
+- [core] Implement the exclusion of all robots from the login page [#WTCORE-75]
+- [mail] Option to add unknown contacts [#WTMAIL-247]
+- [mail] New unified search on emails [#WTMAIL-244]
+- [mail] Inhibit selection of root nodes in tree [#WTMAIL-234]
+- [mail] Show something on the message view when nothing is selected [#WTMAIL-233]
+- [mail] External mail account management [#WTMAIL-232]
+- [mail] New unified search on emails [#WTMAIL-244]
+- [calendar] Provide a better hierarchical display of Calendars [#WTCALENDAR-62]
+- [calendar] The reminder on calendar events is not synchronized [#WTCALENDAR-63]
+- [calendar] Make logic insensitive to all-day events time convention (part1) [#WTCALENDAR-67]
+- [calendar] New unified search tool [#WTCALENDAR-73]
+- [contacts] Edit contact button in the preview window [#WTCONTACTS-31]
+- [contacts] Provide a better hierarchical display of Categories [#WTCONTACTS-35]
+- [contacts] Add display name field [#WTCONTACTS-37]
+- [contacts] New unified search tool [#WTCONTACTS-41]
+- [tasks] Transform the category chooser (during Move/Copy) into a tree [#WTTASKS-9]
+- [tasks] Provide a better hierarchical display of Categories [#WTTASKS-7]
+- [eas] Create better RRULE for android devices [#WTEASSRV-16]
+
 Release 5.6.4 - april 19, 2019
 ---------------------------------
 
