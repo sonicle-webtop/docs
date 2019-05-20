@@ -13,6 +13,7 @@ Release 5.7.0 - may ??, 2019
 - [mail] Mail preview may break html5 content [#WTMAIL-237]
 - [calendar] Event instance is lost when recurring event start is moved ahead [#WTCALENDAR-69]
 - [calendar] Copying an event does not synchronize the original event via CalDAV [#WTCALENDAR-64]
+- [calendar] Until date in recurring event is excluded from instances count [#WTCALENDAR-70]
 - [cloud] File download notification is not sent [#WTCLOUD-21]
 - [cloud] Webdav server fails to list folders with special characters [#WTCLOUD-17]
 
@@ -29,6 +30,7 @@ Release 5.7.0 - may ??, 2019
 - [calendar] The reminder on calendar events is not synchronized [#WTCALENDAR-63]
 - [calendar] Make logic insensitive to all-day events time convention (part1) [#WTCALENDAR-67]
 - [calendar] New unified search tool [#WTCALENDAR-73]
+- [calendar] Each shared schedule should always be activated and expanded by default [#WTCALENDAR-23]
 - [contacts] Edit contact button in the preview window [#WTCONTACTS-31]
 - [contacts] Provide a better hierarchical display of Categories [#WTCONTACTS-35]
 - [contacts] Add display name field [#WTCONTACTS-37]
