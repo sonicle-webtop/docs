@@ -14,6 +14,7 @@ Release 5.7.0 - may ??, 2019
 - [calendar] Event instance is lost when recurring event start is moved ahead [#WTCALENDAR-69]
 - [calendar] Copying an event does not synchronize the original event via CalDAV [#WTCALENDAR-64]
 - [calendar] Until date in recurring event is excluded from instances count [#WTCALENDAR-70]
+- [calendar] The availability of the guest is not shown [#WTCALENDAR-74]
 - [cloud] File download notification is not sent [#WTCLOUD-21]
 - [cloud] Webdav server fails to list folders with special characters [#WTCLOUD-17]
 
