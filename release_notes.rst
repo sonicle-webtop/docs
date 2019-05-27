@@ -4,7 +4,7 @@ Release notes
 
 WebTop release 5
 
-Release 5.7.0 - may ??, 2019
+Release 5.7.0 - may 27, 2019
 ---------------------------------
 
 **Bug Fixes:**
@@ -39,6 +39,13 @@ Release 5.7.0 - may ??, 2019
 - [tasks] Transform the category chooser (during Move/Copy) into a tree [#WTTASKS-9]
 - [tasks] Provide a better hierarchical display of Categories [#WTTASKS-7]
 - [eas] Create better RRULE for android devices [#WTEASSRV-16]
+
+Release 5.6.5 - may 27, 2019
+---------------------------------
+
+**Bug Fixes:**
+
+- [mail] Double clicking on an email, the seen flag is not changed with "Manual Seen" and "Seen on open" option enabled [#WTMAIL-245]
 
 Release 5.6.4 - april 19, 2019
 ---------------------------------
