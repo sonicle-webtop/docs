@@ -4,7 +4,7 @@ Release notes
 
 WebTop release 5
 
-Release 5.7.0 - may 27, 2019
+Release 5.7.0 - may 28, 2019
 ---------------------------------
 
 **Bug Fixes:**
@@ -22,12 +22,12 @@ Release 5.7.0 - may 27, 2019
 
 - [core] Faster login loading time [#WTCORE-85]
 - [core] Implement the exclusion of all robots from the login page [#WTCORE-75]
+- [mail] Mail grid compact view [#WTMAIL-248]
 - [mail] Option to add unknown contacts [#WTMAIL-247]
 - [mail] New unified search on emails [#WTMAIL-244]
 - [mail] Inhibit selection of root nodes in tree [#WTMAIL-234]
 - [mail] Show something on the message view when nothing is selected [#WTMAIL-233]
 - [mail] External mail account management [#WTMAIL-232]
-- [mail] New unified search on emails [#WTMAIL-244]
 - [calendar] Provide a better hierarchical display of Calendars [#WTCALENDAR-62]
 - [calendar] The reminder on calendar events is not synchronized [#WTCALENDAR-63]
 - [calendar] Make logic insensitive to all-day events time convention (part1) [#WTCALENDAR-67]
