@@ -19,6 +19,7 @@ Release 5.7.0 - may 27, 2019
 - [cloud] Webdav server fails to list folders with special characters [#WTCLOUD-17]
 
 **New Features:**
+
 - [core] Faster login loading time [#WTCORE-85]
 - [core] Implement the exclusion of all robots from the login page [#WTCORE-75]
 - [mail] Option to add unknown contacts [#WTMAIL-247]
