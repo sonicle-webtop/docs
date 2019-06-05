@@ -23,6 +23,12 @@ Settings (defaults)
 * | ``default.upcoming.tasks.show`` [ true | false ]
   | Activate a view showing all upcoming tasks by default.
 
+* | ``default.viewmode`` [ columns | compact ]
+  | Default view mode used in main messages list. Internally defaults to ``compact``.
+  | ``columns``: Classic view with columns.
+  | ``compact``: Modern and single column that aggregates all info.
+  | @since: 5.6.2
+
 .. _mail-settings-section:
 
 Settings
@@ -69,11 +75,10 @@ External Archiving
   | The protocol of the server hosting the external archive.
 
 * | ``archiving.external.username`` [ username ]
-  | The username of the external archive account 
+  | The username of the external archive account
 
 * | ``archiving.external.password`` [ password ]
-  | The password of the external archive account 
+  | The password of the external archive account
 
 * | ``archiving.external.minage`` [ number-of-days ]
   | The minimum age in days of mails to be considered for archiving. Defaults to 365*5.
-

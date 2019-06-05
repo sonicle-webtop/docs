@@ -2,11 +2,19 @@
 EAS Server
 ==========
 
-WebTop Exchange Active Sync Server
+WebTop EAS Server is an Exchange Active Sync Server based on Z-Push.
 
 .. _eas-server-section:
 
-Exchange Active Sync Server
-###########################
+Installation instructions available from GitHub
+-----------------------------------------------
 
-WebTop EAS Server is based on Z-Push.
+* `Requirements <https://github.com/sonicle-webtop/webtop-eas-server#requirements>`_
+
+* `Installation <https://github.com/sonicle-webtop/webtop-eas-server#installation>`_
+
+* `Configuration <https://github.com/sonicle-webtop/webtop-eas-server#configuration>`_
+
+* `Build <https://github.com/sonicle-webtop/webtop-eas-server#build>`_
+
+* `License <https://github.com/sonicle-webtop/webtop-eas-server#license>`_

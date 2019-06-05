@@ -4,6 +4,15 @@ Release notes
 
 WebTop release 5
 
+Release 5.7.1 - june XX, 2019
+---------------------------------
+
+**Bug Fixes:**
+
+- [mail] Mail filters cannot be saved [#WTMAIL-254]
+- [mail] Error managing external account grid [#WTMAIL-255]
+- [contacts] Changing the "Show names by" setting does not reload the page [#WTCONTACTS-42]
+
 Release 5.7.0 - may 28, 2019
 ---------------------------------
 
