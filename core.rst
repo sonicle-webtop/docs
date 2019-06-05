@@ -122,29 +122,69 @@ Settings (defaults)
 -------------------
 
 * | ``default.theme`` [ crisp | neptune | classic | gray | ... ]
-  | Defines the default theme for users. Defaults to ``crisp``.
+  | Defines the default theme for users. Internally defaults to ``crisp``.
 
 * | ``default.layout`` [ default | compact ]
-  | Defines the default layout for users. Defaults to ``default``.
+  | Defines the default layout for users. Internally defaults to ``default``.
 
 * | ``default.laf`` [ default ]
-  | Defines the default look and feel for users. This may define an alternative icon set. Defaults to ``default``.
+  | Defines the default look and feel for users. This may define an alternative icon set. Internally defaults to ``default``.
 
 * | ``default.rtl`` [ true | false ] (not yet used)
-  | If true, the web interface is delivered in right-to-left mode. Defaults to ``false``.
+  | If true, the web interface is delivered in right-to-left mode. Internally defaults to ``false``.
 
 * | ``default.viewport.header.scale`` [ small | medium | large ]
-  | Defines the default viewport header's scale. Defaults to ``small``.
+  | Defines the default viewport header's scale. Internally defaults to ``small``.
 
 * | ``default.startup.service`` [ core | mail | calendar | contacts | tasks | vfs ]
   | The default service to start with after login.
 
 * | ``default.notifications.desktop`` [ never | always | auto ]
-  | The default desktop notifications mode. Defaults to ``auto``.
+  | The default desktop notifications mode. Internally defaults to ``auto``.
   | ``never``: Desktop notifications will not be displayed.
   | ``always``: Desktop notification will be always displayed.
   | ``auto``: Desktop notifications will be displayed only if webapp is in background.
   | NB: A consent screen will be prompted by the browser if necessary.
+
+* | ``default.i18n.startDay`` [ 0 | 1 ]
+  | Week start day. Internally defaults to ``1``.
+  | ``0``: Sunday.
+  | ``1``: Monday.
+
+* | ``default.i18n.timezone`` [ timezone-id ]
+  | Users timezone. Internally defaults to ``Europe/Rome``.
+
+* | ``default.i18n.format.date.short`` [ short-date-format-pattern ]
+  | Date format pattern (java style) for short dates. Internally defaults to ``dd/MM/yyyy``.
+  | ``dd/MM/yyyy``: dd/MM/yyyy
+  | ``dd-MM-yyyy``: dd-MM-yyyy
+  | ``yyyy-MM-dd``: yyyy-MM-dd
+  | ``MM/dd/yyyy``: MM/dd/yyyy
+  | ``MM-dd-yyyy``: MM-dd-yyyy
+  | ``MM.dd.yyyy``: MM.dd.yyyy
+
+* | ``default.i18n.format.date.long`` [ long-date-format-pattern ]
+  | Date format pattern (java style) for long dates. Internally defaults to ``dd MMM yyyy``.
+  | ``dd MMM yyyy``: dd MMM yyyy
+  | ``dd MMMM yyyy``: dd MMMM yyyy
+  | ``MMM dd, yyyy``: MMM dd, yyyy
+  | ``MMMM dd, yyyy``: MMMM dd, yyyy
+
+* | ``default.i18n.format.time.short`` [ short-time-format-pattern ]
+  | Time format pattern (java style) for short times. Internally defaults to ``HH:mm``.
+  | ``HH:mm``: hh:mm
+  | ``h:mm a``: h:mm AM/PM
+
+* | ``default.i18n.format.time.long`` [ long-time-format-pattern ]
+  | Time format pattern (java style) for long times. Internally defaults to ``HH:mm:ss``.
+  | ``HH:mm:ss``: hh:mm:ss
+  | ``h:mm:ss a``: h:mm:ss AM/PM
+
+* | ``default.devices.sync.alert.enabled`` [ true | false ]
+  | Enables an email alert if device synchronization is broken. Internally defaults to ``false``.
+
+* | ``default.im.upload.maxfilesize`` [ size-in-bytes ]
+  | Maximum upload size in instant-messaging. Internally defaults to ``10485760`` (10MB).
 
 .. _smtp-settings-section:
 
