@@ -37,6 +37,7 @@ Release 5.7.0 - may 28, 2019
 - [mail] Inhibit selection of root nodes in tree [#WTMAIL-234]
 - [mail] Show something on the message view when nothing is selected [#WTMAIL-233]
 - [mail] External mail account management [#WTMAIL-232]
+- [mail] Description of favorite [ #WTMAIL-257 ]
 - [calendar] Provide a better hierarchical display of Calendars [#WTCALENDAR-62]
 - [calendar] The reminder on calendar events is not synchronized [#WTCALENDAR-63]
 - [calendar] Make logic insensitive to all-day events time convention (part1) [#WTCALENDAR-67]
