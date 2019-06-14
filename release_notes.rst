@@ -4,14 +4,18 @@ Release notes
 
 WebTop release 5
 
-Release 5.7.1 - june XX, 2019
+Release 5.7.1 - june 14, 2019
 ---------------------------------
 
 **Bug Fixes:**
 
-- [mail] Mail filters cannot be saved [#WTMAIL-254]
-- [mail] Error managing external account grid [#WTMAIL-255]
-- [contacts] Changing the "Show names by" setting does not reload the page [#WTCONTACTS-42]
+- [core] Usernames starting with a number in AD domain, are not allowed in admin interface [ #WTMAIL-91 ]
+- [core] Allow change password for writable ldap directory users marked as "Not in WebTop" [ #WTCORE-89 ]
+- [core] Add method to activate js debug mode using browser console[ #WTCORE-88 ]
+- [mail] Mail filters cannot be saved [ #WTMAIL-254 ]
+- [mail] Error managing external account grid [ #WTMAIL-255 ]
+- [mail] Using addressbook, no recipients are shown without a name or surname [ WTMAIL-253 ]
+- [contacts] Changing the "Show names by" setting does not reload the page [ #WTCONTACTS-42 ]
 
 Release 5.7.0 - may 28, 2019
 ---------------------------------
