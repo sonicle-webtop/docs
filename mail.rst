@@ -34,11 +34,6 @@ Settings (defaults)
 Settings
 --------
 
-* | ``editor.fonts`` [ comma separated font names list ]
-  | Customize list of fonts available to the HTML editor.
-  | Default list: Arial, Font, Comic Sans MS, Courier New, Helvetica, Tahoma, Times New Roman, Verdana
-  | @since: 5.5.0
-
 * | ``attachment.maxfilesize`` [ size-in-bytes ]
   | Maximum size for file attachments. Defaults to `10485760` (10MB).
 

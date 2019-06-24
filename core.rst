@@ -186,6 +186,16 @@ Settings (defaults)
 * | ``default.im.upload.maxfilesize`` [ size-in-bytes ]
   | Maximum upload size in instant-messaging. Internally defaults to ``10485760`` (10MB).
 
+.. _editor-settings-section:
+
+HTML Editor Settings
+--------------------
+
+* | ``editor.fonts`` [ comma separated font names list ]
+  | Customize list of fonts available to the HTML editor.
+  | Default list: Arial, Comic Sans MS, Courier New, Helvetica, Tahoma, Times New Roman, Verdana
+  | @since: 5.5.0
+
 .. _smtp-settings-section:
 
 SMTP Settings
