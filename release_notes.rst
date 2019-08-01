@@ -4,12 +4,43 @@ Release notes
 
 WebTop release 5
 
+Release 5.7.2 - august 01, 2019
+---------------------------------
+
+**Bug Fixes:**
+
+- [mail]  [ #WTMAIL-214 ]
+- [mail]  [ #WTMAIL-227 ]
+- [mail]  [ #WTMAIL-240 ]
+- [mail]  [ #WTMAIL-250 ]
+- [mail]  [ #WTMAIL-251 ]
+- [mail]  [ #WTMAIL-256 ]
+- [mail]  [ #WTMAIL-261 ]
+- [mail]  [ #WTMAIL-262 ]
+- [mail]  [ #WTMAIL-263 ]
+- [mail]  [ #WTMAIL-264 ]
+- [mail]  [ #WTMAIL-265 ]
+- [mail]  [ #WTMAIL-268 ]
+- [mail]  [ #WTMAIL-269 ]
+- [mail]  [ #WTMAIL-270 ]
+- [mail]  [ #WTMAIL-273 ]
+- [calendar] All-day events are displayed incorrectly [ #WTCALENDAR-76 ]
+- [calendar] Weekly recurring event is displayed incorrectly [ #WTCALENDAR-77 ]
+- [calendar] In some limit cases displayed events overlap on each other [ #WTCALENDAR-79 ]
+- [calendar] Shared calendars are not updated on Apple devices with CalDAV [ #WTCALENDAR-83 ]
+- [contacts] base64 values are not converted when importing from an LDIF file [ #WTCONTACTS-43 ]
+
+**New Features:**
+
+- [eas-server] Prevents the device from performing a full resync of data after transitioning to webtop-eas-server [ #WTEASSRV-17 ]
+- [dav-server] Avoid NotAuthenticated critical exceptions in logs [ #WTDAVSRV-8 ]
+
 Release 5.7.1 - june 14, 2019
 ---------------------------------
 
 **Bug Fixes:**
 
-- [core] Usernames starting with a number in AD domain, are not allowed in admin interface [ #WTMAIL-91 ]
+- [core] Usernames starting with a number in AD domain, are not allowed in admin interface [ #WTCORE-91 ]
 - [core] Allow change password for writable ldap directory users marked as "Not in WebTop" [ #WTCORE-89 ]
 - [core] Add method to activate js debug mode using browser console[ #WTCORE-88 ]
 - [mail] Mail filters cannot be saved [ #WTMAIL-254 ]
@@ -53,7 +84,7 @@ Release 5.7.0 - may 28, 2019
 - [contacts] New unified search tool [#WTCONTACTS-41]
 - [tasks] Transform the category chooser (during Move/Copy) into a tree [#WTTASKS-9]
 - [tasks] Provide a better hierarchical display of Categories [#WTTASKS-7]
-- [eas] Create better RRULE for android devices [#WTEASSRV-16]
+- [eas-server] Create better RRULE for android devices [#WTEASSRV-16]
 
 Release 5.6.5 - may 27, 2019
 ---------------------------------
