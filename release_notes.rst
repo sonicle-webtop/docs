@@ -4,7 +4,7 @@ Release notes
 
 WebTop release 5
 
-Release 5.7.3 - sept 05, 2019
+Release 5.7.3 - sept XX, 2019
 ---------------------------------
 
 **Bug Fixes:**
