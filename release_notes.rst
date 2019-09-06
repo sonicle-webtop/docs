@@ -4,6 +4,22 @@ Release notes
 
 WebTop release 5
 
+Release 5.7.3 - sept 05, 2019
+---------------------------------
+
+**Bug Fixes:**
+
+- [core] Changes to user settings from the admin panel are not propagated [ #WTCORE-63 ]
+- [mail] Automatic conversion of text file attachments [ #WTMAIL-258 ]
+- [mail] Interactive search does not work "open in Folder" button [ #WTMAIL-274 ]
+- [mail] Possible leak during discconnect of external accounts [ #WTMAIL-277 ]
+- [mail] Manage Tags does not open [ #WTMAIL-278 ]
+- [mail] Missing icon on manage tags [ #WTMAIL-279 ]
+- [mail] JavaScript error on mail on slow internet or browser breaks mail functionality [ #WTMAIL-282 ]
+- [mail] When rename of folder fails, original folder is no more working correctly [ #WTMAIL-283 ]
+- [contacts] ContactList: linked contact with missing firstname/lastname generates error [ #WTCONTACTS-44 ]
+- [calendar] Events search result should not be filtered [ #WTCALENDAR-84 ]
+
 Release 5.7.2 - august 01, 2019
 ---------------------------------
 
