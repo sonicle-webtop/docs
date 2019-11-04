@@ -20,6 +20,7 @@ Release 5.7.4 - oct 30, 2019
 - [mail] The color change of a custom label applies the label to the whole mailbox [ #WTMAIL-295 ]
 - [mail] Truncated display of the mail message [ #WTMAIL-294 ]
 - [mail] Opening draft does not consider saved sender [ #WTMAIL-293 ]
+- [mail] With the compact view mode it does not show the memo icon [ #WTMAIL-290 ]
 - [contacts] VCard writer should escape double-quotes [ #WTCONTACTS-46 ]
 - [calendar] Reminders incorrectly synchronized with CalDAV and Apple devices [ #WTCALENDAR-89 ]
 - [calendar] All-day events of several days with recurrence are not shown correctly [ #WTCALENDAR-87 ]
