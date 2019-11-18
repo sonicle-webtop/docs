@@ -4,6 +4,23 @@ Release notes
 
 WebTop release 5
 
+Release 5.7.5 - nov 18, 2019
+---------------------------------
+
+**Bug Fixes:**
+
+- [mail] Strange behaviour of interactive search filter dialogs [ #WTMAIL-309 ]
+- [mail] Links with mailto containing encoded characters are not decoded in new mail [ #WTMAIL-307 ]
+- [mail] Importing an external invitation fails in some cases [ #WTMAIL-306 ]
+- [mail] Mail with attachment referenced from html shows the paper clip [ #WTMAIL-305 ]
+- [mail] The condition is not saved in the inbox filter [ #WTMAIL-300 ]
+- [mail] Filtering rules in interactive search do not work [ #WTMAIL-231 ]
+- [cloud] File names with the ":" character in Google Drive generate an error [ #WTCLOUD-26 ]
+- [calendar] Import should disarm or ignore past alarms [ #WTCALENDAR-93 ]
+- [calendar] Import should keep first valid VALARM [ #WTCALENDAR-92 ]
+- [calendar] Recurring all-day events longer than a week are not shown correctly [ #WTCALENDAR-91 ]
+- [calendar] Event cannot be synchronized in some iphone devices [ #WTCALENDAR-90 ]
+
 Release 5.7.4 - oct 30, 2019
 ---------------------------------
 
