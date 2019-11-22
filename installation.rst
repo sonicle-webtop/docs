@@ -68,7 +68,7 @@ Then the property file will be looked-up using the following logic:
 If valid files can be found in both locations, properties will be merged keeping precedence to the most specific file (the second one).
 
 .. note::
-  Where ``${PROP_ETC_DIR}`` is the value of ``webtop.etc.dir`` system property and ``${WEBAPP_NAME}`` is the web-application context-name (without any version info).
+  ``${PROP_ETC_DIR}`` is the value of ``webtop.etc.dir`` system property and ``${WEBAPP_NAME}`` is the web-application context-name (without any version info).
 
 
 Please refer to `this page <https://code.sonicle.com/projects/WEBTOP/repos/webtop-core/browse/src/main/java/com/sonicle/webtop/core/app/WebTopProps.java>`_ to extract a list of supported properties.
@@ -85,7 +85,7 @@ Database configuration relies on a specific configuration file that will be look
 2. If no such file is found, it checks the file ``data-sources.xml`` in ``META-INF`` folder inside the application context. Note that this file is always available but it contains a default configuration.
 
 .. note::
-  Where ``${PROP_ETC_DIR}`` is the value of ``webtop.etc.dir`` system property and ``${WEBAPP_NAME}`` is the web-application context-name (without any version info).
+  ``${PROP_ETC_DIR}`` is the value of ``webtop.etc.dir`` system property and ``${WEBAPP_NAME}`` is the web-application context-name (without any version info).
 
 
 .. warning::
