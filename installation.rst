@@ -48,31 +48,80 @@ WebTop runs greatly on Tomcat 8.5 and 8.0, but we advice to use the most recent 
 Configuration
 -------------
 
+.. _configuration-properties-section:
+
+Properties
+^^^^^^^^^^
+
+WebTop supports some configuration and debugging settings that can be enabled through Java properties.
+Properties can be specified in two ways:
+
+1. System property: these properties are usually set by passing the ``-D`` flag to the Java virtual machine.
+2. WebTop property: these properties are defined in a specific property file that is loaded during startup.
+
+In order to enable the WebTop property way, the system property ``webtop.etc.dir`` must be specified first, this will instruct the application where to find customized configuration files.
+Then the property file will be looked-up using the following logic:
+
+1. Startup process tries to find a file called ``webtop.properties`` in ``${PROP_ETC_DIR}`` directory.
+2. Then, it checks the file ``webtop.properties`` in ``${PROP_ETC_DIR}/${WEBAPP_NAME}`` directory.
+
+If valid files can be found in both locations, properties will be merged keeping precedence to the most specific file (the second one).
+
+.. note::
+  Where ``${PROP_ETC_DIR}`` is the value of ``webtop.etc.dir`` system property and ``${WEBAPP_NAME}`` is the web-application context-name (without any version info).
+
+
+Please refer to `this page <https://code.sonicle.com/projects/WEBTOP/repos/webtop-core/browse/src/main/java/com/sonicle/webtop/core/app/WebTopProps.java>`_ to extract a list of supported properties.
+
+
+.. _configuration-database-section:
+
+Database
+^^^^^^^^
+
+Database configuration relies on a specific configuration file that will be looked-up following the sequence below:
+
+1. Startup process tries to find a file called ``data-sources.xml`` in ``${PROP_ETC_DIR}/${WEBAPP_NAME}`` folder.
+2. If no such file is found, it checks the file ``data-sources.xml`` in ``META-INF`` folder inside the application context. Note that this file is always available but it contains a default configuration.
+
+.. note::
+  Where ``${PROP_ETC_DIR}`` is the value of ``webtop.etc.dir`` system property and ``${WEBAPP_NAME}`` is the web-application context-name (without any version info).
+
+
+.. warning::
+  In order to look for external configuration files, the system property ``webtop.etc.dir`` must be specified pointing to a valid location. See above.
+
+
 .. _configuration-logging-section:
 
 Logging
 ^^^^^^^
 
 .. warning::
-  Starting from WebTop Core 5.5.1 is no longer necessary (and discouraged) to edit the :file:`logback.xml` file in order to control log output location and type.
+  Starting from WebTop Core 5.7.0 is no longer necessary (and discouraged) to edit the :file:`logback.xml` file in order to control log output location and type.
 
 By default WebTop will log every message in the webapps's standard output, the Tomcat's :file:`catalina.out` file.
 If you want to change this default behaviour you need to set some JVM global variables:
 
-* | ``webtop.log.appender``
-  | Specifies the pre-configured appender to use for writing log entries. Defaults to ``stdout``.
-  | - ``stdout``: Writes to Tomcat's standard output
-  | - ``file``: Writes to a straight file (any rolling policy support is demanded to OS)
-  | - ``rollingfile``: Writes to a file using a time-based rolling policy (file is rolled every day using a max history of 15 days and 150MB of size cap each file)
+* | ``webtop.log.target``
+  | Specifies the destination used for writing log entries. Defaults to ``console``.
+  | - ``console``: Writes log entries to Tomcat's standard output.
+  | - ``file``: Writes log entries to a file.
 
 * | ``webtop.log.dir``
   | Directory where to store log files. Defaults to ``/var/log/webtop``.
-  | This is only used if the appender targets a file output.
+  | This is only used if the target is ``file``.
 
 * | ``webtop.log.file.basename``
-  | The base filename of the log file (extension `.log` will be automatically appended).
+  | The base filename of the log file (extension `.log` will be automatically appended). Note that appenders may append some other text to it. (eg. webtop.2019-01-01)
   | Defaults to the webapp's full context name (including context version if present).
-  | This is only used if the appender targets a file output.
+  | This is only used if the target is ``file``.
+
+* | ``webtop.log.file.policy``
+  | The policy to apply when writing log files. Defaults to ``rolling``.
+  | - ``simple``: Writes to straight file (any rolling policy support is demanded to OS).
+  | - ``rolling``: Writes to a file using a rolling appender. Currently only time-based policy is supported: 15days of max history with 150MB of total size cap.
+  | This is only used if the target is ``file``.
 
 Due to some differences between components logging needs, the logging level cannot be set using a single variable like above.
 The :file:`logback.xml` file is refreshed every 30s, so you can control your desired logging level by manually updating the level value in correspondence of each `<logger>` elements.
