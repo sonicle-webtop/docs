@@ -4,6 +4,18 @@ Release notes
 
 WebTop release 5
 
+Release 5.7.6 - dec 11, 2019
+---------------------------------
+
+**Bug Fixes:**
+
+- [mail] Mail with html part containing Content-ID header is shown as with attachment [ #WTMAIL-324 ]
+- [core] Socket connections timeouts of JavaMail should not be infinite [ #WTCORE-104 ]
+- [cloud] The icon on the Remove button is not shown [ #WTCLOUD-27 ]
+- [cloud] Confirmation key does not appear complete on small screens [ #WTCLOUD-25 ]
+- [calendar] Invitation message not in english [ #WTCALENDAR-104 ]
+- [calendar] Recurring event generate interface error [ #WTCALENDAR-95 ]
+
 Release 5.7.5 - nov 18, 2019
 ---------------------------------
 
