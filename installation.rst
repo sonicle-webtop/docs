@@ -101,7 +101,7 @@ Logging
   Starting from WebTop Core 5.7.0 is no longer necessary (and discouraged) to edit the :file:`logback.xml` file in order to control log output location and type.
 
 By default WebTop will log every message in the webapps's standard output, the Tomcat's :file:`catalina.out` file.
-If you want to change this default behaviour you need to set some JVM global variables:
+If you want to change this default behaviour you need to set some JVM global variables (or set them into WebTop property file discussed above):
 
 * | ``webtop.log.target``
   | Specifies the destination used for writing log entries. Defaults to ``console``.
