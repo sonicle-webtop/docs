@@ -4,6 +4,13 @@ Release notes
 
 WebTop release 5
 
+Release 5.7.7 - dec 19, 2019
+---------------------------------
+
+**Bug Fixes:**
+
+- [calendar] All-day recurring event does not show the first event [ #WTCALENDAR-107 ]
+
 Release 5.7.6 - dec 11, 2019
 ---------------------------------
 
