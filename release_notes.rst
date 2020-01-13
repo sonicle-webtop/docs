@@ -4,6 +4,41 @@ Release notes
 
 WebTop release 5
 
+Release 5.8.0 - jan 13, 2020
+---------------------------------
+
+**New Features:**
+
+- [core] Make logback configuration more smart, enabling customers modifications [ #WTCORE-94 ]
+- [core] Complete review of Atmosphere component [ #WTCORE-96 ]
+- [mail] Detect missing attachment on send [ #WTMAIL-246 ]
+- [mail] Highlight searched keywords [ #WTMAIL-249 ]
+- [mail] Search new messages and Web notifications on Favorite folders	 [ #WTMAIL-252 ]
+- [mail] Customize description of incoming sharing root [ #WTMAIL-260 ]
+- [mail] Move the preview mover button to a dedicated menu [ #WTMAIL-280 ]
+- [mail] Add readStatus and flags support view options menu [ #WTMAIL-281 ]
+- [mail] Add option to use or not mailcard on a new email [ #WTMAIL-284 ]
+- [mail] Paste from contact list to email recipients [ #WTMAIL-285 ]
+- [mail] Menu for account root to manage sharing of all account [ #WTMAIL-288 ]
+- [mail] Add support to eml (message mime) attachment in forward [ #WTMAIL-323 ]
+- [contacts] Changing the owner does not show the category of a shared resource [ #WTCONTACTS-39 ]
+- [contacts] Add control on contacts that cannot be synchronized with DAV [ #WTCONTACTS-45 ]
+- [contacts] Add function and department into contacts search [ #WTCONTACTS-48 ]
+- [contacts] Highlight searched keyword [ #WTCONTACTS-49 ]
+- [contacts] Add address and notes into contacts search [ #WTCONTACTS-50 ]
+- [calendar] Changing the owner does not show the category of a shared resource [ #WTCALENDAR-72 ]
+- [calendar] Auto-update start/end in a better way [ #WTCALENDAR-75 ]
+- [calendar] Highlight searched keyword [ #WTCALENDAR-94 ]
+- [tasks] Changing the owner does not show the category of a shared resource [ #WTTASKS-11 ]
+- [tasks] New unified search tool [ #WTTASKS-12 ]
+- [tasks] Highlight searched keyword [ #WTTASKS-13 ]
+- [dav-server] Add support to specialUsers in log management [ #WTEASSRV-18 ]
+
+**Bug Fixes:**
+
+- [calendar] CalDav: Adding imported event from invitation should not send a new notification [ #WTCALENDAR-109 ]
+- [calendar] Private events are synchronized and shown when shared [ #WTCALENDAR-82 ]
+
 Release 5.7.6 - dec 11, 2019
 ---------------------------------
 
