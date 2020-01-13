@@ -39,6 +39,13 @@ Release 5.8.0 - jan 13, 2020
 - [calendar] CalDav: Adding imported event from invitation should not send a new notification [ #WTCALENDAR-109 ]
 - [calendar] Private events are synchronized and shown when shared [ #WTCALENDAR-82 ]
 
+Release 5.7.7 - dec 19, 2019
+---------------------------------
+
+**Bug Fixes:**
+
+- [calendar] All-day recurring event does not show the first event [ #WTCALENDAR-107 ]
+
 Release 5.7.6 - dec 11, 2019
 ---------------------------------
 
