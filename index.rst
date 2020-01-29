@@ -10,7 +10,7 @@ WebTop |version| Administrator Manual
 
     * `Web site <http://www.sonicle.com>`_
 
-    * `Community <https://redmine.sonicle.com/projects/webtop5>`_
+    * `Community <https://github.com/sonicle-webtop/>`_
 
 
 Release notes |version|
