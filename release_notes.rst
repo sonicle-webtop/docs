@@ -21,6 +21,7 @@ Release 5.8.0 - jan 13, 2020
 - [mail] Paste from contact list to email recipients [ #WTMAIL-285 ]
 - [mail] Menu for account root to manage sharing of all account [ #WTMAIL-288 ]
 - [mail] Add support to eml (message mime) attachment in forward [ #WTMAIL-323 ]
+- [contacts] Add the default grouping choice [ #WT-568 ]
 - [contacts] Changing the owner does not show the category of a shared resource [ #WTCONTACTS-39 ]
 - [contacts] Add control on contacts that cannot be synchronized with DAV [ #WTCONTACTS-45 ]
 - [contacts] Add function and department into contacts search [ #WTCONTACTS-48 ]
