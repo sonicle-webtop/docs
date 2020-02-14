@@ -4,6 +4,18 @@ Release notes
 
 WebTop release 5
 
+Release 5.8.1 - feb 14, 2020
+---------------------------------
+
+**Bug Fixes:**
+
+- [core] Prevent WebTop's pages indexing by crawlers [ #WT-745 ]
+- [core] Build process is broken [ #WT-748 ]
+- [mail] PEC special preview may fail on some pec message [ #WT-282 ]
+- [mail] Missing icon open mail window [ #WT-344 ]
+- [tasks] Internal href value is not filled with default value [ #WT-747 ]
+- [tasks] New task added on apple device is not synchronized with EAS [ #WT-746 ]
+
 Release 5.8.0 - jan 13, 2020
 ---------------------------------
 
