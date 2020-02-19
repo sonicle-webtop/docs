@@ -45,7 +45,7 @@ Release 5.8.0 - jan 13, 2020
 - [tasks] Changing the owner does not show the category of a shared resource [ #WTTASKS-11 ]
 - [tasks] New unified search tool [ #WTTASKS-12 ]
 - [tasks] Highlight searched keyword [ #WTTASKS-13 ]
-- [dav-server] Add support to specialUsers in log management [ #WTEASSRV-18 ]
+- [eas-server] Add support to specialUsers in log management [ #WTEASSRV-18 ]
 
 **Bug Fixes:**
 
