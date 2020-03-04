@@ -5,21 +5,21 @@ Release notes
 WebTop release 5
 
 Release 5.8.2 - mar 04, 2020
----------------------------------
+----------------------------
 
 **Bug Fixes:**
 
 - [mail] Mails with preformatted text do not print correctly [ #WT-757 ]
 - [mail] View of message with large images does not show scrollbar [ #WT-758 ]
 - [mail] Use mailcard button fails when signature disabled on reply [ #WT-759 ]
-- [mail] Cannot send email in old browsers on old systems [ #WT-768 #WT-766 ]
+- [mail] Cannot send email in old browsers on old systems [ #WT-768 ]
 - [mail] View-option for flagged emails should list messages in ASC order [ #WT-768 ]
 - [mail] Avoid sending receipts multiple times [ #WT-771 ]
 - [mail] Sorting by attachment doesn't work correctly [ #WT-772 ]
 - [calendar] Privacy status public/private in DAV sync is not supported [ #WT-770 ]
 
 Release 5.8.1 - feb 14, 2020
----------------------------------
+----------------------------
 
 **Bug Fixes:**
 
