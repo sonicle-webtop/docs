@@ -4,6 +4,16 @@ Release notes
 
 WebTop release 5
 
+Release 5.8.3 - mar 09, 2020
+----------------------------
+
+**Bug Fixes:**
+
+- [mail] Attach words detection may get false positive furing reply [ #WT-776 ]
+- [mail] Mail with attachments misplaced in multipart/alternative are not showed [ #WT-774 ]
+- [mail] Regression: failed to send mail with images resized in the mailcard [ #WT-773 ]
+- [mail] Sharing the root does not show previous shares [ #WT-760 ]
+
 Release 5.8.2 - mar 04, 2020
 ----------------------------
 
@@ -31,7 +41,7 @@ Release 5.8.1 - feb 14, 2020
 - [tasks] New task added on apple device is not synchronized with EAS [ #WT-746 ]
 
 Release 5.8.0 - jan 13, 2020
----------------------------------
+----------------------------
 
 **New Features:**
 
@@ -67,14 +77,14 @@ Release 5.8.0 - jan 13, 2020
 - [calendar] Private events are synchronized and shown when shared [ #WTCALENDAR-82 ]
 
 Release 5.7.7 - dec 19, 2019
----------------------------------
+----------------------------
 
 **Bug Fixes:**
 
 - [calendar] All-day recurring event does not show the first event [ #WTCALENDAR-107 ]
 
 Release 5.7.6 - dec 11, 2019
----------------------------------
+----------------------------
 
 **Bug Fixes:**
 
@@ -86,7 +96,7 @@ Release 5.7.6 - dec 11, 2019
 - [calendar] Recurring event generate interface error [ #WTCALENDAR-95 ]
 
 Release 5.7.5 - nov 18, 2019
----------------------------------
+----------------------------
 
 **Bug Fixes:**
 
@@ -103,7 +113,7 @@ Release 5.7.5 - nov 18, 2019
 - [calendar] Event cannot be synchronized in some iphone devices [ #WTCALENDAR-90 ]
 
 Release 5.7.4 - oct 30, 2019
----------------------------------
+----------------------------
 
 **Bug Fixes:**
 
@@ -128,7 +138,7 @@ Release 5.7.4 - oct 30, 2019
 - [dav-server] Contacts synchronization with Android removes the business role field [#WTDAVSRV-7]
 
 Release 5.7.3 - sept 10, 2019
----------------------------------
+-----------------------------
 
 **Bug Fixes:**
 
@@ -144,7 +154,7 @@ Release 5.7.3 - sept 10, 2019
 - [calendar] Events search result should not be filtered [ #WTCALENDAR-84 ]
 
 Release 5.7.2 - august 01, 2019
----------------------------------
+-------------------------------
 
 **Bug Fixes:**
 
@@ -175,7 +185,7 @@ Release 5.7.2 - august 01, 2019
 - [dav-server] Avoid NotAuthenticated critical exceptions in logs [ #WTDAVSRV-8 ]
 
 Release 5.7.1 - june 14, 2019
----------------------------------
+-----------------------------
 
 **Bug Fixes:**
 
@@ -188,7 +198,7 @@ Release 5.7.1 - june 14, 2019
 - [contacts] Changing the "Show names by" setting does not reload the page [ #WTCONTACTS-42 ]
 
 Release 5.7.0 - may 28, 2019
----------------------------------
+----------------------------
 
 **Bug Fixes:**
 
@@ -226,14 +236,14 @@ Release 5.7.0 - may 28, 2019
 - [eas-server] Create better RRULE for android devices [#WTEASSRV-16]
 
 Release 5.6.5 - may 27, 2019
----------------------------------
+----------------------------
 
 **Bug Fixes:**
 
 - [mail] Double clicking on an email, the seen flag is not changed with "Manual Seen" and "Seen on open" option enabled [#WTMAIL-245]
 
 Release 5.6.4 - april 19, 2019
----------------------------------
+------------------------------
 
 **Bug Fixes:**
 
@@ -261,21 +271,21 @@ Release 5.6.4 - april 19, 2019
 - [eas-server] All-day events created by the device after the upgrade are modified [#WTEASSRV-14]
 
 Release 5.6.3 - march 22, 2019
----------------------------------
+------------------------------
 
 **Bug Fixes:**
 
 - [core] Old launcher links setting format in globals may cause main interface problems [#WTCORE-79]
 
 Release 5.6.2 - march 13, 2019
----------------------------------
+------------------------------
 
 **Bug Fixes:**
 
 - [core] Missing db namespace in init-data-core.sql [#WTCORE-76]
 
 Release 5.6.1 - march 07, 2019
----------------------------------
+------------------------------
 
 **Bug Fixes:**
 
