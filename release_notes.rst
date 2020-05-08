@@ -4,7 +4,7 @@ Release notes
 
 WebTop release 5
 
-Release 5.8.4 - maj 08, 2020
+Release 5.8.4 - may 08, 2020
 ----------------------------
 
 **Bug Fixes:**
