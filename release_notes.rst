@@ -4,6 +4,30 @@ Release notes
 
 WebTop release 5
 
+Release 5.8.4 - maj 08, 2020
+----------------------------
+
+**Bug Fixes:**
+
+- [core] Push messages are lost when user session is not active [ #WT-777 ]
+- [mail] Message view with large images should try to layout without scrollbars [ #WT-794 ]
+- [mail] Invite email with description containing links (e.g. MS Teams) may not work [ #WT-784 ]
+- [mail] Error after logging in with favorite folders linked to shared accounts [ #WT-783 ]
+- [mail] Sorting by state loses sorting by date in some cases [ #WT-778 ]
+- [mail] Missing label in a field for advanced search [ #WT-744 ]
+- [mail] False deletion of a subfolder of a public folder [ #WT-382 ]
+- [mail] The ">" character in the Display name generates an error [ #WT-261 ]
+- [mail] With the plain text the focus always ends at the end of the text [ #WT-256 ]
+- [mail] The dots at the bottom of the list of recipients do not expand the list [ #WT-252 ]
+- [mail] Ldap/AD auth should allow for imap/smtp authentication without domain [ #WT-790 ]
+- [mail] Possible bug with imap backends not supporting combining diacritical marks in file names [ #WT-793 ]
+- [calendar] Accepted invitation does not create event on the default calendar [ #WT-767 ]
+- [calendar] Breaking the 1st instance of recurring event generates an UI error [ #WT-520 ]
+- [contacts] Missing DisplayName in contacts import [ #WT-792 ]
+- [contacts] The value entered in the company field is not saved [ #WT-789 ]
+- [tasks] Missing icon in home page tasks summary [ #WT-782 ]
+- [cloud] Single file download via link creates an incorrect file [ #WT-764 ]
+
 Release 5.8.3 - mar 09, 2020
 ----------------------------
 
