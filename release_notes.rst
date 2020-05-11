@@ -9,7 +9,6 @@ Release 5.8.4 - may 08, 2020
 
 **Bug Fixes:**
 
-- [core] Push messages are lost when user session is not active [ #WT-777 ]
 - [mail] Message view with large images should try to layout without scrollbars [ #WT-794 ]
 - [mail] Invite email with description containing links (e.g. MS Teams) may not work [ #WT-784 ]
 - [mail] Error after logging in with favorite folders linked to shared accounts [ #WT-783 ]
@@ -33,7 +32,7 @@ Release 5.8.3 - mar 09, 2020
 
 **Bug Fixes:**
 
-- [mail] Attach words detection may get false positive furing reply [ #WT-776 ]
+- [mail] Attach words detection may get false positive during reply [ #WT-776 ]
 - [mail] Mail with attachments misplaced in multipart/alternative are not showed [ #WT-774 ]
 - [mail] Regression: failed to send mail with images resized in the mailcard [ #WT-773 ]
 - [mail] Sharing the root does not show previous shares [ #WT-760 ]
