@@ -4,6 +4,18 @@ Release notes
 
 WebTop release 5
 
+Release 5.8.5 - may 27, 2020
+----------------------------
+
+**New Features:**
+
+- [cloud] Generate, print or save the QR Code to share a file in few clicks [ #WT-799 ]
+- [cloud] When uploading same file, manage overwrite or rename [ #WT-803 ]
+
+**Bug Fixes:**
+
+- [core] Unable to start subsequent parallel deployed webapp for clash of new joda time JVM system properties [ #WT-800 ]
+
 Release 5.8.4 - may 08, 2020
 ----------------------------
 
