@@ -44,6 +44,10 @@ Settings
   | Enable or disable the feature to edit subject of received emails. Defaults to `false`.
   | @since: 5.5.1
 
+* | ``auth.user.strip.domain`` [ true | false ]
+  | Do not append domain on mail user, even on schemes like ldap and AD. Defaults to `false`.
+  | @since: 5.7.8
+
 .. _mail-sieve-settings-section:
 
 Sieve settings
