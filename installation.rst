@@ -32,7 +32,7 @@ The required JRE version for a given WebTop release is:
   Java is missing support to UTF-7 so if you want to add it, you need to plug a third-party encoding implementation on the JRE:
 
   1. Download the JCharset jar from `https://www.freeutils.net/source/jcharset/ <https://www.freeutils.net/source/jcharset/>`_.
-  2. Copy the file :file:`jcharset-2.0.jar` to your :file:`$JAVA_HOME/jre/lib/ext` directory. The JAR file has to be in exactly this directory for the class loader to pick it up.
+  2. Copy the file ``jcharset-2.0.jar`` to your ``$JAVA_HOME/jre/lib/ext`` directory. The JAR file has to be in exactly this directory for the class loader to pick it up.
   3. Restart Tomcat if it is running.
 
 
@@ -44,6 +44,35 @@ WebTop runs greatly on Tomcat 8.5 and 8.0, but we advice to use the most recent 
 .. warning::
   WebTop may run on the older version 7 but is not reccomended due to early WebSocket support (with many reported bugs) and default use of BIO connectors.
 
+Tomcat supports ``Parallel deployment`` that allows to deploy multiple versions of a Web application with the same context path at the same time. You can have more info `here <https://tomcat.apache.org/tomcat-8.5-doc/config/context.html#Parallel_deployment>`_.
+
+If you are planning to use this useful feature, each WebTop application instance must be made aware of the existence of the others in order to properly handle all the background tasks that compete for the data.
+Each instance will periodically monitor Tomcat in order to discover new instances and when found, it put itself in passive mode, gracefully shutting down every task. The newer instance will be the only one instance in active mode.
+
+In order to implement this, you must enable access to Tomcat's management by defining a dedicated user access in ``tomcat-users.xml`` file:
+
+::
+
+  <user username="${MANAGER_USERNAME}" password="${MANAGER_PASSWORD}" roles="manager-script"/>
+
+.. note::
+  Where ``${MANAGER_USERNAME}`` is the choosen username and ``${MANAGER_PASSWORD}`` is the choosen password.
+
+The next and final step is to instruct the application about this access. This can be done in two ways:
+
+1. Use this SQL insert to apply configuration directly in Database:
+   ::
+
+     INSERT INTO "core"."settings" ("service_id", "key", "value") VALUES ('com.sonicle.webtop.core', 'tomcat.manager.uri', 'http://${MANAGER_USERNAME}:${MANAGER_PASSWORD}@localhost:${TOMCAT_PORT}/manager/text');
+
+2. Use these properties within ``webtop.properties`` configuration file (@since: wt.5.9.0):
+   ::
+
+     webtop.tomcat.manager.uri=http://${MANAGER_USERNAME}:${MANAGER_PASSWORD}@localhost:${TOMCAT_PORT}/manager/text
+
+.. note::
+  Where ``${TOMCAT_PORT}`` is the configured Tomcat's port and ``${MANAGER_USERNAME}``, ``${MANAGER_PASSWORD}`` are the values choosen above.
+
 
 Configuration
 -------------
@@ -53,13 +82,13 @@ Configuration
 Properties
 ^^^^^^^^^^
 
-WebTop supports some configuration and debugging settings that can be enabled through Java properties.
+WebTop supports some configuration and debugging settings that can be enabled through Java properties to control application behaviour.
 Properties can be specified in two ways:
 
-1. System property: these properties are usually set by passing the ``-D`` flag to the Java virtual machine.
-2. WebTop property: these properties are defined in a specific property file that is loaded during startup.
+1. Startup/System property: these properties are usually set by passing the ``-D`` flag to the Java virtual machine. This is the classic operative mode and so no other configuration is needed.
+2. WebTop property: these properties are defined in a specific property file that is loaded during startup. This allow to not fill up the Java command-line, making configuration more clear.
 
-In order to enable the WebTop property way, the system property ``webtop.etc.dir`` must be specified first, this will instruct the application where to find customized configuration files.
+In order to enable this second operative mode, the startup/system property ``webtop.etc.dir`` must be specified firstly, this will instruct the application where to find customized configuration files.
 Then the property file will be looked-up using the following logic:
 
 1. Startup process tries to find a file called ``webtop.properties`` in ``${PROP_ETC_DIR}`` directory.
@@ -85,7 +114,7 @@ Database configuration relies on a specific configuration file that will be look
 2. If no such file is found, it checks the file ``data-sources.xml`` in ``META-INF`` folder inside the application context. Note that this file is always available but it contains a default configuration.
 
 .. note::
-  ``${PROP_ETC_DIR}`` is the value of ``webtop.etc.dir`` system property and ``${WEBAPP_NAME}`` is the web-application context-name (without any version info).
+  Where ``${PROP_ETC_DIR}`` is the value of ``webtop.etc.dir`` system property and ``${WEBAPP_NAME}`` is the web-application context-name (without any version info).
 
 
 .. warning::
