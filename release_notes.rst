@@ -1,4 +1,4 @@
-=============
+mar=============
 Release notes
 =============
 
@@ -191,7 +191,7 @@ Release 5.7.4 - oct 30, 2019
 - [calendar] Event notifications on internet calendars are replicated at each synchronization [ #WTCALENDAR-80 ]
 - [dav-server] Contacts synchronization with Android removes the business role field [#WTDAVSRV-7]
 
-Release 5.7.3 - sept 10, 2019
+Release 5.7.3 - sep 10, 2019
 -----------------------------
 
 **Bug Fixes:**
@@ -207,7 +207,7 @@ Release 5.7.3 - sept 10, 2019
 - [contacts] ContactList: linked contact with missing firstname/lastname generates error [ #WTCONTACTS-44 ]
 - [calendar] Events search result should not be filtered [ #WTCALENDAR-84 ]
 
-Release 5.7.2 - august 01, 2019
+Release 5.7.2 - aug 01, 2019
 -------------------------------
 
 **Bug Fixes:**
@@ -238,7 +238,7 @@ Release 5.7.2 - august 01, 2019
 - [eas-server] Prevents the device from performing a full resync of data after transitioning to webtop-eas-server [ #WTEASSRV-17 ]
 - [dav-server] Avoid NotAuthenticated critical exceptions in logs [ #WTDAVSRV-8 ]
 
-Release 5.7.1 - june 14, 2019
+Release 5.7.1 - jun 14, 2019
 -----------------------------
 
 **Bug Fixes:**
@@ -296,7 +296,7 @@ Release 5.6.5 - may 27, 2019
 
 - [mail] Double clicking on an email, the seen flag is not changed with "Manual Seen" and "Seen on open" option enabled [#WTMAIL-245]
 
-Release 5.6.4 - april 19, 2019
+Release 5.6.4 - apr 19, 2019
 ------------------------------
 
 **Bug Fixes:**
@@ -324,21 +324,21 @@ Release 5.6.4 - april 19, 2019
 - [eas-server] config.js not always found correctly [#WTEASSRV-13]
 - [eas-server] All-day events created by the device after the upgrade are modified [#WTEASSRV-14]
 
-Release 5.6.3 - march 22, 2019
+Release 5.6.3 - mar 22, 2019
 ------------------------------
 
 **Bug Fixes:**
 
 - [core] Old launcher links setting format in globals may cause main interface problems [#WTCORE-79]
 
-Release 5.6.2 - march 13, 2019
+Release 5.6.2 - mar 13, 2019
 ------------------------------
 
 **Bug Fixes:**
 
 - [core] Missing db namespace in init-data-core.sql [#WTCORE-76]
 
-Release 5.6.1 - march 07, 2019
+Release 5.6.1 - mar 07, 2019
 ------------------------------
 
 **Bug Fixes:**
@@ -347,7 +347,7 @@ Release 5.6.1 - march 07, 2019
 - [mail] Forwarding mails with multiple bodies (e.g. Italian PEC) misses parts [#WTMAIL-228]
 - [mail] Using Firefox and plain text the interface crashes [#WTMAIL-221]
 
-Release 5.6.0 - february 28, 2019
+Release 5.6.0 - feb 28, 2019
 ---------------------------------
 
 **Bug Fixes:**
@@ -371,21 +371,21 @@ Release 5.6.0 - february 28, 2019
 - [eas-server] Brand new ActiveSync Server, full rewrite of the old webtop-zpush [#WTEASSRV-7]
 - [dav-server] Align config.js and API clients as the EAS server (see dav-server docs) [#WTDAVSRV-5]
 
-Release 5.5.3 - february 19, 2019
+Release 5.5.3 - feb 19, 2019
 ---------------------------------
 
 **Bug Fixes:**
 
 - [mail] From the admin panel the domain mailcard is not editable [#WTMAIL-222]
 
-Release 5.5.2 - february 8, 2019
+Release 5.5.2 - feb 8, 2019
 ---------------------------------
 
 **Bug Fixes:**
 
 - [mail] Sending email sometimes shows error on "closed folder" [#673]
 
-Release 5.5.1 - january 30, 2019
+Release 5.5.1 - jan 30, 2019
 ---------------------------------
 
 **New Features:**
@@ -421,7 +421,7 @@ Release 5.5.1 - january 30, 2019
 - [tasks] It is not possible to copy tasks from one category to another [#623]
 - [cloud] Creating folders with the character : in the name you no longer access your personal cloud [#479]
 
-Release 5.5.0 - november 30, 2018
+Release 5.5.0 - nov 30, 2018
 ---------------------------------
 
 **New Features:**
@@ -444,14 +444,14 @@ Release 5.5.0 - november 30, 2018
 - [mail] It is not possible to rename subfolders in case of alternative root [#634]
 - [mail] Opening more than one new message and sending may delete only one of the automatic drafts [#637]
 
-Release 5.4.5 - november 21, 2018
+Release 5.4.5 - nov 21, 2018
 ---------------------------------
 
 **Bug Fixes:**
 
 - [calendar] Through DAV is not possible to make invitations on events [#627]
 
-Release 5.4.4 - november 20, 2018
+Release 5.4.4 - nov 20, 2018
 ---------------------------------
 
 **Bug Fixes:**
@@ -464,7 +464,7 @@ Release 5.4.4 - november 20, 2018
 - [mail] Inline cids generated as filenames may duplicate during fwds/replies [ #625 ]
 - [mail] Replies do not retain possible original html styles and or inner bodies [ #626 ]
 
-Release 5.4.3 - november 2, 2018
+Release 5.4.3 - nov 2, 2018
 ---------------------------------
 
 **Bug Fixes:**
@@ -472,7 +472,7 @@ Release 5.4.3 - november 2, 2018
 - [mail] Insert file image produces broken image [ #612 ]
 - [mail] Advanced search problem with columns after subject [ #607 ]
 
-Release 5.4.2 - october 24, 2018
+Release 5.4.2 - oct 24, 2018
 ---------------------------------
 
 **New Features:**
@@ -484,7 +484,7 @@ Release 5.4.2 - october 24, 2018
 - [contacts] Contacts list virtual address is not expanded anymore [ #602 ]
 - [contacts] The search result is not updated by deleting the key [ #591 ]
 
-Release 5.4.1 - october 12, 2018
+Release 5.4.1 - oct 12, 2018
 ---------------------------------
 
 **New Features:**
@@ -500,7 +500,7 @@ Release 5.4.1 - october 12, 2018
 - [mail] No message list when quota command is not supported by imap server [ #587 ]
 - [calendar] DB integrity error when inserting an event from CalDAV server [ #586 ]
 
-Release 5.4.0 - october 2, 2018
+Release 5.4.0 - oct 2, 2018
 -------------------------------
 
 **New Features:**
@@ -541,7 +541,7 @@ Release 5.4.0 - october 2, 2018
 - [mail] Emoticons are not interpreted in the mail received from webtop [ #499 ]
 - [calendar] The presence of overlapping events in a day imposes a width on other events [ #469 ]
 
-Release 5.3.3 - september 13, 2018
+Release 5.3.3 - sep 13, 2018
 ----------------------------------
 
 **New Features:**
@@ -554,7 +554,7 @@ Release 5.3.3 - september 13, 2018
 - [mail] Advanced search anywhere does not provide correct results [ #561 ]
 - [core] TinyMCE editor applies blob conversion on inline images [ #560 ]
 
-Release 5.3.2 - september 7, 2018
+Release 5.3.2 - sep 7, 2018
 ---------------------------------
 
 **Bug Fixes:**
@@ -562,7 +562,7 @@ Release 5.3.2 - september 7, 2018
 - [mail] Firefox does not show the grid after login, with Crisp theme [ #549 ]
 - [mail] Sent receipts are always saved in the Sent folder of the main user, also inside shared identities folders [ #559 ]
 
-Release 5.3.1 - september 5, 2018
+Release 5.3.1 - sep 5, 2018
 ---------------------------------
 
 **Bug Fixes:**
@@ -570,7 +570,7 @@ Release 5.3.1 - september 5, 2018
 - [mail] Some text/plain mails with non utf-8 charset may not display correctly [ #554 ]
 - [mail] Sending or discarding a new message may sometime prompt errors [ #555 ]
 
-Release 5.3.0 - july 27, 2018
+Release 5.3.0 - jul 27, 2018
 -----------------------------
 
 **New Features:**
@@ -607,7 +607,7 @@ Release 5.3.0 - july 27, 2018
 - [cloud] Webdav folders are duplicated if name contains encoded whitespaces [ #520 ]
 
 
-Release 5.2.3 - july 11, 2018
+Release 5.2.3 - jul 11, 2018
 -----------------------------
 
 **Bug Fixes:**
@@ -620,7 +620,7 @@ Release 5.2.3 - july 11, 2018
 - [mail] Possible deadlocks when having many many folders, caused by JavaMail standard library [ #518 ]
 
 
-Release 5.2.2 - june 11, 2018
+Release 5.2.2 - jun 11, 2018
 -----------------------------
 
 **Bug Fixes:**
@@ -678,7 +678,7 @@ Release 5.1.9 - may 04, 2018
 - Moving an event breaks reminder notification [ #465 ]
 
 
-Release 5.1.8 - april 19, 2018
+Release 5.1.8 - apr 19, 2018
 ------------------------------
 
 **New Features:**
