@@ -4,6 +4,25 @@ Release notes
 
 WebTop release 5
 
+Release 5.9.0 - jul 30, 2020
+----------------------------
+
+**New Features:**
+
+- [core] Display confirmation message on close (browse/tab) [ #WT-23 ]
+- [core] Implement tags [ #WT-693 ]
+- [core] Implement custom fields [ #WT-31 ]
+- [core] Calendar: provide a better layout logic [ #WT-680 ]
+- [core] All notified reminders should all be selected [ #WT-476 ]
+- [core] Simplify management deprecating core-db project [ #WT-46 ]
+- [contacts] Move grouping "Contact list" in the multiple search window [ #WT-801 ]
+- [mail] Reactivate external imap accounts [ #WT-698 ]
+- [mail] Special folders unseen count management [ #WT-214 ]
+
+**Bug Fixes:**
+
+- [core] Push messages are lost when user session is not active [ #WT-777 ]
+
 Release 5.8.5 - may 27, 2020
 ----------------------------
 
