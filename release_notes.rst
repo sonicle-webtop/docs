@@ -4,7 +4,7 @@ Release notes
 
 WebTop release 5
 
-Release 5.9.1 - aug 06, 2020
+Release 5.9.1 - aug 10, 2020
 ----------------------------
 
 **Bug Fixes:**
@@ -13,6 +13,7 @@ Release 5.9.1 - aug 06, 2020
 - [core] Custom login image is no longer displayed [ #WT-824 ]
 - [core] Unable to delete private tag [ #WT-825 ]
 - [mail] Advanced options sometimes breaks UI [ #WT-826 ]
+- [mail] Special folders unseen count not always honouring unchecked "search new messages" [ #WT-828 ]
 
 Release 5.9.0 - jul 30, 2020
 ----------------------------
