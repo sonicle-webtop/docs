@@ -4,6 +4,14 @@ Release notes
 
 WebTop release 5
 
+Release 5.9.2 - sep XX, 2020
+----------------------------
+
+**Bug Fixes:**
+
+- [calendar] Deleting recurrence events cause errors [ #WT-806 ]
+- [mail] Unencoded labels in the audit window [ #WT-830 ]
+
 Release 5.9.1 - aug 10, 2020
 ----------------------------
 
