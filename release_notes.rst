@@ -4,13 +4,19 @@ Release notes
 
 WebTop release 5
 
-Release 5.9.2 - sep XX, 2020
+Release 5.9.2 - sep 01, 2020
 ----------------------------
 
 **Bug Fixes:**
 
-- [calendar] Deleting recurrence events cause errors [ #WT-806 ]
+- [mail] Flags label are not valued in advanced search [ #WT-805 ]
+- [mail] Downloading attachments in zip format does not open on OSX [ #WT-811 ]
+- [mail] The print preview of an email does not open [ #WT-814 ]
+- [mail] False positive word detection attached in text-only mode [ #WT-815 ]
+- [mail] Advanced search with multiple condition returns an unexpected result [ #WT-821 ]
 - [mail] Unencoded labels in the audit window [ #WT-830 ]
+- [calendar] Click + CTRL on event hides changes to the text [ #WT-762 ]
+- [calendar] Deleting recurrence events cause errors [ #WT-806 ]
 
 Release 5.9.1 - aug 10, 2020
 ----------------------------
@@ -59,6 +65,7 @@ Release 5.8.4 - may 08, 2020
 
 **Bug Fixes:**
 
+- [mail] Receipt email user language not honoured [ #WT-407 ]
 - [mail] Message view with large images should try to layout without scrollbars [ #WT-794 ]
 - [mail] Invite email with description containing links (e.g. MS Teams) may not work [ #WT-784 ]
 - [mail] Error after logging in with favorite folders linked to shared accounts [ #WT-783 ]
