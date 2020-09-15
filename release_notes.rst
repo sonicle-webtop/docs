@@ -4,6 +4,20 @@ Release notes
 
 WebTop release 5
 
+Release 5.9.3 - sep XX, 2020
+----------------------------
+
+**Bug Fixes:**
+
+- [core] Custom login image broken if FQDN for auth differs from the one used to reach webapp [ #WT-832 ]
+- [core] Massive notification of autosave data [ #WT-842 ]
+- [mail] After login some tree folders cannot be opened [ #WT-374 ]
+- [mail] Do not save contact lists in automatic recipients [ #WT-290 ]
+- [mail] Special folders should show unseen states [ #WT-840 ]
+- [mail] Sending mail to a list does not work if the name contains the character ":" [ #WT-838 ]
+- [contacts] Never allow use of logically deleted lists [ #WT-581 ]
+- [calendar] Invitation mail is not sent to any invitee [ #WT-835 ]
+
 Release 5.9.2 - sep 01, 2020
 ----------------------------
 
