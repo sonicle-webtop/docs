@@ -4,6 +4,15 @@ Release notes
 
 WebTop release 5
 
+Release 5.X.X - xxx XX, 2020
+----------------------------
+
+**Bug Fixes:**
+
+- [core] Blank page shown on public areas [ #WT-846 ]
+- [core] Missing unicode equivalents in .properties i18n files [ #WT-843 ]
+- [mail] Missing support to sieve impersonate (no vmail) [ #WT-845 ]
+
 Release 5.9.3 - sep 15, 2020
 ----------------------------
 
