@@ -48,6 +48,11 @@ Settings
   | Do not append domain on mail user, even on schemes like ldap and AD. Defaults to `false`.
   | @since: 5.7.8
 
+* | ``inlineable.mime.types`` [ mime-type, mime-type, ... ]
+  | Comma separated list of mime-types for parts not to be considered as attachments when stated as inline.
+  | If empty or absent defaults to "image/gif, image/jpeg, image/png, text/plain, text/html"
+  | @since: 5.8.11
+
 .. _mail-sieve-settings-section:
 
 Sieve settings
