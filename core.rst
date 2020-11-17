@@ -78,8 +78,8 @@ System Settings
 
 * | ``ajax.specialtimeout`` [ milliseconds ]
   | Allow override of default timeout on proxies/requests that may take longer than 30 seconds.
-  | Currently used only by mail message grid to allow longer search queries.
-  | @since: 5.3.3
+  | @since: 5.3.3 : used by mail message grid to allow longer search queries.
+  | @since: 5.8.12 : used by mail send ajax call to support slow responses from SMTP servers.
 
 .. _login-settings-section:
 
