@@ -82,6 +82,15 @@ System Settings
   | Since mail version 5.8.12 used by mail send ajax call to support slow responses from SMTP servers.
   | @since: 5.3.3
 
+* | ``ajax.longtimeout`` [ milliseconds ]
+  | Allow override of default timeout on proxies/requests that possibly take longer than 5 minutes.
+  | Used in these specific situatons:
+  | - bulk copy/move messages operations
+  | - move folder, trash folder, delete folder
+  | - empty trash
+  | - share mail account folders
+  | @since: 5.8.12
+
 .. _login-settings-section:
 
 Login Settings
