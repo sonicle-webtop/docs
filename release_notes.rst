@@ -4,6 +4,28 @@ Release notes
 
 WebTop release 5
 
+Release 5.9.5 - nov 19, 2020
+----------------------------
+
+**Bug Fixes:**
+
+- [cloud] Error accessing Nextcloud resources [ #WT-629 ]
+- [cloud] cloud service not initialized for usernames that contain the _ character [ #WT-852 ]
+- [mail] Mails containing tables with height 100% may not be correctly displayed [ #WT-857 ]
+- [mail] Compose: generic error on UI after some time [ #WT-859 ]
+- [mail] Sending scheduled mail from shared accounts does not work [ #WT-860 ]
+- [mail] Mails with inline text or html content shows attachment icon [ #WT-861 ]
+- [mail] Eml attachements may cause broken headers on rspamd [ #WT-864 ]
+- [mail] Forwarded message should containt reference headers as for replies [ #WT-865 ]
+- [mail] The text/plain part of an html email may have missing content [ #WT-866 ]
+- [mail] Message send should support ajax special timeout [ #WT-867 ]
+- [mail] Long ajax timeout for possibly long operations [ #WT-869 ]
+- [calendar] Adding a calendar on a shared resource is not shown after save [ #WT-870 ]
+- [contacts] Adding a category on a shared resource is not shown after save [ #WT-871 ]
+- [tasks] Adding a category on a shared resource is not shown after save [ #WT-872 ]
+- [mail] Shift+delete should delete an email permanently [ #WT-873 ]
+- [mail] Dragging from shared special folders to main account special folders keeps mails in shared account [ #WT-875 ]
+
 Release 5.9.4 - oct 08, 2020
 ----------------------------
 
