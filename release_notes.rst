@@ -12,7 +12,10 @@ Release X.XX.X - dec XX, 2020
 - [core] Bump commons-configuration dependency [ #WT-849 ]
 - [core] Complete logging management allowing overrides [ #WT-847 ]
 - [core] New HTML Editor [ #WT-724 ]
+- [core] Add setting to disable the automatic search for internal users mail [ #WT-884 ]
+- [mail] Don't show empty rectangles without mailcards [ #WT-785 ]
 - [mail] Menu are not responsive [ #WT-820 ]
+- [mail] Add user option to always show time on email grid as well [ #WT-877 ]
 - [cloud] QR code generation on a link folder is not supported [ #WT-878 ]
 
 Release 5.9.5 - nov 19, 2020

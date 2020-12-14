@@ -15,7 +15,11 @@ Settings (defaults)
 -------------------
 
 * | ``default.ingrid.preview`` [ true | false ]
-  | Disable grid row preview for everyone, default value is false.
+  | Activates row-preview in messages list. Internally defaults to ``false``.
+
+* | ``default.grid.message.time.showalways`` [ true | false ]
+  | Always display time value in messages list. Internally defaults to ``false``.
+  | @since: 5.10.0
 
 * | ``default.upcoming.events.show`` [ true | false ]
   | Activate a view showing all upcoming events by default.

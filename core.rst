@@ -45,8 +45,12 @@ System Settings
 * | ``whatsnew.enabled`` [ true | false ]
   | Specifies if What's New visualization to users is enabled.
 
+* | ``recipient.provider.webtop.enabled`` [ true | false ]
+  | Specifies whether to include webtop-internal recipients in default (no sources specified) recipients lookups. Defaults to ``true``.
+  | @since: 5.10.0
+
 * | ``recipient.provider.auto.enabled`` [ true | false ]
-  | Specifies whether to include auto-recipients in recipients lookups. Defaults to ``true``.
+  | Specifies whether to include auto-recipients in default (no sources specified) recipients lookups. Defaults to ``true``.
   | @since: 5.5.1
 
 * | ``launcher.links`` [ json-array-of-link-objects ]
