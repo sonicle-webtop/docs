@@ -4,7 +4,7 @@ Release notes
 
 WebTop release 5
 
-Release X.XX.X - dec XX, 2020
+Release 5.10.0 - dec 15, 2020
 -----------------------------
 
 **New Features:**
