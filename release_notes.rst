@@ -4,6 +4,24 @@ Release notes
 
 WebTop release 5
 
+Release 5.10.1 - jan XX, 2021
+-----------------------------
+
+**Bug Fixes:**
+
+- [core] Page is not reloaded after personal info changes [ #WT-834 ]
+- [core] Access via OTP returns blank page under some conditions [ #WT-796 ]
+- [core] Zip attachment causes "BAD HEADER SECTION" [ #WT-886 ]
+- [calendar] Missing some recurring instances in weekly view [ #WT-876 ]
+- [calendar] Missing background colors on events cell [ #WT-844 ]
+- [calendar] Shared calendars are not sorted by calendar name [ #WT-890 ]
+- [contacts] Shared categories are not sorted by name [ #WT-891 ]
+- [mail] Recipients with displayname containing apices in the middle are wrongly broken generating an additional wrong recipient [ #WT-902 ]
+- [mail] In the event of problem saving on shared accounts, the mail is sent but is not saved anywhere [ #WT-900 ]
+- [mail] An empty mailcard is not switched by changing identity [ #WT-899 ]
+- [mail] Missing label on Save All button [ #WT-897 ]
+- [mail] Incorrect labels management on tag menus [ #WT-896 ]
+
 Release 5.10.0 - dec 15, 2020
 -----------------------------
 
@@ -99,6 +117,7 @@ Release 5.9.0 - jul 30, 2020
 - [core] Implement custom fields [ #WT-31 ]
 - [core] Calendar: provide a better layout logic [ #WT-680 ]
 - [core] All notified reminders should all be selected [ #WT-476 ]
+- [core] Provide wider color palette [ #WT-780 ]
 - [core] Simplify management deprecating core-db project [ #WT-46 ]
 - [contacts] Move grouping "Contact list" in the multiple search window [ #WT-801 ]
 - [mail] Reactivate external imap accounts [ #WT-698 ]
