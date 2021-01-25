@@ -4,7 +4,7 @@ Release notes
 
 WebTop release 5
 
-Release 5.10.1 - jan XX, 2021
+Release 5.10.1 - jan 25, 2021
 -----------------------------
 
 **Bug Fixes:**
@@ -16,6 +16,8 @@ Release 5.10.1 - jan XX, 2021
 - [calendar] Missing background colors on events cell [ #WT-844 ]
 - [calendar] Shared calendars are not sorted by calendar name [ #WT-890 ]
 - [contacts] Shared categories are not sorted by name [ #WT-891 ]
+- [mail] It is not possible to save identity mailcards via admin panel [ #WT-903 ]
+- [mail] Searching for recipients does not in clude cc or ccn [ #WT-894 ]
 - [mail] Recipients with displayname containing apices in the middle are wrongly broken generating an additional wrong recipient [ #WT-902 ]
 - [mail] In the event of problem saving on shared accounts, the mail is sent but is not saved anywhere [ #WT-900 ]
 - [mail] An empty mailcard is not switched by changing identity [ #WT-899 ]
