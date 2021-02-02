@@ -4,6 +4,19 @@ Release notes
 
 WebTop release 5
 
+Release 5.10.2 - feb 02, 2021
+-----------------------------
+
+**Bug Fixes:**
+
+- [mail] Missing default folder in settings causes problems to mail interface [ #WT-907 ]
+- [mail] Mailcards linked to personal identities do not show the values of the variables [ #WT-904 ]
+- [mail] Forwarding text only message may contain missing text parts [ #WT-901 ]
+- [mail] PEC message not set as seen when opened [ #WT-885 ]
+- [mail] Shrinking width of browser horizontally may let grid disappear giving all space to message view [ #WT-863 ]
+- [mail] Character encoding of text parts is not always correct [ #WT-841 ]
+- [cloud] Unable to download files from cloud public folder link [ #WT-905 ]
+
 Release 5.10.1 - jan 25, 2021
 -----------------------------
 
