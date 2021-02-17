@@ -4,6 +4,17 @@ Release notes
 
 WebTop release 5
 
+Release 5.10.3 - xxx xx, 2021
+-----------------------------
+
+**Bug Fixes:**
+
+- [mail] Workaround bugged parts with missing encoding also during forward or reply [ #WT-911 ]
+- [mail] Forwarding an email with attached eml multiplies attached files [ #WT-915 ]
+- [mail] Sent message's mailcard does not reflect choosen identity [ #WT-916 ]
+- [mail] Links on email views always have same target tab/window [ #WT-917 ]
+- [mail] Opening and saving draft from live autosaved copy may cause a JavaMail bug to delete wrong draft [ #WT-922 ]
+
 Release 5.10.2 - feb 02, 2021
 -----------------------------
 
