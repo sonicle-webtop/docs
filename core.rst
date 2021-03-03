@@ -172,6 +172,7 @@ Settings (defaults)
   | Date format pattern (java style) for short dates. Internally defaults to ``dd/MM/yyyy``.
   | ``dd/MM/yyyy``: dd/MM/yyyy
   | ``dd-MM-yyyy``: dd-MM-yyyy
+  | ``dd.MM.yyyy``: dd.MM.yyyy
   | ``yyyy-MM-dd``: yyyy-MM-dd
   | ``MM/dd/yyyy``: MM/dd/yyyy
   | ``MM-dd-yyyy``: MM-dd-yyyy
@@ -206,9 +207,14 @@ HTML Editor Settings
 --------------------
 
 * | ``editor.fonts`` [ comma separated font names list ]
-  | Customize list of fonts available to the HTML editor.
-  | Default list: Arial, Comic Sans MS, Courier New, Helvetica, Tahoma, Times New Roman, Verdana
+  | Customize list of fonts available to the HTML editor. (do not use whitespaces after colon)
+  | Default list: Arial, Comic Sans MS, Courier New, Georgia, Helvetica, Tahoma, Times New Roman, Verdana, Webdings, Wingdings
   | @since: 5.5.0
+
+* | ``editor.fontsizes`` [ comma separated font sizes list ]
+  | Customize list of font-sizes available to the HTML editor. (do not use whitespaces after colon)
+  | Default list: 8px, 10px, 12px, 14px, 16px, 18px, 24px, 36px, 48px
+  | @since: 5.9.0
 
 .. _smtp-settings-section:
 
@@ -276,10 +282,29 @@ WebRTC Settings
 
   | @since: 5.2.4
 
+.. _security-settings-section:
+
+Security Settings
+-----------------
+
+* | ``security.knowndeviceverification.enabled`` [ true | false ]
+  | Enable or disable remote-device reporting: an email notice is sent to a set of recipients if, after a successful login, the device is not already marked as known-device. Defaults to true.
+  | @since: 5.10.0
+
+* | ``security.knowndeviceverification.recipients`` [ comma separated recipient list ]
+  | List of email addresses to use as CCN recipients that will receive a copy of unknown-device notice, mainly addressed to the involved user.
+  | @since: 5.10.0
+
+* | ``security.knowndeviceverification.netwhitelist`` [ comma separated network list ]
+  | List of network addresses that will be considered trusted. IP addresses belonging to this networks, will be treated as safe clients and so no report will be sent. Networks are specified in CIDR format.
+  | Example:
+  | ``192.168.0.0/24`` or ``192.168.0.0/24,192.168.1.1/32``
+  | @since: 5.10.0
+
 .. _OTP-settings-section:
 
 OTP Settings
----------------
+------------
 
 * | ``otp.enabled`` [ true | false ]
   | Enable or disable One Time Password (Two Factors Authentication) globally.
@@ -357,6 +382,19 @@ SMS Settings
   | Sepecifies the default sender when sending SMS: number (max 16 chars) or name (max 11 chars).
   | The user has its own setting panel to override this sender with his own, in General / SMS.
   | @since: 5.3.1
+
+.. _GeoIP-settings-section:
+
+IP Geolocation Settings
+--------------
+
+* | ``geolocation.provider`` [ ipstack ]
+  | IP geolocation provider name. Currently only Ipstack is supported.
+  | @since: 5.10.0
+
+* | ``geolocation.ipstack.apikey`` [ ipstack-api-key ]
+  | Ipstack service API key. Create an account at https://ipstack.com/.
+  | @since: 5.10.0
 
 .. _core-docserver-settings-section:
 
