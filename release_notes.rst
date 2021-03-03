@@ -4,6 +4,17 @@ Release notes
 
 WebTop release 5
 
+Release 5.10.4 - feb 25, 2021
+-----------------------------
+
+**Bug Fixes:**
+
+- [mail] Mail badly packaged by an old client may not show text during forward [ #WT-923 ]
+- [mail] Support old content type "application/x-pkcs7-signature" [ #WT-924 ]
+- [mail] Focus sometimes is not in the right field when opening new message [ #WT-924 ]
+- [mail] A forwarded email from a GMail email with attached images, may not show the attach icon [ #WT-928 ]
+- [calendar] Organizer is overwritten [ #WT-927 ]
+
 Release 5.10.3 - feb 18, 2021
 -----------------------------
 
