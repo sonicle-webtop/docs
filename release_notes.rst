@@ -4,6 +4,14 @@ Release notes
 
 WebTop release 5
 
+Release 5.10.5 - mar 09, 2021
+-----------------------------
+
+**Bug Fixes:**
+
+- [core] TinyMCE html editor upgrade, to solve known issues [ #WT-939 ]
+- [mail] In-mail long links are not word-wrapped properly [ #WT-936 ]
+
 Release 5.10.4 - feb 25, 2021
 -----------------------------
 
