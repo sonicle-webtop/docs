@@ -386,7 +386,7 @@ SMS Settings
 .. _GeoIP-settings-section:
 
 IP Geolocation Settings
---------------
+-----------------------
 
 * | ``geolocation.provider`` [ ipstack ]
   | IP geolocation provider name. Currently only Ipstack is supported.
