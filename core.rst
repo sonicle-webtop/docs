@@ -27,14 +27,31 @@ Global and per-domain configuration settings can be setup using the admin interf
 System Settings
 ---------------
 
-* | ``syslog.enabled`` [ true | false ]
-  | If enabled, WebTop will log various actions into a dedicated Postgres table.
-
 * | ``system.language`` [ en | it | ... ]
   | Defines system default language locale.
 
 * | ``system.country`` [ US | IT | ... ]
   | Defines system default country locale.
+
+* | ``themes.extra`` [ comma separated theme entries list ]
+  | Entries in the form of "id=name" (theme id and its name) representing additional themes to be made available in WebTop.
+  | Example:
+
+  ::
+
+    theme1=Theme 1,theme2=Theme 2
+
+  | @since: 5.10.0
+
+* | ``lafs.extra`` [ comma separated LAF entries list ]
+  | Entries in the form of "id=name" (look&feel id and its name) representing additional look&feels to be made available in WebTop.
+  | Example:
+
+  ::
+
+    laf1=LAF 1,laf2=LAF 2
+
+  | @since: 5.10.0
 
 * | ``tomcat.manager.uri`` [ uri-to-tomcat-manager ]
   | Defines how to reach Tomcat manager applicaton. This is necessary when running Tomcat webapp versioning to run different versions of WebTop during upgrades. Each instance will use this URL to detect other instances and decide which one is latest: only the latest will run background processes that need to be unique.
@@ -94,6 +111,13 @@ System Settings
   | - empty trash
   | - share mail account folders
   | @since: 5.8.12
+
+* | ``audit.enabled`` [ true | false ]
+  | If enabled, WebTop will log various actions into a dedicated DB table. Defaults to ``false``.
+
+* | ``audit.logimpersonated`` [ true | false ]
+  | Specifies whether to enable auditing for activities coming from an impersonated session. When ``false`` no entries will be produced during impersonation of a user. Defaults to ``false``.
+  | @since: 5.10.0
 
 .. _login-settings-section:
 
@@ -174,9 +198,12 @@ Settings (defaults)
   | ``dd-MM-yyyy``: dd-MM-yyyy
   | ``dd.MM.yyyy``: dd.MM.yyyy
   | ``yyyy-MM-dd``: yyyy-MM-dd
+  | ``yyyy.MM.dd``: yyyy.MM.dd
   | ``MM/dd/yyyy``: MM/dd/yyyy
   | ``MM-dd-yyyy``: MM-dd-yyyy
   | ``MM.dd.yyyy``: MM.dd.yyyy
+  | ``dd. MM. yyyy.``: dd. MM. yyyy.
+  | ``d/M/yy``: d/M/yy
 
 * | ``default.i18n.format.date.long`` [ long-date-format-pattern ]
   | Date format pattern (java style) for long dates. Internally defaults to ``dd MMM yyyy``.
@@ -184,6 +211,10 @@ Settings (defaults)
   | ``dd MMMM yyyy``: dd MMMM yyyy
   | ``MMM dd, yyyy``: MMM dd, yyyy
   | ``MMMM dd, yyyy``: MMMM dd, yyyy
+  | ``yyyy. MMM dd.``: yyyy. MMM dd.
+  | ``yyyy. MMMM dd.``: yyyy. MMMM dd.
+  | ``dd. MMM yyyy.``: dd. MMM yyyy.
+  | ``dd. MMMM yyyy.``: dd. MMMM yyyy.
 
 * | ``default.i18n.format.time.short`` [ short-time-format-pattern ]
   | Time format pattern (java style) for short times. Internally defaults to ``HH:mm``.
@@ -288,7 +319,7 @@ Security Settings
 -----------------
 
 * | ``security.knowndeviceverification.enabled`` [ true | false ]
-  | Enable or disable remote-device reporting: an email notice is sent to a set of recipients if, after a successful login, the device is not already marked as known-device. Defaults to true.
+  | Enable or disable remote-device reporting: an email notice is sent to a set of recipients if, after a successful login, the device is not already marked as known-device. Defaults to ``true``.
   | @since: 5.10.0
 
 * | ``security.knowndeviceverification.recipients`` [ comma separated recipient list ]
@@ -321,19 +352,6 @@ OTP Settings
 * | ``otp.trust.device.duration`` [ days ]
   | Duration of the cookie used for trusting the device. Defaults to 0 (forever).
 
-.. _PBX-settings-section:
-
-PBX Settings
-------------
-
-* | ``pbx.provider`` [ nethvoice ]
-  | PBX provider name. Currently only NethVoice is supported.
-  | @since: 5.2.0
-
-* | ``pbx.provider.nethvoice.webrest.url`` [ url ]
-  | Specifies the NethVoice base URL to access its webrest APIs
-  | @since: 5.2.0
-
 .. _FAX-settings-section:
 
 FAX Settings
@@ -359,8 +377,8 @@ FAX Settings
 
 .. _SMS-settings-section:
 
-SMS Settings
-------------
+SMS integration Settings
+------------------------
 
 * | ``sms.provider`` [ smshosting | twilio ]
   | SMS provider name. Currently only SMS Hosting and Twilio are supported.
@@ -383,10 +401,23 @@ SMS Settings
   | The user has its own setting panel to override this sender with his own, in General / SMS.
   | @since: 5.3.1
 
+.. _PBX-settings-section:
+
+PBX integration Settings
+------------------------
+
+* | ``pbx.provider`` [ nethvoice ]
+  | PBX provider name. Currently only NethVoice is supported.
+  | @since: 5.2.0
+
+* | ``pbx.provider.nethvoice.webrest.url`` [ url ]
+  | Specifies the NethVoice base URL to access its webrest APIs
+  | @since: 5.2.0
+
 .. _GeoIP-settings-section:
 
-IP Geolocation Settings
------------------------
+IP Geolocation integration Settings
+-----------------------------------
 
 * | ``geolocation.provider`` [ ipstack ]
   | IP geolocation provider name. Currently only Ipstack is supported.
@@ -396,10 +427,29 @@ IP Geolocation Settings
   | Ipstack service API key. Create an account at https://ipstack.com/.
   | @since: 5.10.0
 
+.. _core-meeting-settings-section:
+
+Meeting integration settings
+----------------------------
+
+* | ``meeting.provider`` [jitsi]
+  | Meeting platform provider name. Currently only Jitsi is supported.
+  | @since: 5.10.0
+
+* | ``meeting.jitsi.name`` [ string ]
+  | (only for jitsi provider)
+  | The name of the service to refer to within the application.
+  | @since: 5.10.0
+
+* | ``meeting.jitsi.url`` [ string ]
+  | (only for jitsi provider)
+  | The URL at which the meeting service is served.
+  | @since: 5.10.0
+
 .. _core-docserver-settings-section:
 
-DocumentServer Settings
------------------------
+DocumentServer integration Settings
+-----------------------------------
 
 * | ``documentserver.enabled`` [ true | false ]
   | Enable or disable DocumentServer integration.

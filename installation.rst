@@ -132,11 +132,6 @@ Logging
 By default WebTop will log every message in the webapps's standard output, the Tomcat's :file:`catalina.out` file.
 If you want to change this default behaviour you need to set some JVM global variables (or set them into WebTop property file discussed above):
 
-* | ``webtop.log.target``
-  | Specifies the destination used for writing log entries. Defaults to ``console``.
-  | - ``console``: Writes log entries to Tomcat's standard output.
-  | - ``file``: Writes log entries to a file.
-
 * | ``webtop.log.dir``
   | Directory where to store log files. Defaults to ``/var/log/webtop``.
   | This is only used if the target is ``file``.
@@ -147,10 +142,21 @@ If you want to change this default behaviour you need to set some JVM global var
   | This is only used if the target is ``file``.
 
 * | ``webtop.log.file.policy``
-  | The policy to apply when writing log files. Defaults to ``rolling``.
+  | The policy to apply when writing main (application) log file. Defaults to ``rolling``.
   | - ``simple``: Writes to straight file (any rolling policy support is demanded to OS).
   | - ``rolling``: Writes to a file using a rolling appender. Currently only time-based policy is supported: 15days of max history with 150MB of total size cap.
   | This is only used if the target is ``file``.
+
+* | ``webtop.log.target``
+  | Specifies the destination used for writing main (application) log entries. Defaults to ``console``.
+  | - ``console``: Writes log entries to Tomcat's standard output.
+  | - ``file``: Writes log entries to a file.
+
+* | ``webtop.log.auth.target``
+  | Specifies the destination used for writing auth log entries. Defaults to ``none``.
+  | - ``none``: Output disabled.
+  | - ``file``: Writes log entries to a file (whose name is the basename with ``_auth`` suffix appended).
+  | @since: 5.10.0
 
 Due to some differences between components logging needs, the logging level cannot be set using a single variable like above.
 The :file:`logback.xml` file is refreshed every 30s, so you can control your desired logging level by manually updating the level value in correspondence of each `<logger>` elements.
