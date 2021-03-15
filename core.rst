@@ -433,9 +433,9 @@ Meeting integration Settings
 ----------------------------
 
 * | ``meeting.popular.providers`` [ comma separated theme entries list ]
-  | Entries in the form of "name=url" (service name and its conference base URL) representing popular meeting services available online.
-  | Domain wildcards are supported by adding "\*." as subdomain placeholder.
+  | Entries in the form of "name=url" (service name and its conference base URL) representing popular meeting services available online. Domain wildcards are supported by adding "\*." as subdomain placeholder.
   | Defaults to: ``Google Meet=https://meet.google.com/,Microsoft Teams=https://teams.microsoft.com/l/meetup-join/,Zoom=https://*.zoom.us/j/,Jitsi Meet=https://meet.jit.si/``
+  | @since: 5.10.0
 
 * | ``meeting.provider`` [jitsi]
   | Meeting platform provider name. Currently only Jitsi is supported.
