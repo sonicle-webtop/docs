@@ -429,7 +429,7 @@ IP Geolocation integration Settings
 
 .. _core-meeting-settings-section:
 
-Meeting integration settings
+Meeting integration Settings
 ----------------------------
 
 * | ``meeting.provider`` [jitsi]
