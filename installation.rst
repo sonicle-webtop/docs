@@ -156,7 +156,16 @@ If you want to change this default behaviour you need to set some JVM global var
   | Specifies the destination used for writing auth log entries. Defaults to ``none``.
   | - ``none``: Output disabled.
   | - ``file``: Writes log entries to a file (whose name is the basename with ``_auth`` suffix appended).
+  | - ``syslog``: Writes log entries to a remote syslog (see below for hostname and port defaults).
   | @since: 5.10.0
+
+* | ``webtop.logback.syslog.host``
+  | Specifies the hostname of the remote syslog server used by syslog appender. Defaults to ``localhost``.
+  | @since: 5.10.1
+
+* | ``webtop.logback.syslog.port``
+  | Specifies the port of the remote syslog server used by syslog appender. Defaults to ``514``.
+  | @since: 5.10.1
 
 Due to some differences between components logging needs, the logging level cannot be set using a single variable like above.
 The :file:`logback.xml` file is refreshed every 30s, so you can control your desired logging level by manually updating the level value in correspondence of each `<logger>` elements.
