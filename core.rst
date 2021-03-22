@@ -451,6 +451,11 @@ Meeting integration Settings
   | The URL at which the meeting service is served.
   | @since: 5.10.0
 
+* | ``meeting.jitsi.meetingid.prependusername`` [ boolean ]
+  | (only for jitsi provider)
+  | Specifies whether to prepend user's username to generated meeting IDs. Defaults to ``false``.
+  | @since: 5.10.1
+
 .. _core-docserver-settings-section:
 
 DocumentServer integration Settings
