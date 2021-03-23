@@ -23,6 +23,7 @@ Release 5.11.0 - mar 23, 2021
 - [core] OTP mail template is now more responsive [ #WT-887 ]
 - [calendar] New user setting to set grid increment to 15 minutes [ #WT-888 ]
 - [mail] Grid JSON normalization for forthcoming ExtJS upgrade [ #WT-839 ]
+- [mail] New better auto height of images on message view [ #WT-937 ]
 - [contacts] New facility for import debugging [ #WT-909 ]
 
 Release 5.10.5 - mar 09, 2021
