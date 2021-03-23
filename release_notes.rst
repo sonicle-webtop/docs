@@ -4,6 +4,27 @@ Release notes
 
 WebTop release 5
 
+Release 5.11.0 - mar 23, 2021
+-----------------------------
+
+**New Features:**
+
+- [core] New Jitsi Meet integration and support for 3rd party meeting links [ #WT-879 ]
+- [core] New Jitsi Meet server module for WebTop authentication [ #WT-943 ]
+- [core] New gelocalization services integration settings [ #WT-942 ]
+- [core] New authentication text log for monitoring through fail2ban [ #WT-938 ]
+- [admin] New authentication log admin tool with geo info [ #WT-850 ]
+- [core] New email notifications upon new device login, with geo info [ #WT-929 ]
+- [core] New setting to allow extra custom themes and LAFs definition [ #WT-933 ]
+- [core] Support german short date format [ #WT-925 ]
+- [core] New more visible MessageEditor toggle buttons [ #WT-914 ]
+- [core] "Authorize notifications" is now more informational [ #WT-908 ]
+- [core] New password policy options for WebTop managed domains [ #WT-898 ]
+- [core] OTP mail template is now more responsive [ #WT-887 ]
+- [calendar] New user setting to set grid increment to 15 minutes [ #WT-888 ]
+- [mail] Grid JSON normalization for forthcoming ExtJS upgrade [ #WT-839 ]
+- [contacts] New facility for import debugging [ #WT-909 ]
+
 Release 5.10.5 - mar 09, 2021
 -----------------------------
 
