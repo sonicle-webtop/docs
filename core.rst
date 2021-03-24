@@ -448,7 +448,7 @@ Meeting integration Settings
 
 * | ``meeting.jitsi.url`` [ string ]
   | (only for jitsi provider)
-  | The URL at which the meeting service is served. Required if provider is set to ``jitsi``, e.g. ``https://meet.jit.si/``.
+  | The URL at which the meeting service is served. Required, E.g. ``https://meet.jit.si/``.
   | @since: 5.10.0
 
 * | ``meeting.jitsi.meetingid.prependusername`` [ boolean ]
