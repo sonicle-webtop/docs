@@ -4,7 +4,7 @@ Release notes
 
 WebTop release 5
 
-Release 5.11.1 - mar 23, 2021
+Release 5.11.1 - mar 29, 2021
 -----------------------------
 
 **Bug Fixes:**
