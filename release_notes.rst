@@ -4,6 +4,15 @@ Release notes
 
 WebTop release 5
 
+Release 5.11.1 - mar 23, 2021
+-----------------------------
+
+**Bug Fixes:**
+
+- [mail] Column view always shows mails with attachment [ #WT-947 ]
+- [core] Do not send security report during impersonate [ #WT-945 ]
+- [tasks] Grid does not save column sizes [ #WT-946 ]
+
 Release 5.11.0 - mar 23, 2021
 -----------------------------
 
