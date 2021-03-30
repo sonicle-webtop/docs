@@ -4,6 +4,16 @@ Release notes
 
 WebTop release 5
 
+Release 5.11.2 - xxx xx, 2021
+-----------------------------
+
+**Bug Fixes:**
+
+- [mail] Open as New throws error on email not sent by me [ #WT-949 ]
+- [mail] PEC mail without the text in the body in response [ #WT-944 ]
+- [mail] Personal signature on shared account is not used in some cases [ #WT-406 ]
+- [core] Impersonate should never suggest lost&found data recovery [ #WT-406 ]
+
 Release 5.11.1 - mar 29, 2021
 -----------------------------
 
