@@ -4,6 +4,18 @@ Release notes
 
 WebTop release 5
 
+Release 5.11.3 - apr 13, 2021
+-----------------------------
+
+**Bug Fixes:**
+
+- [core] Admin auth log viewer may slow down with many records [ #WT-960 ]
+- [core] Admin auth log shows wrong session duration total [ #WT-956 ]
+- [mail] Tooltip of recipient or sender containing a single quote is truncated [ #WT-952 ]
+- [mail] Error using context menu on grid without an active selection [ #WT-951 ]
+- [mail] Text only emails wrongly detects emails and converts them into broken links [ #WT-362 ]
+- [cloud] Folder or file with character "%" breaks connection to any type of cloud resource [ #WT-919 ]
+
 Release 5.11.2 - mar 30, 2021
 -----------------------------
 
