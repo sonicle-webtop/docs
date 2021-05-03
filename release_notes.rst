@@ -4,6 +4,40 @@ Release notes
 
 WebTop release 5
 
+Release 5.12.0 - may 03, 2021
+-----------------------------
+
+**New Features:**
+
+- [core] Support for meeting room name in Jitsi integration [ #WT-977 ]
+- [core] Upgrade of Postgres JDBC library to 42.2.19 [ #WT-966 ]
+- [core] Port Java Mail 1.5 to Jakarta Mail 2.0 [ #WT-954 ]
+- [core] Support non ASCII 7bit characters on Login password [ #WT-953 ]
+- [core] Support Google authenticator OTP for admin user [ #WT-950 ]
+- [core] Upgrade Smack library for better XMPP support [ #WT-948 ]
+- [mail] Show full folder path in advanced search folder column [ #WT-969 ]
+- [mail] Support style tags inside mailcard [ #WT-968 ]
+- [mail] Implement searching of notes on emails [ #WT-713 ]
+- [calendar] Show more details on event tooltip [ #WT-889 ]
+
+**Bug Fixes:**
+
+- [core] Notification emails about a new access sholud not contain the geolocalized city [ #WT-978 ]
+- [core] Setting port of database connection on data-sources.xml cause error [ #WT-965 ]
+- [mail] Text only emails may not show corret charset [ #WT-983 ]
+- [mail] Favorites should not consider unread children [ #WT-982 ]
+- [mail] Moving folders does not update unreads on branches [ #WT-976 ]
+- [mail] Parent folders unseen bold state not always updated [ #WT-974 ]
+- [mail] Possible Javascript errors on "search new messages" and "hide folder" [ #WT-973 ]
+- [mail] Unseen count not updated after copy/move on destination folder [ #WT-971 ]
+- [mail] Archiving an email may cause interface unusable [ #WT-970 ]
+- [mail] Mail folder stays bold with mails all seen [ #WT-967 ]
+- [mail] rash folder does not update the number of emails to be read after emptying [ #WT-352 ]
+- [contacts] Mobile number lost on iOS during CardDAV sync [ #WT-964 ]
+- [cloud] Show the name of the resource owner on the sharing links grid [ #WT-981 ]
+- [cloud] Allow to delete and modify sharing links on shared resources [ #WT-980 ]
+- [cloud] Sharing links grid shows encoded chars [ #WT-963 ]
+
 Release 5.11.3 - apr 13, 2021
 -----------------------------
 
