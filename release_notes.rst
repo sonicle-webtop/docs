@@ -32,7 +32,7 @@ Release 5.12.0 - may 03, 2021
 - [mail] Unseen count not updated after copy/move on destination folder [ #WT-971 ]
 - [mail] Archiving an email may cause interface unusable [ #WT-970 ]
 - [mail] Mail folder stays bold with mails all seen [ #WT-967 ]
-- [mail] rash folder does not update the number of emails to be read after emptying [ #WT-352 ]
+- [mail] Trash folder does not update the number of emails to be read after emptying [ #WT-352 ]
 - [contacts] Mobile number lost on iOS during CardDAV sync [ #WT-964 ]
 - [cloud] Show the name of the resource owner on the sharing links grid [ #WT-981 ]
 - [cloud] Allow to delete and modify sharing links on shared resources [ #WT-980 ]
