@@ -4,6 +4,17 @@ Release notes
 
 WebTop release 5
 
+Release 5.12.1 - may 12, 2021
+-----------------------------
+
+**Bug Fixes:**
+
+- [core] Serious bug in Google Gson Json library may cause application hang [ #WT-992 ]
+- [core] Incorrect description for online chat users [ #WT-984 ]
+- [mail] Empty mailcard anomalies [ #WT-994 ]
+- [calendar] Changing the work time doesn't force the reload [ #WT-986 ]
+- [calendar] The time entered by keyboard is not converted into 24 hour format [ #WT-906 ]
+
 Release 5.12.0 - may 03, 2021
 -----------------------------
 
