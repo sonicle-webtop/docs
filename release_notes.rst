@@ -13,7 +13,7 @@ Release 5.12.2 - may 20, 2021
 - [mail] Rules order in incoming filters is not honored [ #WT-1003 ]
 - [mail] Advanced search results do not show the presence of attachments [ #WT-1001 ]
 - [mail] The hide signature button does not work [ #WT-999 ]
-- [mail] Applying tag with Tags Management on an email without any tag doesn't work [ #WT-998 ]
+- [mail] Applying tag with Tags Management on emails without any tag doesn't work [ #WT-998 ]
 - [mail] The editor removes styles in link tags [ #WT-995 ]
 - [mail] Optimize loading of imap folders [ #WT-931 ]
 - [calendar] The link to the meeting is not extracted if the URL is not in the Location [ #WT-997 ]
