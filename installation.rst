@@ -35,6 +35,45 @@ The required JRE version for a given WebTop release is:
   2. Copy the file ``jcharset-2.0.jar`` to your ``$JAVA_HOME/jre/lib/ext`` directory. The JAR file has to be in exactly this directory for the class loader to pick it up.
   3. Restart Tomcat if it is running.
 
+PostgreSQL Database
+^^^^^^^^^^^^^^^^^^
+
+The required DBMS version for a given WebTop release is:
+
++----------------+----------------------+
+| WebTop release | PostgreSQL version   |
++================+======================+
+| 5.XX.0 and up  | 9.1 or greater       |
+|                | plus tablefunc       |
+|                | plus rrule_functions |
++----------------+----------------------+
+| 5.11.0 and up  | 9.1 or greater       |
+|                | plus tablefunc       |
++----------------+----------------------+
+| 5.0.X and up   | 9.1 or greater       |
++----------------+----------------------+
+
+tablefunc
+"""""""""
+
+This package can be installed issuing the following command:
+
+::
+
+  CREATE EXTENSION tablefunc;
+
+Objects will be defined under the ``main`` public schema.
+
+.. note::
+
+  If the above method do not work, you can always add object manually running ``tablefunc.sql`` file, that can be found under PostgreSQL's ``\contrib`` folder, against WebTop's database.
+
+rrule_functions
+"""""""""""""""
+
+This package is not part of the official PostgreSQL extensions, neither a contrib module. Functions are provided by the great `DAViCal <https://www.davical.org/>`_ project.
+
+You can add these functions manually running `rrule_functions.sql <https://gitlab.com/davical-project/davical/-/blob/r1.1.10/dba/rrule_functions.sql>`_ file against WebTop's database.
 
 Apache Tomcat
 ^^^^^^^^^^^^^
