@@ -43,12 +43,12 @@ The required DBMS version for a given WebTop release is:
 +----------------+----------------------+
 | WebTop release | PostgreSQL version   |
 +================+======================+
-| 5.XX.0 and up  | 9.1 or greater       |
-|                | plus tablefunc       |
-|                | plus rrule_functions |
+| 5.X.X and up   | 9.1 or greater       |
+|                | with tablefunc,      |
+|                | rrule_functions      |
 +----------------+----------------------+
 | 5.11.0 and up  | 9.1 or greater       |
-|                | plus tablefunc       |
+|                | with tablefunc       |
 +----------------+----------------------+
 | 5.0.X and up   | 9.1 or greater       |
 +----------------+----------------------+
@@ -56,17 +56,17 @@ The required DBMS version for a given WebTop release is:
 tablefunc
 """""""""
 
-This package can be installed issuing the following command:
+This package can be installed issuing the following SQL command:
 
 ::
 
   CREATE EXTENSION tablefunc;
 
-Objects will be defined under the ``main`` public schema.
+Objects will be defined under the main ``public`` schema.
 
 .. note::
 
-  If the above method do not work, you can always add object manually running ``tablefunc.sql`` file, that can be found under PostgreSQL's ``\contrib`` folder, against WebTop's database.
+  If the above method do not work, you can always add object manually running ``tablefunc.sql`` SQL file against WebTop's database. You can find the file under PostgreSQL's ``\contrib`` folder.
 
 rrule_functions
 """""""""""""""
