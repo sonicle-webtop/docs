@@ -36,7 +36,7 @@ The required JRE version for a given WebTop release is:
   3. Restart Tomcat if it is running.
 
 PostgreSQL Database
-^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^
 
 The required DBMS version for a given WebTop release is:
 
