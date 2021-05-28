@@ -112,6 +112,104 @@ The next and final step is to instruct the application about this access. This c
 .. note::
   Where ``${TOMCAT_PORT}`` is the configured Tomcat's port and ``${MANAGER_USERNAME}``, ``${MANAGER_PASSWORD}`` are the values choosen above.
 
+Run behind a reverse proxy
+--------------------------
+
+Organizations are sometimes required to run applications behind a reverse proxy. Reasons may include:
+
+- security and auditing concerns
+- virtual hosting
+- exposing applications on restricted ports
+- SSL termination
+
+This section provides some general guidance on how to configure common reverse proxy servers to work with WebTop.
+
+Context
+^^^^^^^
+
+By default, the WebTop URL is http://yourhost:8080/webtop. In such case, the context, which is the part of the URL just after the domain name and the port, is webtop. Basically context name follow the base ``.war`` file name.
+In the instance where WebTop needs to be proxied at a different base path you must change the public path by editing a settings value.
+
+Apache httpd
+""""""""""""
+
+If you want to serve WebTop through `Apache httpd <https://httpd.apache.org/>`_ you need to satisfy these mod requirements:
+
+- `mod_proxy <https://httpd.apache.org/docs/current/mod/mod_proxy.html>`_
+- `mod_proxy_wstunnel <https://httpd.apache.org/docs/current/mod/mod_proxy_wstunnel.html>`_
+- `mod_rewrite <https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html>`_
+- `mod_headers <https://httpd.apache.org/docs/2.4/mod/mod_headers.html>`_
+- `mod_ssl <https://httpd.apache.org/docs/current/mod/mod_ssl.html>`_
+
+Example: Reverse Proxy on Restricted Ports
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Scenario**: You need to expose WebTop on restricted port ``80``. Instead run your reverse proxy on the restricted port ``80`` and the application server on the default port ``8080``.
+End users will access WebTop using the virtual host URL http://www.example.com/webtop instead of http://localhost:8080/webtop. This example uses the default content path (/webtop).
+Ensure your external hostname (www.example.com) routes to your reverse proxy server.
+Keep in mind that providing services behind a non encrypted port is unsafe and discouraged, please prefer using the secure port configuration.
+
+Apache httpd
+""""""""""""
+
+The example assumes that Apache httpd is properly configured with the following modules: mod_proxy, mod_proxy_wstunnel, mod_rewrite, mod_headers.
+
+::
+
+  <VirtualHost *:80>
+    ServerName www.example.com
+    ServerAdmin admin@example.com
+    ErrorLog logs/www.example.com/error.log
+    CustomLog logs/www.example.com/access.log common
+
+    RequestHeader unset X-Forwarded-For
+
+    ProxyPreserveHost On
+    ProxyPass /webtop/push ws://localhost:8080/webtop/push
+    ProxyPass /webtop http://localhost:8080/webtop
+    ProxyPassReverse /webtop http://localhost:8080/webtop
+
+    RewriteEngine on
+    RewriteCond %{QUERY_STRING} ^((?!X-Atmosphere-Transport=websocket).)*$ [NC]
+    RewriteRule ^/webtop/push(.*)$ http://localhost:8080/webtop/push$1 [P]
+  </VirtualHost>
+
+Example: Reverse Proxy SSL Termination
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+**Scenario**: Your organization has standardized a reverse proxy to handle SSL certificates and termination. The reverse proxy virtual host will accept HTTPS requests on the standard port ``443`` and serve content from WebTop running on the default non-restricted HTTP port ``8080`` transparently to end users.
+End users will access WebTop using the virtual host URL https://www.example.com/webtop instead of http://localhost:8080/webtop. This example uses the default content path (/webtop).
+Ensure your external hostname (www.example.com) routes to your reverse proxy server.
+To test your configuration, review the steps to generate a self-signed SSL certificate for reverse proxy servers.
+
+Apache httpd
+""""""""""""
+
+The example assumes that Apache httpd is properly configured with the following modules: mod_proxy, mod_proxy_wstunnel, mod_rewrite, mod_headers, mod_ssl.
+
+::
+
+  <VirtualHost *:443>
+    ServerName www.example.com
+    ServerAdmin admin@example.com
+    ErrorLog logs/www.example.com/error.log
+    CustomLog logs/www.example.com/access.log common
+
+    SSLEngine on
+    SSLCertificateFile "example.pem"
+    SSLCertificateKeyFile "example.key"
+
+    RequestHeader unset X-Forwarded-For
+
+    ProxyPreserveHost On
+    ProxyPass /webtop/push ws://localhost:8080/webtop/push
+    ProxyPass /webtop http://localhost:8080/webtop
+    ProxyPassReverse /webtop http://localhost:8080/webtop
+
+    RewriteEngine on
+    RewriteCond %{QUERY_STRING} ^((?!X-Atmosphere-Transport=websocket).)*$ [NC]
+    RewriteRule ^/webtop/push(.*)$ http://localhost:8080/webtop/push$1 [P]
+  </VirtualHost>
 
 Configuration
 -------------
@@ -141,7 +239,6 @@ If valid files can be found in both locations, properties will be merged keeping
 
 Please refer to `this page <https://code.sonicle.com/projects/WEBTOP/repos/webtop-core/browse/src/main/java/com/sonicle/webtop/core/app/WebTopProps.java>`_ to extract a list of supported properties.
 
-
 .. _configuration-database-section:
 
 Database
@@ -158,7 +255,6 @@ Database configuration relies on a specific configuration file that will be look
 
 .. warning::
   In order to look for external configuration files, the system property ``webtop.etc.dir`` must be specified pointing to a valid location. See above.
-
 
 .. _configuration-logging-section:
 
