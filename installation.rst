@@ -60,13 +60,13 @@ This package can be installed issuing the following SQL command:
 
 ::
 
-  CREATE EXTENSION tablefunc;
+  CREATE EXTENSION tablefunc SCHEMA public;
 
 Objects will be defined under the main ``public`` schema.
 
 .. note::
 
-  If the above method do not work, you can always add object manually running ``tablefunc.sql`` SQL file against WebTop's database. You can find the file under PostgreSQL's ``\contrib`` folder.
+  If the above method do not work, you can always add object manually running ``tablefunc.sql`` SQL file against WebTop's database from ``psql``. You can find the file under PostgreSQL's ``\contrib`` folder.
 
 rrule_functions
 """""""""""""""
