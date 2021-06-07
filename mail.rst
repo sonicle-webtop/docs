@@ -44,6 +44,9 @@ Settings
 * | ``message.replyall.stripmyidentities`` [ true | false ]
   | False to disable (in reply to all) recipients removing if matching with user identities. Defaults to `true`.
 
+* | ``folder.drafts.deletemsgonsend"`` [ true | false ]
+  | True to enable automatic deletion of drafts when sent. Defaults to `false`.
+
 * | ``message.edit.subject`` [ true | false ]
   | Enable or disable the feature to edit subject of received emails. Defaults to `false`.
   | @since: 5.5.1
