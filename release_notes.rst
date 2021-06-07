@@ -11,6 +11,7 @@ Release 5.12.3 - jun XX, 2021
 
 - [core] Atmosphere UUID cache is causing OutOfMemory [ #WT-1004 ]
 - [mail] Too much seen states WebSocket messages [ #WT-1005 ]
+- [mail] Opening and sending a lost autosaved message may show errors [ #WT-1006 ]
 
 Release 5.12.2 - may 20, 2021
 -----------------------------
