@@ -4,6 +4,14 @@ Release notes
 
 WebTop release 5
 
+Release 5.12.4 - jun 28, 2021
+-----------------------------
+
+**Bug Fixes:**
+
+- [mail] Attachments lookup breaks advanced search [ #WT-1012 ]
+- [mail] The external account configuration cannot be saved [ #WT-1013 ]
+
 Release 5.12.3 - jun 09, 2021
 -----------------------------
 
