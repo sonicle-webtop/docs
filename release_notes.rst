@@ -4,6 +4,24 @@ Release notes
 
 WebTop release 5
 
+Release 5.13.0 - jul 07, 2021
+-----------------------------
+
+**New Features:**
+
+- [mail] Enhance quota visualizations and warnings [ #WT-1016 ]
+- [mail] Add ability to insert mailcard in drafts without mailcard [ #WT-1014 ]
+- [mail] Number of attachments contained in the email [ #WT-990 ]
+- [mail] Support malformed charset [ #WT-989 ]
+- [mail] Show size of attachments in Message Editor [ #WT-710 ]
+
+**Bug Fixes:**
+
+- [mail] Mark folder as seen does not update the status of the folder [ #WT-1008 ]
+- [mail] Folders with reserved names can not be deleted/renamed [ #WT-361 ]
+- [contacts] Sending a list by email does not attach anything [ #WT-996 ]
+- [tasks] Activity row colors are not correct [ #WT-1009 ]
+
 Release 5.12.4 - jun 28, 2021
 -----------------------------
 
