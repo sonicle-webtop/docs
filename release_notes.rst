@@ -4,6 +4,14 @@ Release notes
 
 WebTop release 5
 
+Release 5.13.1 - jul 23, 2021
+-----------------------------
+
+**Bug Fixes:**
+
+- [mail] Root spam folder is no more recognized as a special folder with its icon [ #WT-1017 ]
+- [contacts] Mobile number becomes work number during CardDAV sync [ #WT-1015 ]
+
 Release 5.13.0 - jul 07, 2021
 -----------------------------
 
