@@ -4,6 +4,14 @@ Release notes
 
 WebTop release 5
 
+Release 5.13.2 - sep 14, 2021
+-----------------------------
+
+**Bug Fixes:**
+
+- [mail] On Dovecot, Junk mail under Public is not recognized as special folder [ #WT-1019 ]
+- [mail] Inline attachment are not removed during reply [ #WT-822 ]
+
 Release 5.13.1 - jul 23, 2021
 -----------------------------
 
