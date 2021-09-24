@@ -61,3 +61,13 @@ DAV Settings
 * | ``dav.addressbook.delete.enabled`` [ true | false ]
   | Enable/Disable addressbook deletions through DAV rest-api interface. Defaults to ``false``.
   | @since: 5.2.0
+
+.. _contacts-mailchimp-settings-section:
+
+Mailchimp Settings
+------------------
+
+* | ``mailchimp.apikey`` [ string ]
+  | The global Mailchimp API Key for Mailchimp integration.
+  | Requires a valid license.
+  | @since: 5.11.1
