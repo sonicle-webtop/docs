@@ -4,6 +4,34 @@ Release notes
 
 WebTop release 5
 
+Release 5.14.0 - oct 08, 2021
+-----------------------------
+
+**New Features:**
+
+- [tasks] Complete rewrite of Tasks service [ #WT-697 ]
+- [contacts] Mailchimp integration via REST API [ #WT-1018 ]
+
+**Bug Fixes:**
+
+- [mail] Advanced Search may block on heavy search [ #WT-1038 ]
+- [mail] Workaround Dovecot bug during folder move on shared folders [ #WT-1037 ]
+- [mail] Quick search of tags should be "or" instead of "and" [ #WT-1036 ]
+
+Release 5.13.0 - jul 07, 2021
+-----------------------------
+
+**New Features:**
+
+- [mail] Enhance quota visualizations and warnings [ #WT-1016 ]
+- [mail] Add ability to insert mailcard in drafts without mailcard [ #WT-1014 ]
+- [mail] Number of attachments contained in the email [ #WT-990 ]
+- [mail] Support malformed charset [ #WT-989 ]
+- [mail] Show size of attachments in Message Editor [ #WT-710 ]
+
+**Bug Fixes:**
+
+- [mail] Mark folder as seen does not update the status of the folder [ #WT-1008 ]
 Release 5.13.2 - sep 14, 2021
 -----------------------------
 
