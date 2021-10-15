@@ -4,7 +4,7 @@ Release notes
 
 WebTop release 5
 
-Release 5.14.0 - oct 08, 2021
+Release 5.14.0 - oct 16, 2021
 -----------------------------
 
 **New Features:**
@@ -14,6 +14,9 @@ Release 5.14.0 - oct 08, 2021
 
 **Bug Fixes:**
 
+- [mail] Invitation mail with no recipient cause null pointer during accept [ #WT-1044 ]
+- [mail] Print layout broken on some emails [ #WT-1043 ]
+- [mail] Error on slow servers creating a new message quickly after login [ #WT-1042 ]
 - [mail] Advanced Search may block on heavy search [ #WT-1038 ]
 - [mail] Workaround Dovecot bug during folder move on shared folders [ #WT-1037 ]
 - [mail] Quick search of tags should be "or" instead of "and" [ #WT-1036 ]
