@@ -20,6 +20,7 @@ Release 5.14.0 - oct 18, 2021
 - [mail] Advanced Search may block on heavy search [ #WT-1038 ]
 - [mail] Workaround Dovecot bug during folder move on shared folders [ #WT-1037 ]
 - [mail] Quick search of tags should be "or" instead of "and" [ #WT-1036 ]
+- [mail] Editor's resulting raw HTML may differ from rendered one [ #WT-1041 ]
 
 Release 5.13.0 - jul 07, 2021
 -----------------------------
