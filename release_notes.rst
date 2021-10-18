@@ -21,6 +21,8 @@ Release 5.14.0 - oct 18, 2021
 - [mail] Workaround Dovecot bug during folder move on shared folders [ #WT-1037 ]
 - [mail] Quick search of tags should be "or" instead of "and" [ #WT-1036 ]
 - [mail] Editor's resulting raw HTML may differ from rendered one [ #WT-1041 ]
+- [calendar] Allow shared calendar to be choosen as default one [ #WT-1027 ]
+- [contacts] Allow shared calendar to be choosen as default one [ #WT-1028 ]
 
 Release 5.13.0 - jul 07, 2021
 -----------------------------
