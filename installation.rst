@@ -73,7 +73,8 @@ rrule_functions
 
 This package is not part of the official PostgreSQL extensions, neither a contrib module. Functions are provided by the great `DAViCal <https://www.davical.org/>`_ project.
 
-You can add these functions manually running `rrule_functions.sql <https://gitlab.com/davical-project/davical/-/blob/r1.1.10/dba/rrule_functions.sql>`_ file against WebTop's database.
+These `original procedures <https://gitlab.com/davical-project/davical/-/blob/r1.1.10/dba/rrule_functions.sql>`_ treat upper-bound dates in a inclusive manner: we have slightly modified them to make comparisons exclusive.
+So you can add these functions manually running `rrule_functions.sql <https://raw.githubusercontent.com/sonicle/sonicle-webtop5-gate/master/postgres/rrule_functions.sql>`_ file against WebTop's database.
 
 Apache Tomcat
 ^^^^^^^^^^^^^
