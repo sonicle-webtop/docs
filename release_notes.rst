@@ -4,6 +4,19 @@ Release notes
 
 WebTop release 5
 
+Release 5.14.1 - xxx XX, 2021
+-----------------------------
+
+**Bug Fixes:**
+
+- [core] Recurrence field binding anomalies [ #WT-1052 ]
+- [mail] Interactive search ignores “Search in” folder [ #WT-1031 ]
+- [mail] Forwarded or Replied text/plain does not show sender email in quoted text [ #WT-1045 ]
+- [mail] Interactive search does not stop on window close [ #WT-1051 ]
+- [tasks] Searching by dates generates an error [ #WT-1046 ]
+- [calendar] NP Exception when modifying first instance of a recurrent event [ #WT-1048 ]
+- [calendar] Monthly or Annual recurrence cannot be broken anymore [ #WT-1049 ]
+
 Release 5.14.0 - oct 18, 2021
 -----------------------------
 
