@@ -4,6 +4,14 @@ Release notes
 
 WebTop release 5
 
+Release 5.14.2 - nov XX, 2021
+-----------------------------
+
+**Bug Fixes:**
+
+- [tasks] Tasks does not synchronize correctly through EAS [ #WT-1056 ]
+- [tasks] Importance value mismatch [ #WT-1057 ]
+
 Release 5.14.1 - oct 27, 2021
 -----------------------------
 
