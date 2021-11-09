@@ -11,6 +11,7 @@ Release 5.14.2 - nov XX, 2021
 
 - [tasks] Tasks does not synchronize correctly through EAS [ #WT-1056 ]
 - [tasks] Importance value mismatch [ #WT-1057 ]
+- [tasks] Completing a parent activity does not ask for confirmation only if done by the open activity [ #WT-1059 ]
 
 Release 5.14.1 - oct 27, 2021
 -----------------------------
