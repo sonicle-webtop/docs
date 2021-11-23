@@ -16,6 +16,8 @@ Release 5.14.2 - nov XX, 2021
 - [tasks] Attachment cannot be removed from task [ WT-1069 ]
 - [tasks] Search view lost after updating a Task [ WT-1072 ]
 - [mail] The change of order leaves "Date" selected [ #WT-1060 ]
+- [mail] Printing emails received from Outlook may add page breaks on Chrome [ #WT-1068 ]
+- [mail] It is not possible to change the read status on multiple messages on shared folders with read-only ACLs [ #WT-1054 ]
 - [calendar] Event creation from email generates error in LookupCausal [ #WT-1061 ]
 - [eas-server] Task due and start instants are shifted by zone offset [ #WT-1063 ]
 
