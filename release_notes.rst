@@ -13,6 +13,8 @@ Release 5.14.2 - nov XX, 2021
 - [tasks] Importance value mismatch [ #WT-1057 ]
 - [tasks] Completing a parent activity does not ask for confirmation only if done by the open activity [ #WT-1059 ]
 - [tasks] Category select in Task view shows only the current category [ #WT-1067 ]
+- [tasks] Attachment cannot be removed from task [ WT-1069 ]
+- [tasks] Search view lost after updating a Task [ WT-1072 ]
 - [mail] The change of order leaves "Date" selected [ #WT-1060 ]
 - [calendar] Event creation from email generates error in LookupCausal [ #WT-1061 ]
 - [eas-server] Task due and start instants are shifted by zone offset [ #WT-1063 ]
